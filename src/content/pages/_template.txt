@@ -1,0 +1,34 @@
+---
+title: 'Page title for <title> and OG tags'
+description: 'Description for <meta> description and OG tags'
+permalink: 'page-path/'
+eleventyNavigation:
+    key: Name to appear in navigation
+    order: 1000
+    parent: Optional - Put another page's "key" here to create a dropdown
+    hideOnMobile: Optional - set to "true" to hide on devices from, and below, 1023px
+    hideOnDesktop: Optional - set to "true" to hide on devices above, and including, 1024px
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+    <picture class="cs-background">
+        <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 720, height: 774 }) | avif %}" media="(max-width: 600px)" type="image/avif">
+        <source srcset="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | avif %}" media="(min-width: 601px)" type="image/avif">
+        <img src="{% getUrl '/assets/images/hero.jpg' | resize({ width: 1500, height: 1475 }) | webp %}" alt="Produce collection">
+    </picture>
+{% endblock %}
+
+TODO: 
+-Lazy load all images below the fold
+-Remove all references to code stitch
+- Ensure all images have alt description
+- Remove CMS capability, if not being used
+- Delete this text file
