@@ -628,7 +628,7 @@
   #cs-footer {
     background-color: #1a1a1a;
     padding: clamp(3.75em, 7.82vw, 6.25em) 1em;
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Courier Prime", "Arial", sans-serif;
   }
   #cs-footer .cs-container {
     margin: auto;

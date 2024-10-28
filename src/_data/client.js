@@ -1,20 +1,23 @@
 module.exports = {
-    "name": "New Growth Web Services",
-    "email": "newgrowthweb@gmail.com",
-    "phoneForTel": "613-857-9828",
-    "phoneFormatted": "(613) 857-9828",
+    "name": "Jason Bramburger",
+    "email": "jason.bramburger@concordia.ca",
+    // "phoneForTel": "613-857-9828",
+    // "phoneFormatted": "(613) 857-9828",
     "address": {
-        "lineOne": "123 Fake Street",
-        "city": "Ottawa",
-        "state": "ON",
-        "postalCode": "K0A1X0",
+        "lineOne": "LB 901-21",
+        "lineTwo": "Concordia University" ,
+        "city": "Montreal",
+        "state": "QC",
+        "postalCode": "H3G 1M8",
         "country": "Canada",
-        "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
+        // "mapLink": "https://maps.app.goo.gl/5y6iGEJqFwFWFt9i9"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
-        "instagram": "https://www.instagram.com/",
+        "researchGate": "https://www.researchgate.net/profile/Jason_Bramburger",
+        "github": "https://github.com/jbramburger",
+        "youtube": "https://www.youtube.com/channel/UCdf2-sP9uBkJMi7OJV6SS8w",
+        "twitter": "https://twitter.com/jbramburger7",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://hybrid.concordia.ca/jbrambur"
 };
