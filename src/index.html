@@ -82,7 +82,55 @@ media="print" onload="this.media='all'; this.onload=null;">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero-black.png" | resize({ width: 2000, height: 1000, position: "left" }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/hero-black.png" | resize({ width: 2000, height: 2000, position: "left" }) | jpeg %}" alt="Hero image, geometric shapes" width="600" height="774" decoding="async" aria-hidden="true">
     </picture>
-</section>                 
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-1461">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 1080, height: 1440 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" alt="Screenshot of Jason writing on a lightboard for his YouTube channel" width="540" height="720" decoding="async" aria-hidden="true">
+            </picture>
+
+            <picture class="cs-picture cs-picture2">
+               <!--Mobile Image-->
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | avif %}" type="image/avif">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | webp %}" type="image/webp">
+               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" type="image/jpeg">
+               <!--Desktop Image-->
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 1080, height: 1440 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
+               <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 780, height: 798 }) | jpeg %}" alt="Cover of Data Driven Methods book" width="313" height="381" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Me</span>
+            <h2 class="cs-title">Welcome to Jason Bramburger's Homepage</h2>
+            <p class="cs-text">
+                I'm an assistant professor at Concordia University and a member of the <a href="http://www.crm.umontreal.ca/labo/mathappli/en/">CRM Applied Math Lab</a>. My interests broadly lie in dynamical systems with research programs focusing on data-driven discovery, pattern formation, and polynomial optimization applied to differential equations. I received my Ph.D. in 2017 from the University of Ottawa under the supervision of Dr. Benoit Dionne and <a href="https://mysite.science.uottawa.ca/vleblanc/" target="_blank">Dr. Victor LeBlanc</a>. My training includes working as an NSERC postdoctoral fellow at Brown University, a PIMS postdoctoral fellow at the University of Victoria, and an acting instructor at the University of Washington.
+            </p>
+            <p>
+                Students who are interested in working with me on problems in computational and/or analytical aspects of dynamical systems are encouraged to reach out with a brief description of their interests. Moderate to strong programming skills are an advantage, while a background in differential equations is necessary. Those interested in working as a postdoctoral fellow in my lab are encouraged to apply for a <a href="">CRM-ISM Fellowship</a> listing me as an advisor.
+            </p>
+            <a href="" class="cs-button-solid">Get in Touch</a>
+        </div>
+    </div>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 {% endblock %}
