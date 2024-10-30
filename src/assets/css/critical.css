@@ -76,7 +76,6 @@
     line-height: 3.5rem;
     margin-top: 2rem;
     color: #fff;
-    border-radius: 0.25rem;
   }
 }
 /*-- -------------------------- -->
@@ -103,7 +102,6 @@
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 32.625rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
@@ -151,40 +149,40 @@
     top: 0.625rem;
     left: -0.9375rem;
   }
+  #sbs-1461 .cs-button-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
   #sbs-1461 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 2rem 0 0 0;
-    color: #fff;
-    min-width: 9.375rem;
     padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
+  }
+  #sbs-1461 .cs-button-transparent {
+    font-size: 1rem;
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    font-weight: 700;
+    width: 11.25rem;
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    color: var(--bodyTextColor);
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
+    transition: 0.3s;
   }
-  #sbs-1461 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-  }
-  #sbs-1461 .cs-button-solid:hover:before {
-    width: 100%;
+  #sbs-1461 .cs-button-transparent:hover {
+    border-color: var(--primaryLight);
+    scale: 1.01;
   }
   #sbs-1461 .cs-image-group {
     /* scaling the font size with the view width, removed at desktop */
@@ -265,33 +263,48 @@
     gap: 3.25rem;
   }
   #sbs-1461 .cs-content {
-    width: 40%;
+    width: 50%;
     padding: 3rem 0;
     /* prevents flexbox from squishing it */
     flex: none;
     align-self: center;
   }
   #sbs-1461 .cs-image-group {
-    font-size: 1rem;
-    width: 50vw;
-    max-width: 40.625rem;
-    height: auto;
-    /* 580px - 729px */
-    min-height: clamp(36.25rem, 50vw, 45.5625rem);
-    flex: none;
-    display: flex;
+    /* scaling the font size with the view width, removed at desktop */
+    font-size: min(2.23vw, 0.83em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 40.625em;
+    height: 45.5625em;
+    position: relative;
+  }
+  #sbs-1461 .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #sbs-1461 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
   }
   #sbs-1461 .cs-picture1 {
-    width: 83%;
-    height: auto;
-    position: relative;
-    left: auto;
-    top: auto;
-    border-radius: 1rem;
+    width: 32.625em;
+    height: 45.5625em;
+    left: 0;
+    top: 0;
   }
   #sbs-1461 .cs-picture2 {
-    width: 23.25rem;
-    height: 57%;
+    width: 23.625em;
+    height: 28.75em;
+    right: 0;
+    bottom: -5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   #sbs-1461 .cs-text a {
     color: var(--bodyTextColor);
