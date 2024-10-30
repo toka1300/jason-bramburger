@@ -147,6 +147,84 @@ media="print" onload="this.media='all'; this.onload=null;">
     </div>
 </section>
                                          
+<!-- ============================================ -->
+<!--                    Events                    -->
+<!-- ============================================ -->
+
+<section id="events-1711">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Events</span>
+            <h2 class="cs-title">Upcoming Talks and Conferences</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-date">
+                    <strong>10</strong>
+                    Sep
+                </span>
+                <div class="cs-info-wrapper">
+                    <div class="cs-info">
+                        <h3 class="cs-h3">McGill CAMBAM-QLS Seminar</h3>
+                        <span class="cs-location">Montréal</span>
+                        <span class="cs-time">
+                            <img class="cs-icon" src="./assets/svgs/clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            12:00PM - 01:00PM
+                        </span>
+                    </div>
+                    <div class="cs-button-wrapper">
+                        <a href="https://www.mcgill.ca/qls/seminars" target="_blank" class="cs-button-solid">More Info</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date">
+                    <strong>20-21</strong>
+                    Mar
+                </span>
+                <div class="cs-info-wrapper">
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Data, Dynamics, and Life Sciences (MDDLS) Conference</h3>
+                        <span class="cs-location">Irvine, CA</span>
+                        <span class="cs-time">
+                            <img class="cs-icon" src="./assets/svgs/clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            TBD
+                        </span>
+                    </div>
+                    <div class="cs-button-wrapper">
+                        <a href="https://cellfate.uci.edu/2025mddls/"  target="_blank" class="cs-button-solid">More Info</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date">
+                    <strong>11-25</strong>
+                    Aug
+                </span>
+                <div class="cs-info-wrapper">
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
+                        <span class="cs-location">Montréal</span>
+                        <span class="cs-time">
+                             <img class="cs-icon" src="./assets/svgs/clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            TBD
+                        </span>
+                    </div>
+                    <div class="cs-button-wrapper">
+                        <a href="https://www.siam.org/students-education/programs-initiatives/gene-golub-siam-summer-school" target="_blank" class="cs-button-solid">More Info</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Conference.jpg" | resize({ width: 1800, height: 1608 }) | avif %}" type="image/avif">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Conference.jpg" | resize({ width: 1800, height: 1608 }) | webp %}" type="image/webp">
+       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/Conference.jpg" | resize({ width: 1800, height: 1608 }) | jpeg %}" type="image/jpeg">
+       <img src="{% getUrl "/assets/images/Conference.jpg" | resize({ width: 1824, height: 1608 }) | jpeg %}" alt="Jason presenting at a conference" width="900" height="804" loading="lazy" decoding="async" aria-hidden="true">
+    </picture>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 {% endblock %}
