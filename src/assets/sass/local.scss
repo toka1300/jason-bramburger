@@ -310,3 +310,232 @@
         }
     }
 }
+
+/*-- -------------------------- -->
+<---        Side By Side        -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-1278 {
+        padding: var(--sectionPadding);
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: calc(850 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-direction: column;
+            /* 48px - 108px */
+            gap: clamp(3rem, 5vw, 6.75rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-text {
+            margin-bottom: calc(16 / 16 * 1rem);
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            border: none;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            border-radius: calc(4 / 16 * 1rem);
+            overflow: hidden;
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            transition: color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                color: #fff;
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            /* 456px - 598px */
+            height: clamp(21.5rem, 30vw, 28.5rem);
+            border-radius: calc(20 / 16 * 1rem);
+            overflow: hidden;
+            display: block;
+            /* sends it to the bottom in the 2nd position */
+            order: 2;
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                /* black overlay */
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: #1a1a1a;
+                opacity: 0.3;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 50%;
+            background-color: #1a1a1a;
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbs-1278 {
+        .cs-content {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: calc(32 / 16 * 1rem);
+        }
+
+        .cs-flex {
+            width: 45%;
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-text {
+            width: 50%;
+        }
+
+        .cs-button-solid {
+            margin: 1rem auto 0 0;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-1278 {
+        /* moved padding back to the section container */
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 100%;
+            max-width: 31rem;
+            margin: 0;
+            flex-direction: column;
+            order: 2;
+            row-gap: 0;
+        }
+
+        .cs-flex {
+            width: 100%;
+        }
+
+        .cs-title {
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: var(--headerColor);
+        }
+
+        .cs-text {
+            width: 100%;
+        }
+
+        .cs-picture {
+            max-width: calc(738 / 16 * 1rem);
+            order: 1;
+        }
+
+        .cs-background {
+            width: 60vw;
+            height: 100%;
+            /* 172px - 336px */
+            margin-right: clamp(11.125rem, 30vw, 21rem);
+            left: auto;
+            right: 50%;
+            top: 0;
+        }
+    }
+}
+
+                                

@@ -130,6 +130,7 @@
   a:hover,
   button:hover {
     cursor: pointer;
+    font-weight: bold;
   }
   .skip {
     z-index: -1111111;
