@@ -1,0 +1,133 @@
+---
+title: 'Research | Jason Bramburger'
+description: 'TODO: Meta description for the page'
+permalink: 'research/'
+eleventyNavigation:
+    key: Research
+    order: 300
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/research.css">
+    {# <link rel="preload" as="image" href="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930  }) | avif %}"/> #}
+    <script defer src="/assets/js/collapsible.js"></script>
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us No</h1>
+        <picture class="">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                    Publications              -->
+<!-- ============================================ -->
+
+<section id="faq-2070">
+    <div class="cs-container">
+        {# <picture class="cs-picture">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+        </picture> #}
+        <div class="cs-content">
+            <span class="cs-topper">Frequently Asked Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+                Orci eu lobortis elementum nibh yay telluls. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How often should I have dental check-ups and cleanings?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We recommend dental check-ups and cleanings every six months for most patients. However, some individuals may need more frequent visits based on their oral health needs.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What is the importance of fluoride treatments, and are they necessary for adults?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Fluoride treatments help strengthen tooth enamel and prevent decay. While especially important for children, adults can also benefit, particularly those at higher risk for cavities.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Are dental sealants only for children, or can adults benefit from them too?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            While commonly used for children, adults can also benefit from dental sealants, especially those prone to cavities or with deep grooves in their teeth.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How can I improve my at-home oral hygiene routine?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            To maintain optimal oral health, follow these essential practices: Brush your teeth twice daily for two minutes using fluoride toothpaste and a soft-bristled brush. Floss once a day to clean between teeth where brushing can't reach. Consider using an antimicrobial mouthwash after brushing and flossing. Maintain a healthy diet low in sugary and acidic foods, and drink plenty of water to rinse away food particles. Visit your dentist regularly for checkups and cleanings, replace your toothbrush every few months, and avoid smoking. These habits will help prevent cavities, gum disease, and other oral health issues while promoting overall well-being.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What are the early signs of gum disease, and how can I prevent it?
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Early signs of gum disease include red, swollen, or bleeding gums. Prevention includes regular brushing, flossing, and professional cleanings.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

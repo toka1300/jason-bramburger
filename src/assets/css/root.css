@@ -420,6 +420,7 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+    overflow-x: hidden;
   }
   #cs-navigation .cs-li {
     width: 100%;
@@ -847,18 +848,6 @@ html {
     color: #fff;
     text-align: center;
   }
-  #int-hero:before {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    opacity: 0.7;
-    display: block;
-    background: #000;
-    height: 100%;
-    width: 100%;
-  }
 }
 /* Tablet */
 @media only screen and (min-width: 48rem) {
@@ -955,6 +944,7 @@ html {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
+    background-color: var(--whiteButtonTextColor);
   }
   #footer-1147 .cs-container {
     width: 100%;

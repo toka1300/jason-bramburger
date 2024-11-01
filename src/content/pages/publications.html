@@ -1,0 +1,202 @@
+---
+title: 'Publications | Jason Bramburger'
+description: 'TODO: Meta description for the page'
+permalink: 'publications/'
+eleventyNavigation:
+    key: Publications
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/publications.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %})"/>
+    <script defer src="/assets/js/collapsible.js"></script>
+{% endblock %}
+
+{% block body %}
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Publications</h1>
+        <picture class="cs-background">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
+        </picture>
+    </section>
+
+<!-- ============================================ -->
+<!--                    Publications              -->
+<!-- ============================================ -->
+
+<section id="faq-2070">
+    <div class="cs-container">
+        {# <picture class="cs-picture">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
+        </picture> #}
+        <div class="cs-content">
+            <span class="cs-topper">My Work</span>
+            <h2 class="cs-title">Publications</h2>
+            <p class="cs-text">
+                A collection of Books, Preprints, publications, Refereed Conference Proceedings, Conference Reports, Outreach and Public Interest Articles and Theses
+            </p>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by dedfault -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Books
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <li>J. Bramburger
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://epubs.siam.org/doi/10.1137/1.9781611978162" target="_blank">Data-Driven Methods for Dynamic Systems</a></li>
+                                    <li>Society for Industrial and Applied Math (SIAM), 2024
+                                        <a href="https://github.com/jbramburger/DataDrivenDynSyst" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
+                                            <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon" alt="GitHub logo" loading="lazy" decoding-"async" width="18" height="18" aria-hidden="true">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Preprints
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        {# No GitHub #}
+                        <ul class="cs-item-p">
+                            <li>E. Bergland, J. Bramburger, and B. Sandstede.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2409.07546" target="_blank">Localized synchronous patterns in weakly coupled bistable oscillators.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        {# With GitHub #}
+                        <ul class="cs-item-p">
+                            <li>M. Mignacca, S. Brugiapaglia, and J. Bramburger.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2405.05057" target="_blank">Real-time motion detection using dynamic mode decomposition.</a>
+                                        <a href="https://github.com/marco-mig/dmd-motion-detection" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
+                                            <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon" alt="GitHub logo" loading="lazy" decoding-"async" width="18" height="18" aria-hidden="true">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <li>J. Bramburger, D. Hill, and D. Lloyd.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2404.14987" target="_blank">Localized multi-dimensional patterns.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <li>J. Bramburger, M. Holzer, and J. Williams.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2402.09276" target="_blank">Persistence of steady-states for dynamical systems on large networks.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <li>A.M. Neuman and J. Bramburger.</li>
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2307.13206" target="_blank">Transferability of graph neural networks using graphon and sampling theories</a></li>
+                                </ul>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <li>J.N. Kutz, A. Rahman, M. Ebers, J. Koch, and J. Bramburger.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2211.11748" target="_blank">Universal dynamics of damped-driven systems: The logistic map as a normal form for energy balance.</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Publications
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+
+                        <ul class="cs-item-p">
+                            <li>J. Bramburger and G. Fantuzzi.
+                                <ul class="cs-item-p-2">
+                                    <li><a href="https://arxiv.org/abs/2405.05057" target="_blank">Real-time motion detection using dynamic mode decomposition.</a>
+                                        <a href="https://github.com/marco-mig/dmd-motion-detection" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
+                                            <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon" alt="GitHub logo" loading="lazy" decoding-"async" width="18" height="18" aria-hidden="true">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+
+
+                    
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Refereed Conference Proceedings
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            To maintain optimal oral health, follow these essential practices: Brush your teeth twice daily for two minutes using fluoride toothpaste and a soft-bristled brush. Floss once a day to clean between teeth where brushing can't reach. Consider using an antimicrobial mouthwash after brushing and flossing. Maintain a healthy diet low in sugary and acidic foods, and drink plenty of water to rinse away food particles. Visit your dentist regularly for checkups and cleanings, replace your toothbrush every few months, and avoid smoking. These habits will help prevent cavities, gum disease, and other oral health issues while promoting overall well-being.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Conference Reports
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Early signs of gum disease include red, swollen, or bleeding gums. Prevention includes regular brushing, flossing, and professional cleanings.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}

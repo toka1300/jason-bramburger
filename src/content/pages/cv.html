@@ -1,18 +1,16 @@
 ---
-title: 'Project Two | Code Stitch Web Designs'
-description: 'Meta description for the page'
-permalink: 'project-two/'
+title: 'CV | Code Stitch Web Designs'
+description: 'TODO: description for the page'
+permalink: 'cv/'
 eleventyNavigation:
-    key: Project Two
-    order: 3200
-    parent: Projects
+    key: CV
+    order: 400
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/projects.css">
-    <link rel="preload" as="image" href="{% getUrl '/assets/images/cabinets2.jpg' | resize({ width: 720, height: 774 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/cv.css">
 {% endblock %}
 
 {% block body %}
@@ -22,7 +20,7 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Project Two Gallery</h1>
+        <h1 id="home-h">Project Three Gallery</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
             <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
