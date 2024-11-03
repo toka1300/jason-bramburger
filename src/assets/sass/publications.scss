@@ -6,21 +6,8 @@
 @media only screen and (min-width: 0rem) {
     #faq-2070 {
         padding: var(--sectionPadding);
-        // overflow-y: hidden;
         position: relative;
-
-        &:before {
-            content: "";
-            width: 100%;
-            height: 90%;
-            background: var(--primary);
-            opacity: 0.05;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 0;
-        }
-
+        
         .cs-container {
             width: 100%;
             max-width: calc(704/16 * 1rem);
@@ -31,7 +18,7 @@
             position: relative;
             z-index: 1;
         }
-
+        
         .cs-picture {
             // width: 100%;
             /* 272px - 358px */
@@ -42,7 +29,7 @@
             position: absolute;
             top: -4rem;
             right: 7rem;
-
+            
             img {
                 width: 100%;
                 height: 100%;
@@ -53,17 +40,7 @@
                 z-index: 1;
             }
         }
-
-        .cs-graphic {
-            /* 64px - 112px */
-            width: clamp(4rem, 8vw, 7rem);
-            height: auto;
-            position: absolute;
-            bottom: 0;
-            left: calc(32/16 * 1rem);
-            z-index: 1;
-        }
-
+        
         .cs-content {
             /* set text align to center if content needs to be center aligned */
             text-align: left;
@@ -72,6 +49,19 @@
             flex-direction: column;
             /* left aligns content, set to center to center align the content */
             align-items: flex-start;
+            
+                    &:before {
+                        content: "";
+                        width: 200vw;
+                        height: 150%;
+                        background: var(--primary);
+                        opacity: 0.05;
+                        position: absolute;
+                        bottom: 0;
+                        top: 00rem;
+                        left: -50%;
+                        z-index: 0;
+                    }
         }
 
         .cs-text {
@@ -201,12 +191,13 @@
                     list-style-position: inside;
                     padding: 0 0 calc(24/16 * 1rem) 0;
                     opacity: 1;
-                    list-style-type: disc;
+                    list-style-type: decimal;
                 }
 
                 .cs-item-p-2 {
-                    list-style-type: circle;
-                    padding-left: 1rem;
+                    list-style-type: none;
+                    display: block;
+                    // padding-left: 1rem;
                 }
             }
         }
@@ -293,9 +284,15 @@
             gap: 0.75em;
         }
 
+        .cs-social-li {
+            display: flex;
+            gap: 0.5rem;
+            position: absolute;
+            right: 0;
+        }
+
         .cs-social-link {
             z-index: 1;
-            position: relative;
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -311,6 +308,8 @@
             }
         }
 
+        .cs-youtube
+
         .cs-social-img {
             display: block;
             height: calc(13 / 16 * 1rem);
@@ -321,14 +320,9 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #faq-2070 {
-        &:before {
-            height: 80%;
-        }
-
-        .cs-container {
+    #faq-2070 .cs-container {
             max-width: calc(1280/16 * 1rem);
             align-items: flex-end;
         }
-    }
+    
 }

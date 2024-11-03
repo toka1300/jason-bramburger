@@ -168,37 +168,38 @@ module.exports = {
             "authors": "J. Bramburger, D. Altschuler, C. Avery, T. Sangsawang, M. Beck, P. Carter, and B. Sandstede.",
             "title": "Localized radial roll patterns in higher space dimensions.",
             "link": "https://epubs.siam.org/doi/pdf/10.1137/18M1218728",
-            "reference": "SIAM Journal on Applied Dynamical Systems 18, (2019) 1420–1453.",
+            "reference": "SIAM Journal on Applied Dynamical Systems 18, (2019) 1420-1453.",
             "repo": "https://github.com/sandstede-lab/Radial-Roll-Patterns"
         },
         {
-            "authors": "",
-            "title": "",
-            "link": "",
-            "reference": "",
-            "repo": ""
+            "authors": "J. Bramburger and F. Lutscher.",
+            "title": "Analysis of integrodifference equations with a separable dispersal kernel.",
+            "link": "https://link.springer.com/article/10.1007/s10440-018-0207-9",
+            "reference": "Acta Applicandae Mathematicae 161, (2019) 127-151."
         },
         {
-            "authors": "",
-            "title": "",
-            "link": "",
-            "reference": "",
-            "repo": ""
+            "authors": "J. Bramburger.",
+            "title": "Rotating wave solutions to lattice dynamical systems II: Persistence results.",
+            "link": "https://link.springer.com/article/10.1007/s10884-018-9677-8",
+            "reference": "Journal of Dynamics and Differential Equations 31, (2019) 499-536."
         },
         {
-            "authors": "",
-            "title": "",
-            "link": "",
-            "reference": "",
-            "repo": ""
+            "authors": "J. Bramburger.",
+            "title": "Rotating wave solutions to lattice dynamical systems I: The anti-continuum limit.",
+            "link": "https://link.springer.com/article/10.1007/s10884-018-9678-7",
+            "reference": "Journal of Dynamics and Differential Equations 31, (2019) 469-498."
         },
         {
-            "authors": "",
-            "title": "",
-            "link": "",
-            "reference": "",
-            "repo": ""
+            "authors": "J. Bramburger.",
+            "title": "Stability of infinite systems of coupled oscillators via random walks on weighted graphs.",
+            "link": "https://www.ams.org/journals/tran/2019-372-02/S0002-9947-2019-07609-2/",
+            "reference": "Transactions of the American Mathematical Society 372, (2019) 1159-1192."
         },
-
+        {
+            "authors": "J. Bramburger, B. Dionne, and V.G. LeBlanc.",
+            "title": "Zero-Hopf bifurcation in the Van der Pol oscillator with delayed position and velocity feedback.",
+            "link": "https://link.springer.com/content/pdf/10.1007/s11071-014-1638-0.pdf",
+            "reference": "Nonlinear Dynamics 78, (2014) 2959-2973."
+        }
     ]
 };

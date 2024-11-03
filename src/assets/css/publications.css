@@ -7,17 +7,6 @@
     padding: var(--sectionPadding);
     position: relative;
   }
-  #faq-2070:before {
-    content: "";
-    width: 100%;
-    height: 90%;
-    background: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
   #faq-2070 .cs-container {
     width: 100%;
     max-width: 44rem;
@@ -47,15 +36,6 @@
     right: 0;
     z-index: 1;
   }
-  #faq-2070 .cs-graphic {
-    /* 64px - 112px */
-    width: clamp(4rem, 8vw, 7rem);
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    left: 2rem;
-    z-index: 1;
-  }
   #faq-2070 .cs-content {
     /* set text align to center if content needs to be center aligned */
     text-align: left;
@@ -64,6 +44,18 @@
     flex-direction: column;
     /* left aligns content, set to center to center align the content */
     align-items: flex-start;
+  }
+  #faq-2070 .cs-content:before {
+    content: "";
+    width: 200vw;
+    height: 150%;
+    background: var(--primary);
+    opacity: 0.05;
+    position: absolute;
+    bottom: 0;
+    top: 0rem;
+    left: -50%;
+    z-index: 0;
   }
   #faq-2070 .cs-text {
     /* 48px - 64px */
@@ -172,11 +164,11 @@
     list-style-position: inside;
     padding: 0 0 1.5rem 0;
     opacity: 1;
-    list-style-type: disc;
+    list-style-type: decimal;
   }
   #faq-2070 .cs-faq-item.active .cs-item-p-2 {
-    list-style-type: circle;
-    padding-left: 1rem;
+    list-style-type: none;
+    display: block;
   }
   #faq-2070 .cs-button {
     /* 16px - 20px */
@@ -247,9 +239,14 @@
     justify-content: flex-start;
     gap: 0.75em;
   }
+  #faq-2070 .cs-social-li {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    right: 0;
+  }
   #faq-2070 .cs-social-link {
     z-index: 1;
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +260,7 @@
     scale: 1.05;
     background-color: var(--secondary);
   }
-  #faq-2070 .cs-social-img {
+  #faq-2070 .cs-youtube .cs-social-img {
     display: block;
     height: 0.8125rem;
     width: auto;
@@ -271,9 +268,6 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #faq-2070:before {
-    height: 80%;
-  }
   #faq-2070 .cs-container {
     max-width: 80rem;
     align-items: flex-end;
