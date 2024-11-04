@@ -1,4 +1,45 @@
 module.exports = {
+    "books": [
+        {
+            "authors": "J. Bramburger",
+            "title": "Society for Industrial and Applied Math (SIAM), 2024",
+            "link": "https://epubs.siam.org/doi/10.1137/1.9781611978162",
+            "repo": "https://github.com/jbramburger/DataDrivenDynSyst"
+        }
+    ],
+    "preprints": [
+        {
+            "authors": "E. Bergland, J. Bramburger, and B. Sandstede.",
+            "title": "Localized synchronous patterns in weakly coupled bistable oscillators.",
+            "link": "https://arxiv.org/abs/2409.07546"
+        },
+        {
+            "authors": "M. Mignacca, S. Brugiapaglia, and J. Bramburger.",
+            "title": "Real-time motion detection using dynamic mode decomposition.",
+            "link": "https://arxiv.org/abs/2405.05057",
+            "repo": "https://github.com/marco-mig/dmd-motion-detection"
+        },
+        {
+            "authors": "J. Bramburger, D. Hill, and D. Lloyd.",
+            "title": "Localized multi-dimensional patterns.",
+            "link": "https://arxiv.org/abs/2404.14987"
+        },
+        {
+            "authors": "J. Bramburger, M. Holzer, and J. Williams.",
+            "title": "Persistence of steady-states for dynamical systems on large networks.",
+            "link": "https://arxiv.org/abs/2402.09276"
+        },
+        {
+            "authors": "A.M. Neuman and J. Bramburger.",
+            "title": "Transferability of graph neural networks using graphon and sampling theories.",
+            "link": "https://arxiv.org/abs/2307.13206"
+        },
+        {
+            "authors": "J.N. Kutz, A. Rahman, M. Ebers, J. Koch, and J. Bramburger.",
+            "title": "Universal dynamics of damped-driven systems: The logistic map as a normal form for energy balance.",
+            "link": "https://arxiv.org/abs/2211.11748"
+        }
+    ],
     "publications": [{
             "authors": "J. Bramburger and G. Fantuzzi.",
             "title": "Data-driven discovery of invariant measures.",
@@ -201,5 +242,63 @@ module.exports = {
             "link": "https://link.springer.com/content/pdf/10.1007/s11071-014-1638-0.pdf",
             "reference": "Nonlinear Dynamics 78, (2014) 2959-2973."
         }
+    ],
+    "conferenceProceedings":[
+        {
+            "authors": "J. Bramburger, S. Dahdah, and J. Forbes",
+            "title": "Synthesizing control laws from data using sum-of-squares optimization",
+            "link": "https://ieeexplore.ieee.org/document/10666531",
+            "reference": "2024 IEEE Conference on Control Technology and Applications (CCTA)",
+            "location": "Newcastle upon Tyne, UK, 2024",
+            "repo": "https://github.com/jbramburger/data-clf",
+        }
+    ],
+    "conferenceReports": [
+        {
+            "authors": "J. Bramburger",
+            "title": "Data-driven system analysis using polynomial optimization and the Koopman operator",
+            "link": "https://publications.mfo.de/handle/mfo/4171",
+            "reference": "Oberwolfach Reports 35, (2024) 33-34."
+        },
+        {
+            "authors": "J. Bramburger, C. Budd, J. Hu, and A. Wan",
+            "title": "Structured machine learning and timestepping for dynamical systems (24w5301)",
+            "link": "https://www.birs.ca/workshops/2024/24w5301/report24w5301.pdf",
+            "reference": "BIRS Report, (2024)."
+        },
+        {
+            "authors": "J. Bramburger",
+            "title": "Localized patterns on graphs: The influence of dimension and topology on pattern formation",
+            "link": "https://publications.mfo.de/handle/mfo/3898",
+            "reference": "Oberwolfach Reports 37, (2021) 16-17."
+        }
+    ],
+    "outreachArticles": [
+        {
+            "authors": "J. Bramburger",
+            "title": "The emerging utility of graphons in applied math",
+            "link": "https://sinews.siam.org/Details-Page/the-emerging-utility-of-graphons-in-applied-math",
+            "reference": "SIAM News 56, (2023)."
+        },
+        {
+            "authors": "J. Bramburger",
+            "title": "Patterns and waves in theory, experiment, and application",
+            "link": "https://publications.mfo.de/handle/mfo/4053",
+            "reference": "Snapshot of Modern Mathematics from Oberwolfach (2023)."
+        }        
+    ],
+    "theses": [
+        {
+            "authors": "J. Bramburger",
+            "title": "On the existence and stability of rotating wave solutions to lattice dynamical systems.",
+            "link": "https://ruor.uottawa.ca/handle/10393/36235",
+            "reference": "Ph.D. Thesis, University of Ottawa, 2017."
+        },
+        {
+            "authors": "J. Bramburger",
+            "title": "Steady-state/Hopf interactions in the Van der Pol oscillator with delayed feedback.",
+            "link": "https://ruor.uottawa.ca/handle/10393/24325",
+            "reference": "M.Sc. Thesis, University of Ottawa, 2013."
+        }    
     ]
 };
