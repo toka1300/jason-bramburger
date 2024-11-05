@@ -1,5 +1,5 @@
 ---
-title: 'CV | Code Stitch Web Designs'
+title: 'CV | Jason Bramburger'
 description: 'TODO: description for the page'
 permalink: 'cv/'
 eleventyNavigation:
@@ -11,92 +11,132 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/cv.css">
+        <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Project Three Gallery</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        <h1 id="home-h">CV</h1>
+        <picture class="">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    CV                        -->
+<!-- ============================================ -->
 
-    <section id="gallery">
-        <div class="cs-container">
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-            </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+<section id="faq-2070">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">My Work</span>
+            <h2 class="cs-title">CV</h2>
+            <p class="cs-text">Below you can find some quick information about my education, employment, and some awards I have won. For full details please consult the up-to-date version of my CV:</p>
         </div>
-    </section>
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Education</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p><strong>Ph.D Mathematics</strong>, July 2017</p>
+                            <p>University of Ottawa</p>
+                            <p>Advisors: Benoit Dionne and Victor LeBlanc</p>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <p><strong>M.Sc. Mathematics</strong>, July 2013</p>
+                            <p>University of Ottawa</p>
+                            <p>Advisors: Benoit Dionne and Victor LeBlanc</p>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <p><strong>B.A. Honours</strong>, May 2011</p>
+                            <p>Nipissing University</p>
+                            <p>Specialization in pure mathematics with minor in computer science</p>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Employment
+                            </span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                            {% for job in research.employment %}
+                                <ul class="cs-item-p">
+                                    <p><strong>{{ job.title }}</strong>, {{ job.dates }}</p>
+                                    <p>{{ job.department }}</p>
+                                    <p>{{ job.location }}</p>
+                                </ul>
+                            {% endfor%}
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Research Funding</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p><strong>Research Support for New Academics (FRQNT) - Metropolitan communities</strong></p>
+                            <p>April 2024 - March 2026</p>
+                            <p>Title: <em>Model Discovery in the Right Coordinates using Neural Networks</em></p>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <p><strong>NSERC Discovery Launch Supplement</strong></p>
+                                <p>April 2023 - March 2028</p>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <p><strong>Concodia University Faculty of Arts and Science Start-Up Grant</strong></p>
+                            <p>September 2022 - August 2024</p>
+                        </ul>
+                    </li>
+
+                    
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                            {% for award in research.awards %}
+                                <ul class="cs-item-p">
+                                    <p><strong>{{ award.name }}</strong>, {{ award.dates }}</p>
+                                    <p>{{ award.source }}</p>
+                                    {% if award.link %}
+                                        <a href="{{ award.link }}" target="_blank">Details<img src="../../assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
+                                    {% endif %}
+                                </ul>
+                            {% endfor%}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
     {% include 'components/cta.html' %}
 
