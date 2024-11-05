@@ -28,7 +28,7 @@
         }
 
         .cs-text {
-            margin-bottom: clamp(3rem, 6vw, 4rem);
+            margin-bottom: clamp(0.5rem, 6vw, 1rem);
         }
 
         .cs-flex-group {
@@ -62,6 +62,11 @@
                     color: var(--primary);
                 }
 
+                .cs-icon {
+                    transform: rotate(180deg);
+                    filter: grayscale(1) brightness(1000%);
+                }
+
                 .cs-arrows {
                     background-color: var(--primary);
                     border-color: var(--primary);
@@ -73,10 +78,13 @@
                     list-style-type: decimal;
                     padding: 0 0 calc(24/16 * 1rem) 0;
                     opacity: 1;
+
+                    strong {
+                        font-size: 1.25rem;
+                    }
                 }
 
                 .cs-item-p-2 {
-                    // list-style-type: circle;
                     display: block;
                     padding-left: 28px;
                 }
@@ -111,6 +119,10 @@
             }
         }
 
+        .cs-button-solid {
+            border: none;
+        }
+
         .cs-arrows {
             width: calc(48/16 * 1rem);
             height: calc(48/16 * 1rem);
@@ -126,6 +138,13 @@
             transform: translateY(-50%);
             z-index: 1;
             transition: border-color .3s, background-color .3s;
+        }
+
+        .cs-icon {
+            width: calc(24/16 * 1rem);
+            height: auto;
+            display: block;
+            transition: transform .3s;
         }
 
         .cs-button-text {

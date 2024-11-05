@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/cv.css">
-        <script defer src="/assets/js/collapsible.js"></script>
+    <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -44,7 +44,8 @@ eleventyNavigation:
         <div class="cs-content">
             <span class="cs-topper">My Work</span>
             <h2 class="cs-title">CV</h2>
-            <p class="cs-text">Below you can find some quick information about my education, employment, and some awards I have won. For full details please consult the up-to-date version of my CV:</p>
+            <p class="cs-text">Below you can find some quick information about my education, employment, and some awards I have won. TODO: Reword this--> For full details please consult the up-to-date version of my CV, by clicking the button below.</p>
+            <a href="https://hybrid.concordia.ca/jbrambur/Bramburger-CV.pdf"><button class="cs-button-solid">Download Full CV</button></a>
         </div>
         <div class="cs-flex-group">
             <div class="cs-wrapper">
@@ -83,13 +84,13 @@ eleventyNavigation:
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                            {% for job in research.employment %}
-                                <ul class="cs-item-p">
-                                    <p><strong>{{ job.title }}</strong>, {{ job.dates }}</p>
-                                    <p>{{ job.department }}</p>
-                                    <p>{{ job.location }}</p>
-                                </ul>
-                            {% endfor%}
+                        {% for job in research.employment %}
+                            <ul class="cs-item-p">
+                                <p><strong>{{ job.title }}</strong>, {{ job.dates }}</p>
+                                <p>{{ job.department }}</p>
+                                <p>{{ job.location }}</p>
+                            </ul>
+                        {% endfor%}
 
                     <li class="cs-faq-item">
                         <button class="cs-button">
@@ -114,7 +115,7 @@ eleventyNavigation:
                     </li>
 
                     
-                    <li class="cs-faq-item active">
+                    <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
                             <span class="cs-arrows" aria-hidden="true">

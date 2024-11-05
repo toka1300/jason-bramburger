@@ -11,64 +11,140 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/group.css">
+    <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        <h1 id="home-h">Group</h1>
+        <picture class="">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
-
     </section>
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    CV                        -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
+<section id="faq-2070">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">TODO: Text Here</span>
+            <h2 class="cs-title">Group</h2>
+            <p class="cs-text">TODO: Explanation here?</p>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Doctoral</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p><strong>Gabriel Remond-Tiedrez</strong>, since 2024</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>Co-supervisor: <a href="https://www.math.mcgill.ca/jplessard/Home.html" target="_blank">Jean-Philippe Lessard</a></p>
+                            </div>
+                        </ul>
+                        <ul class="cs-item-p">
+                            <p><strong>Jackson Williams</strong>, since 2021</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>Co-supervisor: <a href="https://math.gmu.edu/~mholzer/">Matt Holzer</a></p>
+                            </div>
+                            <a href="https://hybrid.concordia.ca/jbrambur/Graphon_Poster_Jackson.pdf" class="cs-item-p-2" target="_blank">
+                                <img src="../../assets/svgs/poster.svg" alt="trophy icon">
+                                <p>Existence and Persistence of Steady States for Dynamical Systems on Large Networks (presented at SIAM DS23 and Dynamics Days 2024)</p>
+                            </a>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/trophy.svg" alt="trophy icon"> 
+                                <p>T.C. Lim Graduate Award for Excellence in Teaching</p>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Masters</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+
+                        <ul class="cs-item-p">
+                            <p><strong>Tristan Kolla</strong>, since 2024</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>Co-supervisor: <a href="https://www.pedersenfisherieslab.com/" target="_blank">Eric Pederson</a></p>
+                            </div>
+                        </ul>
+
+                        <ul class="cs-item-p">
+                            <p><strong>Daniel Fassler</strong>, since 2023</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>Co-supervisor: <a href="https://sites.google.com/view/paglia" target="_blank">Simone Brugiapaglia</a></p>
+                            </div>
+                        </ul>
+
+                        <ul class="cs-item-p">
+                            <p><strong>Bocheng Ruan</strong>, since 2023</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>Co-supervisor: <a href="http://mypage.concordia.ca/mathstat/pgora/" target="_blank"> Pawel Gora</a></p>
+                            </div>
+                        </ul>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Undergraduate</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p><strong>Mathew Sanza</strong>,  2024, CURSA</p>
+                        </ul>
+
+                        <ul class="cs-item-p">
+                            <p><strong>Marco Mignacca</strong>, 2023 Honours Project</p>
+                            <div class="cs-item-p-2">
+                                <img src="../../assets/svgs/users.svg" alt="users icon">
+                                <p>2023, NSERC USRA, Co-supervisor: <a href="https://sites.google.com/view/paglia" target="_blank">Simone Brugiapaglia</a></p>
+                            </div>
+                            <a href="https://hybrid.concordia.ca/jbrambur/Marco_Poster_CMS.pdf" class="cs-item-p-2" target="_blank">
+                                <img src="../../assets/svgs/poster.svg" alt="trophy icon">
+                                <p>Motion Detection using Dynamic Mode Decomposition (presented at CMS Winter Meeting 2023 - Winner of best poster prize)</p>
+                            </a>
+                        </ul>
+
+                        <ul class="cs-item-p">
+                            <p><strong>Georgia Brooks</strong>, 2023</p>
+                            <p>Don and Bonnie Poole Undergraduate Summer Research Internship</p>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     {% include 'components/cta.html' %}
 

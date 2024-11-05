@@ -62,7 +62,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             {% for book in research.books %}
                                 <div class="cs-item-p">
-                                    <li>{{ book.authors }}
+                                    <li><strong>{{ book.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
                                             <div class="cs-social-li">
@@ -92,7 +92,7 @@ eleventyNavigation:
                             {# If you need to add more items, add another element to the array in research.js #}
                             {% for preprint in research.preprints %}
                                 <div class="cs-item-p">
-                                    <li>{{ preprint.authors }}
+                                    <li><strong>{{ preprint.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ preprint.link }}" target="_blank">{{ preprint.title }}</a>
                                         </div>
@@ -124,7 +124,7 @@ eleventyNavigation:
                             </picture>
                             {% for publication in research.publications %}
                                 <div class="cs-item-p">
-                                    <li>{{ publication.authors }}
+                                    <li><strong>{{ publication.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a>
                                             <span class="cs-reference">{{ publication.reference }}</span>
@@ -161,8 +161,6 @@ eleventyNavigation:
                             {% endfor %}
                         </ul>
                     </li>
-
-                    
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Refereed Conference Proceedings</span>
@@ -173,7 +171,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             {% for conference in research.conferenceProceedings %}
                                 <div class="cs-item-p">
-                                    <li>{{ conference.authors }}
+                                    <li><strong>{{ conference.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ conference.link }}" target="_blank">{{ conference.title }}</a>
                                             <span class="cs-reference">{{ conference.reference }}</span>
@@ -205,7 +203,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             {% for reports in research.conferenceReports %}
                                 <div class="cs-item-p">
-                                    <li>{{ reports.authors }}
+                                    <li><strong>{{ reports.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ reports.link }}" target="_blank">{{ reports.title }}</a>
                                             <span class="cs-reference">{{ reports.reference }}</span>
@@ -215,6 +213,7 @@ eleventyNavigation:
                             {% endfor %}
                         </ul>
                     </li>
+
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">
@@ -227,7 +226,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             {% for articles in research.outreachArticles %}
                                 <div class="cs-item-p">
-                                    <li>{{ articles.authors }}
+                                    <li><strong>{{ articles.authors }}</strong>
                                         <div class="cs-item-p-2">
                                             <a href="{{ articles.link }}" target="_blank">{{ articles.title }}</a>
                                             <span class="cs-reference">{{ articles.reference }}</span>
@@ -250,18 +249,18 @@ eleventyNavigation:
 
                         <ul class="cs-item-p">
                             <div class="cs-item-p">
-                                <li>J. Bramburger
+                                <li><strong>J. Bramburger</strong>
                                     <div class="cs-item-p-2">
                                         <a href="https://ruor.uottawa.ca/handle/10393/36235" target="_blank">On the existence and stability of rotating wave solutions to lattice dynamical systems.</a>
-                                        <span class="cs-reference"><strong>Ph.D. Thesis</strong>, University of Ottawa, 2017.</span>
+                                        <span class="cs-reference">Ph.D. Thesis, University of Ottawa, 2017.</span>
                                     </div>
                                 </li>
                             </div>
                             <div class="cs-item-p">
-                                <li>J. Bramburger
+                                <li><strong>J. Bramburger</strong>
                                     <div class="cs-item-p-2">
                                         <a href="https://ruor.uottawa.ca/handle/10393/24325" target="_blank">Steady-state/Hopf interactions in the Van der Pol oscillator with delayed feedback.</a>
-                                        <span class="cs-reference"><strong>M.Sc. Thesis</strong>, University of Ottawa, 2013.</span>
+                                        <span class="cs-reference">M.Sc. Thesis, University of Ottawa, 2013.</span>
                                     </div>
                                 </li>
                             </div>

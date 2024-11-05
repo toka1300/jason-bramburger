@@ -149,6 +149,9 @@
     opacity: 0;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
+  #faq-2070 .cs-item-p strong {
+    font-size: 1.25rem;
+  }
   #faq-2070 .cs-social {
     position: absolute;
     top: 0;

@@ -25,7 +25,7 @@
     align-items: flex-start;
   }
   #faq-2070 .cs-text {
-    margin-bottom: clamp(3rem, 6vw, 4rem);
+    margin-bottom: clamp(0.5rem, 6vw, 1rem);
   }
   #faq-2070 .cs-flex-group {
     width: 100%;
@@ -53,6 +53,10 @@
   #faq-2070 .cs-faq-item.active .cs-button {
     color: var(--primary);
   }
+  #faq-2070 .cs-faq-item.active .cs-icon {
+    transform: rotate(180deg);
+    filter: grayscale(1) brightness(1000%);
+  }
   #faq-2070 .cs-faq-item.active .cs-arrows {
     background-color: var(--primary);
     border-color: var(--primary);
@@ -63,6 +67,9 @@
     list-style-type: decimal;
     padding: 0 0 1.5rem 0;
     opacity: 1;
+  }
+  #faq-2070 .cs-faq-item.active .cs-item-p strong {
+    font-size: 1.25rem;
   }
   #faq-2070 .cs-faq-item.active .cs-item-p-2 {
     display: block;
@@ -91,6 +98,9 @@
   #faq-2070 .cs-button:hover {
     cursor: pointer;
   }
+  #faq-2070 .cs-button-solid {
+    border: none;
+  }
   #faq-2070 .cs-arrows {
     width: 3rem;
     height: 3rem;
@@ -106,6 +116,12 @@
     transform: translateY(-50%);
     z-index: 1;
     transition: border-color 0.3s, background-color 0.3s;
+  }
+  #faq-2070 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
   }
   #faq-2070 .cs-button-text {
     width: 100%;

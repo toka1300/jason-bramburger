@@ -84,31 +84,6 @@
     line-height: 3.5rem;
     color: #fff;
   }
-  #hero-219 .cs-button-transparent {
-    font-size: 1rem;
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    font-weight: 700;
-    width: 11.25rem;
-    height: clamp(2.875rem, 5.5vw, 3.5rem);
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    color: #fff;
-    background-color: transparent;
-    border: 2px solid var(--primary);
-    text-decoration: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    transition: 0.3s;
-    text-transform: uppercase;
-  }
-  #hero-219 .cs-button-transparent:hover {
-    border-color: var(--primaryLight);
-    scale: 1.01;
-  }
 }
 /*-- -------------------------- -->
 <---       Side By Side         -->
