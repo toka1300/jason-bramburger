@@ -179,7 +179,7 @@
   }
   #faq-2070 .cs-social-link:hover {
     scale: 1.05;
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
   #faq-2070 .cs-social-img {
     display: block;

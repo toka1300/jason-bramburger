@@ -1,252 +1,85 @@
 /*-- -------------------------- -->
-<---            FAQ             -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #faq-2070 {
+  #sbs-865, #sbs-865-r {
     padding: var(--sectionPadding);
-    overflow: hidden;
     position: relative;
   }
-  #faq-2070:before {
-    content: "";
+  #sbs-865 .cs-container, #sbs-865-r .cs-container {
     width: 100%;
-    height: 90%;
-    background: var(--primary);
-    opacity: 0.05;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-  }
-  #faq-2070 .cs-container {
-    width: 100%;
-    max-width: 44rem;
+    max-width: 34.375rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    z-index: 1;
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  #faq-2070 .cs-picture {
-    /* 272px - 358px */
-    width: 16rem;
-    height: 24rem;
-    box-sizing: border-box;
-    overflow: hidden;
-    position: absolute;
-    top: -4rem;
-    right: 7rem;
-  }
-  #faq-2070 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
-  }
-  #faq-2070 .cs-graphic {
-    /* 64px - 112px */
-    width: clamp(4rem, 8vw, 7rem);
-    height: auto;
-    position: absolute;
-    bottom: 0;
-    left: 2rem;
-    z-index: 1;
-  }
-  #faq-2070 .cs-content {
-    /* set text align to center if content needs to be center aligned */
+  #sbs-865 .cs-content, #sbs-865-r .cs-content {
     text-align: left;
     width: 100%;
+    max-width: 44rem;
     display: flex;
     flex-direction: column;
-    /* left aligns content, set to center to center align the content */
     align-items: flex-start;
   }
-  #faq-2070 .cs-text {
-    /* 48px - 64px */
-    margin-bottom: clamp(3rem, 6vw, 4rem);
+  #sbs-865 .cs-title, #sbs-865-r .cs-title {
+    max-width: 23ch;
   }
-  #faq-2070 .cs-flex-group {
-    width: 100%;
-    overflow: hidden;
+  #sbs-865 .cs-text, #sbs-865-r .cs-text {
+    margin-bottom: 1rem;
+    max-width: fit-content;
+  }
+  #sbs-865 .cs-text:last-of-type, #sbs-865-r .cs-text:last-of-type {
+    margin-bottom: 0;
+  }
+  #sbs-865 .cs-button-solid, #sbs-865-r .cs-button-solid {
+    border-radius: 0.25rem;
+  }
+  #sbs-865 .cs-picture, #sbs-865-r .cs-picture {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
     position: relative;
-  }
-  #faq-2070 .cs-wrapper {
-    position: relative;
-  }
-  #faq-2070 .cs-faq-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    width: 30%;
+    min-width: 19rem;
     justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    transform-style: preserve-3d;
-    perspective: 900px;
-    transition: transform 0.7s, opacity 0.3s, visibility 0.5s, top 0.3s, left 0.3s;
-    /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
-    transform-origin: top;
+    box-shadow: 0px 2.80579px 42.0868px rgba(0, 0, 0, 0.16);
+    order: 1;
   }
-  #faq-2070 .cs-faq-group.cs-hidden {
-    /* prevents the mouse from interacting with it */
-    pointer-events: none;
-    /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
-    opacity: 0;
-    /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
-    visibility: hidden;
-    position: absolute;
-    /* this top and left value help control the animation, by setting it to position absolute and left 0, the FAQ won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-flex-group (left: 0). Same for the bottom:0 value, the FAQ won't go past that position when it animates */
-    top: 0;
-    left: 0;
-    /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
-    transform: scaleY(0);
-  }
-  #faq-2070 .cs-faq-group.cs-hidden .cs-faq-item {
-    opacity: 0;
-    transform: rotateX(270deg);
-  }
-  #faq-2070 .cs-faq-item {
-    list-style: none;
+  #sbs-865 .cs-picture img, #sbs-865-r .cs-picture img {
     width: 100%;
-    /* clips all corners of the button that overlap the rounded border */
-    overflow: hidden;
-    opacity: 1;
-    border-bottom: 1px solid #e8e8e8;
-    top: 0;
-    transform: rotateX(0deg);
-    transition: transform 0.6s, opacity 0.3s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(2) {
-    transition-delay: 0.1s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(3) {
-    transition-delay: 0.2s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(4) {
-    transition-delay: 0.3s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(5) {
-    transition-delay: 0.4s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(6) {
-    transition-delay: 0.5s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(7) {
-    transition-delay: 0.6s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(8) {
-    transition-delay: 0.7s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(9) {
-    transition-delay: 0.8s;
-  }
-  #faq-2070 .cs-faq-item:nth-of-type(10) {
-    transition-delay: 0.9s;
-  }
-  #faq-2070 .cs-faq-item:last-of-type {
-    border-bottom: none;
-  }
-  #faq-2070 .cs-faq-item.active {
-    display: flex;
-    flex-direction: column;
-  }
-  #faq-2070 .cs-faq-item.active .cs-button {
-    color: var(--primary);
-  }
-  #faq-2070 .cs-faq-item.active .cs-arrows {
-    background-color: var(--primary);
-    border-color: var(--primary);
-  }
-  #faq-2070 .cs-faq-item.active .cs-icon {
-    transform: rotate(180deg);
-    filter: grayscale(1) brightness(1000%);
-  }
-  #faq-2070 .cs-faq-item.active .cs-item-p {
     height: auto;
-    /* 20px - 24px bottom */
-    /* 16px - 24px left & right */
-    padding: 0 0 1.5rem 0;
-    opacity: 1;
-  }
-  #faq-2070 .cs-button {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    font-weight: bold;
-    line-height: 1.2em;
-    text-align: left;
-    width: 100%;
-    padding: 1.5rem 4.25rem 1.5rem 0;
-    background-color: transparent;
-    color: var(--headerColor);
-    border: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    position: relative;
-    z-index: 1;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  #faq-2070 .cs-button:hover {
-    cursor: pointer;
-  }
-  #faq-2070 .cs-arrows {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border: 1px solid #BABABA;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: none;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    transition: border-color 0.3s, background-color 0.3s;
-  }
-  #faq-2070 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    display: block;
-    transition: transform 0.3s;
-  }
-  #faq-2070 .cs-button-text {
-    width: 100%;
+    object-fit: cover;
     display: block;
   }
-  #faq-2070 .cs-item-p {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    width: 90%;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    /* clips the text so it doesn't show up */
-    overflow: hidden;
-    color: var(--bodyTextColor);
-    opacity: 0;
-    transition: opacity 0.3s, padding-bottom 0.3s;
+  #sbs-865 h3, #sbs-865-r h3 {
+    margin: 2rem 0 0.5rem 0;
+  }
+  #sbs-865 .cs-item-ul, #sbs-865-r .cs-item-ul {
+    padding-left: 1.25rem;
+  }
+  #sbs-865-r {
+    background-color: #f7f7f7;
+  }
+  #sbs-865-r .cs-picture {
+    order: 1;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #faq-2070:before {
-    height: 80%;
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-865 .cs-picture {
+    order: 0;
   }
-  #faq-2070 .cs-container {
+  #sbs-865-r .cs-picture {
+    order: 1;
+  }
+  #sbs-865 .cs-container, #sbs-865-r .cs-container {
     max-width: 80rem;
-    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #sbs-865 .cs-floater, #sbs-865-r .cs-floater {
+    display: block;
   }
 }
 

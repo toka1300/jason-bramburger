@@ -74,7 +74,8 @@ module.exports = {
             "link": "https://www.sciencedirect.com/science/article/pii/S246806722300072X",
             "reference": "HardwareX 15, (2023) e00465",
             "repo": "https://github.com/dynamicslab/MultiArm-Pendulum",
-            "videoAbstract": "https://zenodo.org/record/6633719"
+            "videoAbstract": "https://zenodo.org/record/6633719",
+            "cadFile": "https://zenodo.org/record/6633719"
         },
         {
             "authors": "J. Bramburger and M. Holzer.",

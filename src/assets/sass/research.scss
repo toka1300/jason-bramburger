@@ -1,294 +1,106 @@
 /*-- -------------------------- -->
-<---            FAQ             -->
+<---       Side By Side         -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #faq-2070 {
+    #sbs-865, #sbs-865-r {
         padding: var(--sectionPadding);
-        overflow: hidden;
         position: relative;
-
-        &:before {
-            content: "";
-            width: 100%;
-            height: 90%;
-            background: var(--primary);
-            opacity: 0.05;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 0;
-        }
 
         .cs-container {
             width: 100%;
-            max-width: calc(704/16 * 1rem);
+            max-width: calc(550 / 16 * 1rem);
             margin: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .cs-picture {
-            // width: 100%;
-            /* 272px - 358px */
-            width: 16rem;
-            height: 24rem;
-            box-sizing: border-box;
-            overflow: hidden;
-            position: absolute;
-            top: -4rem;
-            right: 7rem;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: absolute;
-                top: 0;
-                right: 0;
-                z-index: 1;
-            }
-        }
-
-        .cs-graphic {
-            /* 64px - 112px */
-            width: clamp(4rem, 8vw, 7rem);
-            height: auto;
-            position: absolute;
-            bottom: 0;
-            left: calc(32/16 * 1rem);
-            z-index: 1;
+            gap: clamp(3rem, 6vw, 4rem);
         }
 
         .cs-content {
-            /* set text align to center if content needs to be center aligned */
             text-align: left;
             width: 100%;
+            max-width: 44rem;
             display: flex;
             flex-direction: column;
-            /* left aligns content, set to center to center align the content */
             align-items: flex-start;
         }
 
+        .cs-title {
+            max-width: 23ch;
+        }
+
         .cs-text {
-            /* 48px - 64px */
-            margin-bottom: clamp(3rem, 6vw, 4rem);
-        }
-
-        .cs-flex-group {
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            gap: calc(32/16 * 1rem);
-            position: relative;
-        }
-
-        .cs-wrapper {
-            position: relative;
-        }
-
-        .cs-faq-group {
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: calc(8/16 * 1rem);
-            transform-style: preserve-3d;
-            perspective: 900px;
-            transition:
-                transform 0.7s,
-                opacity 0.3s,
-                visibility 0.5s,
-                top 0.3s,
-                left 0.3s;
-            /* makes the transfrom scaling orgin the top left corner, dictates the direction by which the scale transforms animate towards */
-            transform-origin: top;
-
-            &.cs-hidden {
-                /* prevents the mouse from interacting with it */
-                pointer-events: none;
-                /* hidden galleries have a 0 opacity, and we animate the opacity to 1 when they become active */
-                opacity: 0;
-                /* by using visibility:hidden instead of display:none, we can see the animations from the opacity and transforms, display:none won't render animations. */
-                visibility: hidden;
-                position: absolute;
-                /* this top and left value help control the animation, by setting it to position absolute and left 0, the FAQ won't fly off screen to the left, it will stop its position to be at the left edge of the .cs-flex-group (left: 0). Same for the bottom:0 value, the FAQ won't go past that position when it animates */
-                top: 0;
-                left: 0;
-                /* prevents the hidden galleries from overflowing the section, and makes a nice animations to transition to and from */
-                transform: scaleY(0);
-
-                .cs-faq-item {
-                    opacity: 0;
-                    transform: rotateX(270deg);
-                }
-            }
-        }
-
-        .cs-faq-item {
-            list-style: none;
-            width: 100%;
-            /* clips all corners of the button that overlap the rounded border */
-            overflow: hidden;
-            opacity: 1;
-            border-bottom: 1px solid #e8e8e8;
-            top: 0;
-            transform: rotateX(0deg);
-            transition:
-                transform 0.6s,
-                opacity 0.3s;
-
-            &:nth-of-type(2) {
-                transition-delay: 0.1s;
-            }
-            &:nth-of-type(3) {
-                transition-delay: 0.2s;
-            }
-            &:nth-of-type(4) {
-                transition-delay: 0.3s;
-            }
-            &:nth-of-type(5) {
-                transition-delay: 0.4s;
-            }
-            &:nth-of-type(6) {
-                transition-delay: 0.5s;
-            }
-            &:nth-of-type(7) {
-                transition-delay: 0.6s;
-            }
-            &:nth-of-type(8) {
-                transition-delay: 0.7s;
-            }
-            &:nth-of-type(9) {
-                transition-delay: 0.8s;
-            }
-            &:nth-of-type(10) {
-                transition-delay: 0.9s;
-            }
-
+            margin-bottom: calc(16 / 16 * 1rem);
+            max-width: fit-content;
             &:last-of-type {
-                border-bottom: none;
-            }
-
-            &.active {
-                display: flex;
-                flex-direction: column;
-
-                .cs-button {
-                    color: var(--primary);
-                }
-
-                .cs-arrows {
-                    background-color: var(--primary);
-                    border-color: var(--primary);
-                }
-
-                .cs-icon {
-                    transform: rotate(180deg);
-                    filter: grayscale(1) brightness(1000%);
-                }
-
-                .cs-item-p {
-                    height: auto;
-                    /* 20px - 24px bottom */
-                    /* 16px - 24px left & right */
-                    padding: 0 0 calc(24/16 * 1rem) 0;
-                    opacity: 1;
-                }
+                margin-bottom: 0;
             }
         }
 
-        .cs-button {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            font-weight: bold;
-            line-height: 1.2em;
-            text-align: left;
-            width: 100%;
-            padding: calc(24/16 * 1rem) calc(68/16 * 1rem) calc(24/16 * 1rem) 0;
-            background-color: transparent;
-            color: var(--headerColor);
-            border: none;
+        .cs-button-solid {
+            border-radius: calc(4 / 16 * 1rem);
+        }
+        
+        .cs-picture {
             display: flex;
-            justify-content: space-between;
-            gap: calc(16/16 * 1rem);
             position: relative;
-            z-index: 1;
-            transition:
-                background-color 0.3s,
-                color 0.3s;
+            width: 30%;
+            min-width: 19rem;
+            justify-content: center;
+            box-shadow: 0px 2.80579px 42.0868px rgba(0, 0, 0, 0.16);
+            order: 1;
 
-            &:hover {
-                cursor: pointer;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                display: block;
             }
         }
 
-        .cs-arrows {
-            width: calc(48/16 * 1rem);
-            height: calc(48/16 * 1rem);
-            border-radius: 50%;
-            border: 1px solid #BABABA;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: none;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
-            transition: border-color .3s, background-color .3s;
+        h3 {
+            margin: 2rem 0 0.5rem 0;
         }
 
-        .cs-icon {
-            width: calc(24/16 * 1rem);
-            height: auto;
-            display: block;
-            transition: transform .3s;
+        .cs-item-ul {
+            padding-left: 1.25rem;
         }
+    }
 
-        .cs-button-text {
-            width: 100%;
-            display: block;
-        }
+    #sbs-865-r {
+        background-color: #f7f7f7;
 
-        .cs-item-p {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            width: 90%;
-            height: 0;
-            margin: 0;
-            padding: 0;
-            /* clips the text so it doesn't show up */
-            overflow: hidden;
-            color: var(--bodyTextColor);
-            opacity: 0;
-            transition:
-                opacity 0.3s,
-                padding-bottom 0.3s;
+        .cs-picture {
+            order: 1;
         }
     }
 }
 
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #faq-2070 {
-        &:before {
-            height: 80%;
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbs-865 {
+        .cs-picture {
+            order: 0;
         }
-
+    }
+    #sbs-865-r {
+        .cs-picture {
+            order: 1;
+        }
+    }
+    #sbs-865, #sbs-865-r {
         .cs-container {
-            max-width: calc(1280/16 * 1rem);
-            align-items: flex-end;
+            max-width: calc(1280 / 16 * 1rem);
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .cs-floater {
+            display: block;
         }
     }
 }
+
+                                

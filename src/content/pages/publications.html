@@ -151,6 +151,11 @@ eleventyNavigation:
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding-"async" width="18" height="18" aria-hidden="true">
                                             </a>
                                         {% endif %}
+                                        {% if publication.cadFile %}
+                                            <a href="{{ publication.repo }}" aria-label="cad file" class="cs-social-link" target="_blank" rel="noopener" title="CAD File">
+                                                <img src="../../assets/svgs/cad-file-icon.svg" class="cs-social-icon cs-cad" alt="GitHub logo" loading="lazy" decoding-"async" width="18" height="18" aria-hidden="true">
+                                            </a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             {% endfor %}

@@ -21,7 +21,7 @@ eleventyNavigation:
 <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">About Us No</h1>
+        <h1 id="home-h">Research</h1>
         <picture class="">
            <!--Mobile Image-->
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
@@ -36,98 +36,133 @@ eleventyNavigation:
     </section>
 
 <!-- ============================================ -->
-<!--                    Publications              -->
+<!--                Side By Side                  -->
 <!-- ============================================ -->
 
-<section id="faq-2070">
+<section id="sbs-865">
     <div class="cs-container">
-        {# <picture class="cs-picture">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | webp %}" type="image/webp">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 746 }) | jpeg %}" type="image/jpeg">
-           <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
-        </picture> #}
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/hill-regions.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true">
+        </picture>
         <div class="cs-content">
-            <span class="cs-topper">Frequently Asked Questions</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <span class="cs-topper">TODO: Text Here</span>
+            <h2 class="cs-title">Analysis of Dynamical Systems</h2>
             <p class="cs-text">
-                Orci eu lobortis elementum nibh yay telluls. Vulputate eu scelerisque felis imperdiet proin fermentum leo vel. Luctus accumsan tortor posuere ac ut consequat semper. Et pharetra pharetra massa massa ultricies mi quis.
+                In the broadest sense, my interests in mathematics lie in the analysis of dynamical systems. This is an all-encompasing term to mean that I am interested in equations that change with either a discrete or a continuous 'time' variable, and can be either deterministic or stochastic. I have a particular focus on understanding complex pattern-forming behaviour, typically in the form of nonlinear waves and coherent structures in spatially-extended systems, including, but not limited to, partial differential equations, non-local equations, and spatially-discrete lattice dynamical systems. Examples of waves and patterns that I continue to focus my research on are spiral waves, spatially-localized steady-states (see below), and spatio-temporal chaotic attractors. 
             </p>
-        </div>
-        <div class="cs-flex-group">
-            <div class="cs-wrapper">
-                <ul class="cs-faq-group">
-                    <!-- Active class added as default -->
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How often should I have dental check-ups and cleanings?
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            We recommend dental check-ups and cleanings every six months for most patients. However, some individuals may need more frequent visits based on their oral health needs.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What is the importance of fluoride treatments, and are they necessary for adults?
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Fluoride treatments help strengthen tooth enamel and prevent decay. While especially important for children, adults can also benefit, particularly those at higher risk for cavities.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Are dental sealants only for children, or can adults benefit from them too?
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            While commonly used for children, adults can also benefit from dental sealants, especially those prone to cavities or with deep grooves in their teeth.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                How can I improve my at-home oral hygiene routine?
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            To maintain optimal oral health, follow these essential practices: Brush your teeth twice daily for two minutes using fluoride toothpaste and a soft-bristled brush. Floss once a day to clean between teeth where brushing can't reach. Consider using an antimicrobial mouthwash after brushing and flossing. Maintain a healthy diet low in sugary and acidic foods, and drink plenty of water to rinse away food particles. Visit your dentist regularly for checkups and cleanings, replace your toothbrush every few months, and avoid smoking. These habits will help prevent cavities, gum disease, and other oral health issues while promoting overall well-being.
-                        </p>
-                    </li>
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                What are the early signs of gum disease, and how can I prevent it?
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <p class="cs-item-p">
-                            Early signs of gum disease include red, swollen, or bleeding gums. Prevention includes regular brushing, flossing, and professional cleanings.
-                        </p>
-                    </li>
-                </ul>
-            </div>
+            <p class="cs-text">
+                My approach brings together tools from real and functional analysis, graph theory, topology, and geometry, and unites them with state-of-the-art computational methods, such as semi-definite programming, machine learning, and computer-assisted proofs. It is through this unification of computation and analysis that my work also seeks to develop computational tools that are motivated by the theory I have developed over my career as a dynamical systems analyst.
+            </p>
         </div>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-865-r">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 768, height: 1264 }) | avif %}" type="image/avif">
+            {# <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp"> #}
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/slow-extraction.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">TODO: Text Here</span>
+            <h2 class="cs-title">Data-Driven Discovery of Mappings</h2>
+            <p class="cs-text">
+                With the increasing size of experimental datasets and continual advancement of computational techniques, there is a growing demand for data-driven techniques for analyzing and forecasting dynamical systems which model these datasets. My work proposes a method of data-driven discovery of Poincaré maps based upon sparse regression techniques, specifically the sparse identification of nonlinear dynamics (SINDy) algorithm. This method can be applied to determine the dynamics on and near invariant manifolds of a given dynamical system, as well as provide long-time forecasting of the coarse-grained dynamics of multiscale systems.
+            </p>
+            <p class="cs-text">
+                Myself and my collaborators have also used this work to create a data-driven method for averaging of multiscale phenomena that evolve on multiple distinct timescales which are so prevalent throughout the sciences. A simple example of this would be the tides where high and low tide come at a regular period of approximately half a day, while the influence of the sun's gravity creates a slow drift in this almost periodic phenomena which can only be observed on long timescales. As in the tidal example, it is often the case with such multiscale phenomena that the governing equations of the persistent and approximately periodic fast scales are prescribed, while the emergent slow scale evolution is unknown. Our work presents an accurate and efficient method for extracting the slow timescale dynamics from signals exhibiting multiple timescales. A visual summary of the algorithm is provided on the left, while an accessible overview of this method can be found in <a href="https://www.youtube.com/watch?v=GW7ou39gK7A" target="_blank">this video</a>.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-865">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/hom-connect.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">TODO: Text Here</span>
+            <h2 class="cs-title">Polynomial Optimization for Dynamical Systems Analysis</h2>
+            <p class="cs-text">
+                Many important statements about ODEs and PDEs can be proved by finding auxiliary functions. These are scalar-valued functions whose time evolution along trajectories obeys certain pointwise inequalities that imply the desired result. A familiar example is a Lyapunov function, which is used to prove stability of a state by showing that it is positive and decreasing in time along trajectories near the state. Finding such functions can be a tremendously rewarding task, but it is typically difficult as there are no general methods to guide construct them analytically.
+            </p>
+            <p class="cs-text">
+                When the ODE in question is polynomial one can attempt to find auxiliary functions by expanding them in a monomial basis, giving that the required inequalities amount to tuning the coefficients of the auxiliary function to guarantee nonnegativity of a polynomial expression on a specified set. Although deciding nonnegativity of a multivariable polynomial is NP-hard in general, nonnegativity can be replaced by the stronger but more tractable condition that the polynomial admits a representation as a sum of squares (SOS). The resulting SOS-constrained problem can be solved computationally by reformulating it as a semidefinite program and solving the latter numerically, giving the coefficients of the auxiliary function.
+            </p>
+            <p class="cs-text">
+                    My own work in this area has applied these computational techniques to creating trapping bariers in phase space that can be used to infer the existence and non-existence of heteroclinic orbits. This work was used to improve upon my analysis on an FKPP-Burgers system, and insight gained from its application led to me proving the exact value of the minimum wave speed in Keller-Segel models for chemotaxis. Recently I have been working to extend computational SOS methods to problems in the calculus of variations, motivated by problems in partial differential equations, and to system analysis from data using the Koopman operator.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Side By Side Reverse          -->
+<!-- ============================================ -->
+
+<section id="sbs-865-r">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 768, height: 1264 }) | avif %}" type="image/avif">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 768, height: 1264 }) | webp %}" type="image/webp">
+            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 768, height: 1264 })  | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/spots-vs-rings.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">TODO: Text Here</span>
+            <h2 class="cs-title">Localized Pattern Formation</h2>
+            <p class="cs-text">
+                Spatially localized patterns have been observed in a wide variety of physical situations, ranging from vegetation patterns to crime hotspots to chemical concentration patterns. As solutions to partial differential equations such spatially localized patterns often exhibit exotic bifurcation structures. In particular, the Swift-Hohenberg equation is a widely studied partial differential equation which is known to support a variety of spatially localized structures, and in one spatial dimension the Swift-Hohenberg equation exhibits spatially localized steady-state solutions which give way to a bifurcation structure known as snaking. That is, spatially-localized solutions bounce between two different values of the bifurcation parameter while ascending in norm and retaining the same basic shape.
+            </p>
+            <p class="cs-text">
+                Here my interest is on furthering the understanding of the existence, stability, and bifurcation structure of localized steady-states to mathematical equations. This includes investigating localized structures in planar PDEs and in spatially discrete networked dynamical systems. Much of my work has focussed on how spatial dimension and organization can effect the existence regions of these patterns in parameter space. I am particularly interested in solutions that exhibit nontrivial symmetries, such as clusters of spots/bumps that self-organize to form hexagons on the macroscopic scale (see left image). A summary of some of my contributions in this area can be found in <a href="https://www.youtube.com/watch?v=4oLcfy4a3a8" target="_blank">this video</a>.
+            </p>
+            <h3>Posters related to this work:</h2>
+            <ul class="cs-item-ul">
+                <li><a href="https://hybrid.concordia.ca/jbrambur/Snaking_Poster.pdf">Snaking in the Swift-Hohenberg Equation in Dimensions 1+Epsilon.</a></li>
+                <li><a href="https://hybrid.concordia.ca/jbrambur/Lattice_Snaking_Poster.pdf">Snakes and Lattices: Understanding the Bifurcation Structure of Localized Solutions to Lattice Dynamical Systems.</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+                                
 
     {% include 'components/cta.html' %}
 {% endblock %}
