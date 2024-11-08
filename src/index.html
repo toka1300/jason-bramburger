@@ -35,8 +35,8 @@ media="print" onload="this.media='all'; this.onload=null;">
                     {% if client.address.city %},
                         "addressLocality": "{{ client.address.city }}"
                     {% endif %}
-                    {% if client.address.state %},
-                        "addressRegion": "{{ client.address.state }}"
+                    {% if client.address.province %},
+                        "addressRegion": "{{ client.address.province }}"
                     {% endif %}
                     {% if client.address.postalCode %},
                         "postalCode": "{{ client.address.postalCode }}"

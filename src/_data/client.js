@@ -7,7 +7,7 @@ module.exports = {
         "lineOne": "LB 901-21",
         "lineTwo": "Concordia University" ,
         "city": "Montreal",
-        "state": "QC",
+        "province": "QC",
         "postalCode": "H3G 1M8",
         "country": "Canada",
         "mapLink": "https://maps.app.goo.gl/18T9xPJ4vLkUaxYKA"
