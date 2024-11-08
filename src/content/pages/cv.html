@@ -84,7 +84,7 @@ eleventyNavigation:
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                        {% for job in research.employment %}
+                        {% for job in cv.employment %}
                             <ul class="cs-item-p">
                                 <p><strong>{{ job.title }}</strong>, {{ job.dates }}</p>
                                 <p>{{ job.department }}</p>
@@ -122,7 +122,7 @@ eleventyNavigation:
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                            {% for award in research.awards %}
+                            {% for award in cv.awards %}
                                 <ul class="cs-item-p">
                                     <p><strong>{{ award.name }}</strong>, {{ award.dates }}</p>
                                     <p>{{ award.source }}</p>
