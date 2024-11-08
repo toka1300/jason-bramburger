@@ -1,5 +1,5 @@
 const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
-const socialIcons = document.querySelectorAll('.cs-social-link');
+const sections = document.querySelectorAll('.cs-item-p');
 
 for (const item of faqItems) {
         const onClick = () => {
@@ -8,7 +8,7 @@ for (const item of faqItems) {
     item.addEventListener('click', onClick)
 }
 
-socialIcons.forEach(icon => {
+sections.forEach(icon => {
     icon.addEventListener('click', event => {
         event.stopPropagation();
     })

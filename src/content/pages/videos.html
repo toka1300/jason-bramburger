@@ -14,74 +14,145 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<section id="int-hero">
+    <h1 id="home-h">Videos</h1>
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+        <!--Desktop Image-->
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+        <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
+    </picture>
+</section>
 
-    <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Playlists                 -->
+<!-- ============================================ -->
 
-    <div class="blog-container main-content-wrapper">
-        <!--Main content -->
-        <div class="main-content">
-            <!-- ============================================ -->
-            <!--                 Blog Articles                -->
-            <!-- ============================================ -->
-
-            {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
-            {% else %}
-                {%- for post in collections.post | reverse -%}
-                    <article class="recent-articles">
-                        <!--Main Article Image-->
-                        <picture class="blog-mainImage">
-                            <img
-                            src="{{ post.data.image }}"
-                            alt="{{ post.data.imageAlt }}"
-                            width="795"
-                            height="400"
-                            decoding="async"/>
-                        </picture>
-                        <!--Article Info-->
-                        <div class="article-group">
-                            <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                    src="/assets/svgs/profile.svg"
-                                    alt="house"
-                                    width="32"
-                                    height="32"
-                                    decoding="async"/>
-                                </picture>
-                                <span class="blog-author">{{ post.data.author }}</span>
-                                <span aria-hidden="true" class="blog-dot"></span>
-                                <!--Blog Date-->
-                                <span class="blog-date">{{ post.date | postDate }}</span>
-                            </div>
-                            <h2 class="blog-h1">
-                                {{ post.data.title }}
-                            </h2>
-                            <p class="blog-desc">
-                                {{ post.data.description }}
-                            </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
-                        </div>
-                    </article>
-                {%- endfor -%}
-            {% endif %}
+<section id="blog-1144">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-content-flex">
+                <span class="cs-topper">Videos</span>
+                <h2 class="cs-title">Full Course Lecture Series</h2>
+            </div>
         </div>
-
-        {% include 'components/featured-post.html' %}
+        <ul class="cs-card-group">
+            {% for playlist in videos.playlists %}
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <iframe src="https://www.youtube.com/embed/videoseries?list={{ playlist.link.split('=')[1] }}&rel=0" title="YouTube playlist player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">{{ playlist.name }}</h3>
+                        <p class="cs-item-text">{{ playlist.description }}</p>
+                        <a href="{{ playlist.link }}" target="_blank" class="cs-link">
+                            Full Playlist
+                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                        </a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Video Abstracts           -->
+<!-- ============================================ -->
+
+<section id="blog-1144">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-content-flex">
+                <span class="cs-topper">Videos</span>
+                <h2 class="cs-title">Video Abstracts</h2>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            {% for video in videos.videoAbstracts %}
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <iframe src="https://www.youtube.com/embed/{{ video.videoLink.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">{{ video.name }}</h3>
+                        <p class="cs-item-text">{{ video.description }}</p>
+                        <a href="{{ video.paperLink }}" target="_blank" class="cs-link">
+                            Paper
+                            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/event-chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                        </a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Research Talks            -->
+<!-- ============================================ -->
+
+<section id="blog-1144">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-content-flex">
+                <span class="cs-topper">Videos</span>
+                <h2 class="cs-title">Reseach Talks</h2>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            {% for video in videos.researchTalks %}
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">{{ video.name }}</h3>
+                        <p class="cs-item-text">{{ video.description }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Research Talks            -->
+<!-- ============================================ -->
+
+<section id="blog-1144">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-content-flex">
+                <span class="cs-topper">Podcasts</span>
+                <h2 class="cs-title">Podcasts</h2>
+            </div>
+        </div>
+        <ul class="cs-card-group">
+            {% for video in videos.podcasts %}
+                <li class="cs-item">
+                    <picture class="cs-picture">
+                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">{{ video.name }}</h3>
+                        <p class="cs-item-text">{{ video.description }} <a href="{{ video.hostLink }}">{{video.host}}</a></p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+
+    {% include 'components/cta.html' %}
 {% endblock %}

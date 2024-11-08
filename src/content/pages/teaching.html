@@ -11,116 +11,139 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/teaching.css">
+    <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Our Reviews</h1>
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
+        <h1 id="home-h">Teaching</h1>
+        <picture class="cs-background">
+           <!--Mobile Image-->
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
+           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
+           <!--Desktop Image-->
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
+           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
+           <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
     </section>
 
-    <!-- ============================================ -->
-    <!--                  Reviews                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                    Teaching                  -->
+<!-- ============================================ -->
 
-    <section id="reviews">
-        <div class="container">
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">B Miller<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Vincent M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Alex L.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Arrieana M.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Leo N.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
-            </div>
-            <div class="review">
-                <picture>
-                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
-                </picture>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed recusandae rerum unde similique ratione sapiente necessitatibus natus mollitia nam iusto.
-                </p>
-                <div class="star-group">
-                    <span class="name">Brian A.<span class="desc">Homeowner</span></span>
-                    <picture>
-                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
-                    </picture>
-                </div>
+<section id="faq-2070">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">My Teaching Summary</span>
+            <h2 class="cs-title">Teaching</h2>
+            <p class="cs-text">TODO: Pickled sus humblebrag pok pok kitsch adaptogen butcher brunch photo booth taxidermy post-ironic la croix Brooklyn scenester praxis.</p>
+        </div>
+
+        <div class="cs-flex-group">
+            <div class="cs-wrapper">
+                <ul class="cs-faq-group">
+                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
+                    <li class="cs-faq-item active">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Current Teaching</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            {# <h3>This year I am teaching the following courses: TODO: Is this text needed?</h3> #}
+                            {% for universityName, classes in teaching.currentTeaching %}
+                                <h2>{{ teaching.universityNames[universityName] }}</h2>
+                                    <ul>
+                                        {% for class in classes %}
+                                            <li>
+                                                <a href="{{ class.syllabusLink }}" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
+                                                    <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="info icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
+                                                    <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                            {% endfor %}
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Past Teaching</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            {# <h3> An up-to-date list of my teaching experience follows: TODO: Is this text needed?</h3> #}
+                            <ul>
+                                {% for universityName, classes in teaching.pastTeaching %}
+                                    <h2>{{ teaching.universityNames[universityName] }}</h2>
+                                        <ul>
+                                            {% for class in classes %}
+                                                <li>
+                                                    <a href="{{ class.syllabusLink }}" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
+                                                        <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="info icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
+                                                        <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
+                                                    </a>
+                                                </li>
+                                            {% endfor %}
+                                        </ul>
+                                {% endfor %}
+                            </ul>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Course Development</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p>While at George Mason University I helped develop online, asynchronous modules for MATH 114: Analytic Geometry and Calculus II. The result of our work is a completely online course that students can progress through on their own time, complete with assignments, practice tests, and examinations. The course also features over 60 videos that I recorded to communicate each component of the course. Lecture videos are meant to be relatively short and digestable, allowing students to progress through the modules as they have time.</p>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Teaching Assistant Experience</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p>I have held a number of teaching assistant positions over my post-secondary career, working as both a demonstrator and a marker. My experience began in my final year of undergraduate studies at Nipissing University, where I worked as a teaching assistant for the course Arithmetic for Educators. My work continued during my Masters and Doctoral studies at the University of Ottawa where I was associated with a diverse range of courses at all levels of undergraduate studies. This includes, but is not limited to; introductory and advanced calculus, introductory and advanced linear algebra, discrete mathematics, real analysis, differential equations, and probability and statistics.</p>
+                        </ul>
+                    </li>
+
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Other Relevant Experience</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ul class="cs-item-p">
+                            <p>During the summer of 2017 I worked at Algonquin College in Ottawa as an Instructor in the Academic Upgrading program, which offers grade 12 equivalency courses for admission into college. During my time with the program I was instructing courses on computer skills, such as using the Microsoft Office suite, and high school level mathematics, primarily focussing on understanding real-valued functions.</p><br>
+                            <p> Outside of my academic career, when living in Ottawa I volunteered as a science and mathematics tutor at the internationally-recognized <a href="https://www.pathwaystoeducation.ca/ottawa" target="_blank">Pathways to Education</a> program at the Pinecrest-Queensway Community Health Centre. The Pathways program aims to help students from lower income families or new Canadians achieve academic success by addressing systemic barriers presented to these students and provides a comprehensive set of academic, social, financial and individual support to youth. This program has been proven to increase high school graduation rates of students who are traditionally deemed “at-risk” and also helps with the transition to post-secondary education, workplace training or employment following graduation. My role in the Pathways program was aiding students in understanding concepts of mathematics and the sciences given to them in class. I held this position from January 2013 to June 2017.</p>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     {% include 'components/cta.html' %}
-
 {% endblock %}
