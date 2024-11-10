@@ -11,7 +11,6 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/publications.css">
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %})"/>
     <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
@@ -61,7 +60,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            {% for book in research.books %}
+                            {% for book in publications.books %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ book.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -90,8 +89,8 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            {# If you need to add more items, add another element to the array in research.js #}
-                            {% for preprint in research.preprints %}
+                            {# If you need to add more items, add another element to the array in publications.js #}
+                            {% for preprint in publications.preprints %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ preprint.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -124,7 +123,7 @@ eleventyNavigation:
                                 <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 300, height: 500 }) | jpeg %}" type="image/jpeg">
                                 <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
                             </picture>
-                            {% for publication in research.publications %}
+                            {% for publication in publications.publications %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ publication.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -172,7 +171,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            {% for conference in research.conferenceProceedings %}
+                            {% for conference in publications.conferenceProceedings %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ conference.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -204,7 +203,7 @@ eleventyNavigation:
                         </button>
 
                         <ul class="cs-item-p">
-                            {% for reports in research.conferenceReports %}
+                            {% for reports in publications.conferenceReports %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ reports.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -227,7 +226,7 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            {% for articles in research.outreachArticles %}
+                            {% for articles in publications.outreachArticles %}
                                 <div class="cs-item-p">
                                     <li><strong>{{ articles.authors }}</strong>
                                         <div class="cs-item-p-2">
@@ -251,22 +250,14 @@ eleventyNavigation:
                         </button>
 
                         <ul class="cs-item-p">
-                            <div class="cs-item-p">
-                                <li><strong>J. Bramburger</strong>
+                            {% for thesis in publications.theses %}
+                                <li><strong>{{ thesis.authors }}</strong>
                                     <div class="cs-item-p-2">
-                                        <a href="https://ruor.uottawa.ca/handle/10393/36235" target="_blank">On the existence and stability of rotating wave solutions to lattice dynamical systems.</a>
-                                        <span class="cs-reference">Ph.D. Thesis, University of Ottawa, 2017.</span>
+                                        <a href="{{ thesis.link }}" target="_blank">{{ thesis.title }}</a>
+                                        <span class="cs-reference">{{ thesis.reference }}</span>
                                     </div>
                                 </li>
-                            </div>
-                            <div class="cs-item-p">
-                                <li><strong>J. Bramburger</strong>
-                                    <div class="cs-item-p-2">
-                                        <a href="https://ruor.uottawa.ca/handle/10393/24325" target="_blank">Steady-state/Hopf interactions in the Van der Pol oscillator with delayed feedback.</a>
-                                        <span class="cs-reference">M.Sc. Thesis, University of Ottawa, 2013.</span>
-                                    </div>
-                                </li>
-                            </div>
+                            {% endfor %}
                         </ul>
                     </li>
                 </ul>

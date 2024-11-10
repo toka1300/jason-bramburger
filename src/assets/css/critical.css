@@ -45,6 +45,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    object-position: right;
   }
   #hero-219 .cs-container {
     width: 100%;

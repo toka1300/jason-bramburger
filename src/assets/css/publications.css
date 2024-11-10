@@ -81,7 +81,7 @@
     height: auto;
     list-style-position: inside;
     list-style-type: decimal;
-    padding: 0 0 1.5rem 0;
+    padding: 0;
     opacity: 1;
   }
   #faq-2070 .cs-faq-item.active .cs-item-p-2 {
@@ -151,6 +151,9 @@
   }
   #faq-2070 .cs-item-p strong {
     font-size: 1.25rem;
+  }
+  #faq-2070 .cs-item-p li {
+    margin-top: 1rem;
   }
   #faq-2070 .cs-social {
     position: absolute;

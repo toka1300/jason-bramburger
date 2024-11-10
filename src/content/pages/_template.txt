@@ -28,7 +28,6 @@ eleventyNavigation:
 
 TODO: 
 -Lazy load all images below the fold
--Remove all references to code stitch
 - Ensure all images have alt description
 - Remove CMS capability, if not being used
 - Delete this text file

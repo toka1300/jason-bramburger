@@ -94,7 +94,7 @@
                     height: auto;
                     list-style-position: inside;
                     list-style-type: decimal;
-                    padding: 0 0 calc(24/16 * 1rem) 0;
+                    padding: 0;
                     opacity: 1;
                 }
 
@@ -178,6 +178,10 @@
 
             strong {
                 font-size: 1.25rem;
+            }
+
+            li {
+                margin-top: 1rem;
             }
         }
 
