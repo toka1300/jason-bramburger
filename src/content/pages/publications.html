@@ -1,6 +1,6 @@
 ---
 title: 'Publications | Jason Bramburger'
-description: 'TODO: Meta description for the page'
+description: 'TODO: A collection of books, preprints, publications and more'
 permalink: 'publications/'
 eleventyNavigation:
     key: Publications
@@ -41,225 +41,234 @@ eleventyNavigation:
 
 <section id="faq-2070">
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">My Work</span>
-            <h2 class="cs-title">Publications</h2>
-            <p class="cs-text">A collection of Books, Preprints, publications, Refereed Conference Proceedings, Conference Reports, Outreach and Public Interest Articles and Theses</p>
+        <div class="cs-header-picture">
+            <div class="cs-content">
+                <span class="cs-topper">My Work</span>
+                <h2 class="cs-title">Publications</h2>
+                <p class="cs-text">A collection of Books, Preprints, publications, Refereed Conference Proceedings, Conference Reports, Outreach and Public Interest Articles and Theses</p>
+            </div>
+            <div class="cs-image-group">
+                <picture class="cs-picture">
+                    <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
+                    <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                <picture class="cs-picture">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                </picture>
+                {# Third book below, it will not be visible on mobile, as it will be too squished, add "mobile-hidden" class to any of them you want to hide on mobile #}
+                {# <picture class="cs-picture mobile-hidden">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
+                    <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                </picture> #}
+            </div>
         </div>
         <div class="cs-flex-group">
             <div class="cs-wrapper">
                 <ul class="cs-faq-group">
-                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
-                    <li class="cs-faq-item">
+                    {# ---Books--- #}
+                    <div class="cs-faq-item"><!-- To have any section expanded by default, add 'active' to the existing class of 'cs-faq-item', separated by a space (class="cs-faq-item active") -->
                         <button class="cs-button">
-                            <span class="cs-button-text">
-                                Books
-                            </span>
+                            <span class="cs-button-text">Books</span>
                             <span class="cs-arrows" aria-hidden="true">
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                        <ul class="cs-item-p">
-                            {% for book in publications.books %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ book.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ book.link }}" target="_blank">{{ book.title }}</a>
-                                            <div class="cs-social-li">
-                                                {% if book.repo %}
-                                                    <a href="{{ book.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                        <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
-                                                    </a>
-                                                {% endif %}
-                                            </div>
-                                        </div>
-                                    </li>
-                                </div>
+                        <ol>
+                            {% for book in publications.books %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    <span>{{ book.authors }}</span>
+                                    <a href="{{ book.link }}" class="cs-item-link" target="_blank">{{ book.title }}</a>
+                                    <span><strong>{{ book.publication }}</strong>, {{ book.year }}</span>
+                                    <div class="cs-social-li">
+                                        {% if book.repo %}
+                                            <a href="{{ book.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
+                                                <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>Code Repo</span>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                </li>
                             {% endfor %}
-                        </ul>
-                    </li>
+                        </ol>
+                    </div>
 
-                    <li class="cs-faq-item">
+                    {# ---Preprints--- #}
+                    <div class="cs-faq-item">
                         <button class="cs-button">
-                            <span class="cs-button-text">
-                                Preprints
-                            </span>
+                            <span class="cs-button-text">Preprints</span>
                             <span class="cs-arrows" aria-hidden="true">
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                        <ul class="cs-item-p">
-                            {# If you need to add more items, add another element to the array in publications.js #}
+                        <ol>
                             {% for preprint in publications.preprints %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ preprint.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ preprint.link }}" target="_blank">{{ preprint.title }}</a>
-                                        </div>
-                                    </li>
+                                <li class="cs-item-p">
+                                    <strong>{{ preprint.authors }}</strong>
+                                    <a href="{{ preprint.link }}" class="cs-item-link" target="_blank">{{ preprint.title }}</a>
                                     <div class="cs-social-li">
                                         {% if preprint.repo %}
                                             <a href="{{ preprint.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>GitHub Repo</span>
                                             </a>
                                         {% endif %}
                                     </div>
-                                </div>
+                                </li>
                             {% endfor %}
-                        </ul>
-                    </li>
+                        </ol>
+                    </div>
 
-                    <li class="cs-faq-item">
+                    {# ---Publications--- #}
+                    <div class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Publications</span>
                             <span class="cs-arrows" aria-hidden="true">
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                        <ul class="cs-item-p">
-                            <picture class="cs-picture">
-                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 300, height: 500 }) | avif %}" type="image/avif">
-                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 300, height: 500 }) | webp %}" type="image/webp">
-                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 300, height: 500 }) | jpeg %}" type="image/jpeg">
-                                <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="" height="" loading="lazy" decoding="async" aria-hidden="true">
-                            </picture>
-                            {% for publication in publications.publications %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ publication.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ publication.link }}" target="_blank">{{ publication.title }}</a>
-                                            <span class="cs-reference">{{ publication.reference }}</span>
-                                        </div>
-                                    </li>
+                        <ol>
+                            {% for publication in publications.publications %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    {{ publication.authors }}
+                                    <a href="{{ publication.link }}" class="cs-item-link" target="_blank">{{ publication.title }}</a>
+                                    <span class="cs-reference"><strong>{{ publication.publication }}</strong>, {{ publication.reference }}</span>
                                     <div class="cs-social-li">
                                         {% if publication.coverArticle %}
                                             <a href="{{ publication.coverArticle }}" aria-label="cover article" class="cs-social-link" target="_blank" rel="noopener" title="Cover article">
                                                 <img src="../../assets/svgs/book.svg" class="cs-social-icon cs-cover-article" alt="book icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>Article</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.dsWebFeature %}
                                             <a href="{{ publication.dsWebFeature }}" aria-label="ds-web" class="cs-social-link" target="_blank" rel="noopener" title="DSweb Feature">
                                                 <img src="../../assets/svgs/ds-web.svg" class="cs-social-icon cs-dsweb" alt="Journal" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>DSWeb</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.videoAbstract %}
                                             <a href="{{ publication.videoAbstract }}" aria-label="youtube" class="cs-social-link" target="_blank" rel="noopener" title="Youtube abstract">
                                                 <img src="../../assets/svgs/brand-youtube.svg" class="cs-social-icon cs-youtube" alt="youtube logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>Video</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.repo %}
                                             <a href="{{ publication.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>Code Repo</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.cadFile %}
-                                            <a href="{{ publication.repo }}" aria-label="cad file" class="cs-social-link" target="_blank" rel="noopener" title="CAD File">
+                                            <a href="{{ publication.repo }}" aria-label="cad file" class="cs-social-link" target="_blank" rel="noopener" title="CAD Files">
                                                 <img src="../../assets/svgs/cad-file-icon.svg" class="cs-social-icon cs-cad" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>CAD File</span>
                                             </a>
                                         {% endif %}
                                     </div>
-                                </div>
+                                </li>
                             {% endfor %}
-                        </ul>
-                    </li>
+                        </ol>
+                    </div>
                     
-                    <li class="cs-faq-item">
+                    {# ---Refereed Conference Proceedings--- #}
+                    <div class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Refereed Conference Proceedings</span>
                             <span class="cs-arrows" aria-hidden="true">
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
-                        <ul class="cs-item-p">
-                            {% for conference in publications.conferenceProceedings %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ conference.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ conference.link }}" target="_blank">{{ conference.title }}</a>
-                                            <span class="cs-reference">{{ conference.reference }}</span>
-                                            <span class="cs-reference">{{ conference.location }}</span>
-                                        </div>
-                                    </li>
+                        <ol>
+                            {% for conference in publications.conferenceProceedings %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    <span>{{ conference.authors }}</span>
+                                    <div class="cs-item-p-2">
+                                        <a href="{{ conference.link }}" class="cs-item-link" target="_blank">{{ conference.title }}</a>
+                                        <p class="cs-reference"><strong>{{ conference.reference }}</strong>, {{ conference.location }}</p>
+                                    </div>
                                     <div class="cs-social-li">
                                         {% if conference.repo %}
                                             <a href="{{ conference.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>GitHub Repo</span>
                                             </a>
                                         {% endif %}
                                     </div>
-                                </div>
+                                </li>
                             {% endfor %}
-                        </ul>
-                    </li>
+                        </ol>
+                    </div>
 
-                    <li class="cs-faq-item">
+                    {# ---Conference Reports--- #}
+                    <div class="cs-faq-item">
                         <button class="cs-button">
-                            <span class="cs-button-text">
-                                Conference Reports
-                            </span>
+                            <span class="cs-button-text">Conference Reports</span>
                             <span class="cs-arrows" aria-hidden="true">
                                 <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
 
-                        <ul class="cs-item-p">
-                            {% for reports in publications.conferenceReports %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ reports.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ reports.link }}" target="_blank">{{ reports.title }}</a>
-                                            <span class="cs-reference">{{ reports.reference }}</span>
-                                        </div>
-                                    </li>
-                                </div>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Outreach and Public Interest Articles
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-                        <ul class="cs-item-p">
-                            {% for articles in publications.outreachArticles %}
-                                <div class="cs-item-p">
-                                    <li><strong>{{ articles.authors }}</strong>
-                                        <div class="cs-item-p-2">
-                                            <a href="{{ articles.link }}" target="_blank">{{ articles.title }}</a>
-                                            <span class="cs-reference">{{ articles.reference }}</span>
-                                        </div>
-                                    </li>
-                                </div>
-                            {% endfor %}
-                        </ul>
-                    </li>
-
-                    <li class="cs-faq-item">
-                        <button class="cs-button">
-                            <span class="cs-button-text">
-                                Theses
-                            </span>
-                            <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
-                            </span>
-                        </button>
-
-                        <ul class="cs-item-p">
-                            {% for thesis in publications.theses %}
-                                <li><strong>{{ thesis.authors }}</strong>
+                        <ol>
+                            {% for report in publications.conferenceReports %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    <span>{{ report.authors }}</span>
                                     <div class="cs-item-p-2">
-                                        <a href="{{ thesis.link }}" target="_blank">{{ thesis.title }}</a>
-                                        <span class="cs-reference">{{ thesis.reference }}</span>
+                                        <a href="{{ report.link }}" class="cs-item-link" target="_blank">{{ report.title }}</a>
+                                        <span class="cs-reference"><strong>{{ report.publication }}</strong>, {{ report.reference }}</span>
                                     </div>
                                 </li>
                             {% endfor %}
-                        </ul>
-                    </li>
+                        </ol>
+                    </div>
+
+                    {# ---Outreach and Public Interest Articles--- #}
+                    <div class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Outreach and Public Interest Articles</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+                        <ol>
+                            {% for article in publications.outreachArticles %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    <span>{{ article.authors }}</span>
+                                    <div class="cs-item-p-2">
+                                        <a href="{{ article.link }}" class="cs-item-link" target="_blank">{{ article.title }}</a>
+                                        <span class="cs-reference"><strong>{{ article.publication }}</strong>, {{ article.reference }}</span>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+
+                    {# ---Theses--- #}
+                    <div class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">Theses</span>
+                            <span class="cs-arrows" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                            </span>
+                        </button>
+
+                        <ol>
+                            {% for thesis in publications.theses %} {# If you need to add more items, add another element to the array in publications.js #}
+                                <li class="cs-item-p">
+                                    <span>{{ thesis.authors }}</span>
+                                    <div class="cs-item-p-2">
+                                        <a href="{{ thesis.link }}" class="cs-item-link" target="_blank">{{ thesis.title }}</a>
+                                        <span class="cs-reference"><strong>{{ thesis.publication }}</strong>, {{ thesis.reference }}</span>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    </div>
                 </ul>
             </div>
         </div>

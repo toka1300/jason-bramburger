@@ -1,5 +1,5 @@
 /*-- -------------------------- -->
-<---            FAQ             -->
+<---            Publications    -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -17,13 +17,28 @@
     position: relative;
     z-index: 1;
   }
+  #faq-2070 .cs-header-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  #faq-2070 .cs-image-group {
+    display: flex;
+    justify-content: center;
+    gap: clamp(1rem, 3vw, 2.5rem);
+    max-width: 100%;
+    font-size: min(2.97vw, 1rem);
+    position: relative;
+  }
   #faq-2070 .cs-picture {
     display: block;
     width: 10rem;
     height: 15rem;
     box-sizing: border-box;
     overflow: hidden;
-    margin: 0 auto 2rem auto;
+  }
+  #faq-2070 .cs-picture.mobile-hidden {
+    display: none;
   }
   #faq-2070 .cs-picture img {
     width: 100%;
@@ -41,7 +56,7 @@
     align-items: flex-start;
   }
   #faq-2070 .cs-text {
-    margin-bottom: clamp(3rem, 6vw, 4rem);
+    margin-bottom: clamp(2rem, 6vw, 4rem);
   }
   #faq-2070 .cs-flex-group {
     width: 100%;
@@ -49,6 +64,7 @@
     flex-direction: column;
     gap: 2rem;
     position: relative;
+    margin-top: 1rem;
   }
   #faq-2070 .cs-wrapper {
     position: relative;
@@ -77,22 +93,22 @@
     transform: rotate(180deg);
     filter: grayscale(1) brightness(1000%);
   }
+  #faq-2070 .cs-faq-item.active ol {
+    padding-left: 1.5rem;
+  }
   #faq-2070 .cs-faq-item.active .cs-item-p {
     height: auto;
-    list-style-position: inside;
-    list-style-type: decimal;
-    padding: 0;
     opacity: 1;
+    margin-bottom: 1rem;
   }
-  #faq-2070 .cs-faq-item.active .cs-item-p-2 {
+  #faq-2070 .cs-faq-item.active .cs-item-link {
     display: block;
-    padding-left: 28px;
   }
   #faq-2070 .cs-faq-item.active .cs-reference {
     display: block;
   }
   #faq-2070 .cs-button {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: bold;
     line-height: 1.2em;
     text-align: left;
@@ -138,19 +154,14 @@
     display: block;
   }
   #faq-2070 .cs-item-p {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: 1rem;
     line-height: 1.5em;
-    width: 90%;
     height: 0;
     margin: 0;
     padding: 0;
     color: var(--bodyTextColor);
-    list-style-type: none;
     opacity: 0;
     transition: opacity 0.3s, padding-bottom 0.3s;
-  }
-  #faq-2070 .cs-item-p strong {
-    font-size: 1.25rem;
   }
   #faq-2070 .cs-item-p li {
     margin-top: 1rem;
@@ -167,20 +178,21 @@
   #faq-2070 .cs-social-li {
     display: flex;
     gap: 0.5rem;
-    position: absolute;
-    right: 0.6rem;
-    transform: translateY(-28px);
-    list-style-position: inside;
+    margin-top: 0.25rem;
   }
   #faq-2070 .cs-social-link {
     z-index: 1;
     display: inline-flex;
+    gap: 0.25rem;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 0.25rem;
     background-color: #4e4b66;
-    height: 1.75rem;
-    width: 1.75rem;
+    height: fit-content;
+    width: auto;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1em;
     transition: 0.3s;
   }
   #faq-2070 .cs-social-link:hover {
@@ -193,20 +205,30 @@
     width: auto;
   }
 }
-/* Tablet - 768px */
+@media only screen and (min-width: 35rem) {
+  #faq-2070 .cs-container .cs-picture.mobile-hidden {
+    display: block;
+  }
+}
+/* Tablet - 960px */
 @media only screen and (min-width: 60rem) {
   #faq-2070 .cs-container {
     max-width: 80rem;
-    align-items: flex-end;
   }
   #faq-2070 .cs-container .cs-picture {
     width: 10rem;
     height: 15rem;
     box-sizing: border-box;
     overflow: hidden;
-    position: absolute;
-    top: 2rem;
-    right: 7rem;
+  }
+  #faq-2070 .cs-container .cs-picture.mobile-hidden {
+    display: block;
+  }
+  #faq-2070 .cs-container .cs-faq-item.active ol {
+    padding-left: 2.5rem;
+  }
+  #faq-2070 .cs-header-picture {
+    flex-direction: row;
   }
 }
 

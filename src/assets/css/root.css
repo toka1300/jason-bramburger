@@ -147,7 +147,7 @@
     margin: 0;
     font-size: 1rem;
     line-height: 1.5em;
-    color: var(--bodyTextColor);
+    text-decoration: none;
   }
   p,
   li {
@@ -156,7 +156,6 @@
   a:hover,
   button:hover {
     cursor: pointer;
-    font-weight: bold;
   }
   .skip {
     z-index: -1111111;

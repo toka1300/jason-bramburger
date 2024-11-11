@@ -1,0 +1,1 @@
+1) After making any changes to the website, you must run 'npm run build'
