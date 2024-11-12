@@ -85,6 +85,43 @@
     line-height: 3.5rem;
     color: #fff;
   }
+  #hero-219 .cs-social {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #hero-219 .cs-social-li {
+    list-style: none;
+  }
+  #hero-219 .cs-social-link {
+    padding: 0.5rem;
+    background-color: #484848;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  #hero-219 .cs-social-link:hover {
+    background-color: var(--secondary);
+  }
+  #hero-219 .cs-social-link:hover .cs-social-icon {
+    filter: grayscale(1) brightness(0);
+    opacity: 1;
+  }
+  #hero-219 .cs-social-icon {
+    width: 0.9rem;
+    height: auto;
+    display: block;
+    opacity: 0.5;
+  }
+}
+/* Desktop - 1024px */
+@media screen and (min-width: 64rem) {
+  #hero-219 .cs-social-icon {
+    width: 1.15rem;
+  }
 }
 /*-- -------------------------- -->
 <---       Side By Side         -->
@@ -95,6 +132,7 @@
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
+    background-color: #f7f7f7;
   }
   #sbs-1461 .cs-container {
     width: 100%;

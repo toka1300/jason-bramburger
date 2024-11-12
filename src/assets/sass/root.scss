@@ -58,7 +58,9 @@
     .cs-button-solid {
         z-index: 1;
         position: relative;
-        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         overflow: hidden;
         color: #fff;
         background-color: var(--primary);
@@ -67,7 +69,8 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
-        line-height: calc(50 / 16 * 1em);
+        // line-height: calc(50 / 16 * 1em);
+        height: clamp(2.875rem, 5.5vw, 3.5rem);
         font-weight: bold;
 
         transition: 0.3s;
@@ -1131,7 +1134,7 @@ html {
             transition: color 0.3s;
 
             &:hover {
-                color: var(--secondary);
+                color: var(--accentYellow);
             }
         }
 
@@ -1178,7 +1181,7 @@ html {
             align-items: center;
             transition: background-color 0.3s;
             &:hover {
-                background-color: var(--secondary);
+                background-color: var(--primary);
 
                 .cs-social-icon {
                     filter: grayscale(1) brightness(0);

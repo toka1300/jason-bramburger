@@ -50,7 +50,9 @@
   .cs-button-solid {
     z-index: 1;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     color: #fff;
     background-color: var(--primary);
@@ -59,7 +61,7 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
-    line-height: 3.125em;
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
     font-weight: bold;
     transition: 0.3s;
     text-align: center;
@@ -954,7 +956,7 @@ html {
     transition: color 0.3s;
   }
   #footer-1147 .cs-link:hover {
-    color: var(--secondary);
+    color: var(--accentYellow);
   }
   #footer-1147 .cs-logo {
     width: 10.5rem;
@@ -995,7 +997,7 @@ html {
     transition: background-color 0.3s;
   }
   #footer-1147 .cs-social-link:hover {
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
   #footer-1147 .cs-social-link:hover .cs-social-icon {
     filter: grayscale(1) brightness(0);
