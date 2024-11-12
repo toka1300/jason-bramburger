@@ -6,6 +6,7 @@
 @media only screen and (min-width: 0rem) {
     #faq-2070 {
         padding: var(--sectionPadding);
+        // margin-left: 1rem;
         position: relative;
         
         .cs-container {
@@ -111,12 +112,16 @@
 
                 ol {
                     padding-left: 1.5rem;
+
+                    li::marker {
+                        font-weight: bold;
+                      }
                 }
 
                 .cs-item-p {
                     height: auto;
                     opacity: 1;
-                    margin-bottom: 1rem;
+                    margin-bottom: 0.5rem;
                 }
 
                 .cs-item-link {

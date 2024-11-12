@@ -1,6 +1,6 @@
 ---
 title: 'Videos | Jason Bramburger'
-description: 'TODO: description for the page'
+description: 'Full course lectures and video abstracts on computational and applied mathematics.'
 permalink: 'videos/'
 eleventyNavigation:
     key: Videos
@@ -19,7 +19,6 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-    <h1 id="home-h">Videos</h1>
     <picture class="cs-background">
         <!--Mobile Image-->
         <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
@@ -53,11 +52,11 @@ eleventyNavigation:
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ playlist.name }}</h3>
                         <p class="cs-item-text">{{ playlist.description }}</p>
-                        <a href="{{ playlist.link }}" target="_blank" class="cs-link">
-                            Full Playlist
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                        </a>
                     </div>
+                    <a href="{{ playlist.link }}" target="_blank" class="cs-link">
+                        Full Playlist
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
                 </li>
             {% endfor %}
         </ul>
@@ -85,11 +84,11 @@ eleventyNavigation:
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ video.name }}</h3>
                         <p class="cs-item-text">{{ video.description }}</p>
-                        <a href="{{ video.paperLink }}" target="_blank" class="cs-link">
-                            Paper
-                            <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
-                        </a>
                     </div>
+                    <a href="{{ video.paperLink }}" target="_blank" class="cs-link">
+                        Paper
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+                    </a>
                 </li>
             {% endfor %}
         </ul>

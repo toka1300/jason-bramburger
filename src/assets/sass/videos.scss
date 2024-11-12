@@ -133,7 +133,7 @@
         }
 
         .cs-flex {
-            padding: calc(24 / 16 * 1rem);
+            padding: 1.5rem 1.5rem 0 1.5rem;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -170,11 +170,12 @@
             color: var(--primary);
             display: flex;
             align-items: center;
-            justify-content: center;
+            // justify-content: center;
+            padding: 0 0 1.5rem 1.5rem;
 
             &:hover {
                 .cs-arrow {
-                    transform: translateX(0.25rem);
+                    transform: translateX(0.25rem) translateY(-1.5px);;
                 }
             }
         }
@@ -183,6 +184,7 @@
             width: calc(20 / 16 * 1rem);
             height: auto;
             transition: transform 0.3s;
+            transform: translateY(-1.5px);
         }
     }
 }

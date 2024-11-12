@@ -3,37 +3,37 @@ module.exports = {
         {
             "name": "Partial Differential Equations",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFQJ6BY1O6Hz5XX2ppgGvEAu",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "Example-driven introduction to partial differential equations. Features derivations and solutions to the heat, wave, Helmholtz, and transport equations."
         },
         {
             "name": "Dynamical Systems Extra Credit",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFRVHibgG9lL1wkbMr4f1K4K",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "A collection of some of my favourite topics in dynamical systems that I couldn't fit into the regular curriculum."
         },
         {
             "name": "Dynamical Systems",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFQlsNP4tamU-QtSAG77u4T9",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "An introduction to dynamical systems with many applications. Features steady-state analysis, bifurcations, conservative systems, limit cycles, and chaos theory."
         },
         {
             "name": "Mathematical Modelling",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFT5ZM86xh8i1AMFYxnrefLk",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "Example-driven exposition on both constructing and analyzing mathematical models for physical, biological, and social phenomena, divided into three modelling techniques: optimization, dynamic, and stochastic models."
         },
         {
             "name": "Ordinary Differential Equations",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFTkAhFApYsNfqgRvZrPTeom",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "An introduction to the theory and solutions of ordinary differential equations. Topics include integrating factors, numerical approximation, power series, and the Laplace transform."
         },
         {
             "name": "Analytic Geometry and Calculus II",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFTaHk0VtafGc99pnNHHwH5U",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "Integral calculus from the ground up for undergraduates who have completed differential calculus. Topics include computing volumes, integration techniques, sequences, and series."
         },
         {
             "name": "Single Variable Real Analysis",
             "link": "https://www.youtube.com/playlist?list=PLXsDp0z6VWFQJDSzyrOQe6_Dk1ldEaPJj",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!"
+            "description": "Starts from the definition of the real numbers and moves through integral and differential calculus, vector spaces, and Taylor series in a completely rigorous way.    "
         }
     ],
     "videoAbstracts": [

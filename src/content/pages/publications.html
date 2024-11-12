@@ -1,6 +1,6 @@
 ---
 title: 'Publications | Jason Bramburger'
-description: 'TODO: A collection of books, preprints, publications and more'
+description: ' A collection of books, preprints, publications, and other published material from professor Jason Bramburger.'
 permalink: 'publications/'
 eleventyNavigation:
     key: Publications
@@ -45,7 +45,7 @@ eleventyNavigation:
             <div class="cs-content">
                 <span class="cs-topper">My Work</span>
                 <h2 class="cs-title">Publications</h2>
-                <p class="cs-text">A collection of Books, Preprints, publications, Refereed Conference Proceedings, Conference Reports, Outreach and Public Interest Articles and Theses</p>
+                <p class="cs-text">A collection of books, preprints, publications, refereed conference proceedings, conference reports, outreach and public interest articles and theses</p>
             </div>
             <div class="cs-image-group">
                 <picture class="cs-picture">
@@ -116,7 +116,7 @@ eleventyNavigation:
                                         {% if preprint.repo %}
                                             <a href="{{ preprint.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
-                                                <span>GitHub Repo</span>
+                                                <span>Code Repo</span>
                                             </a>
                                         {% endif %}
                                     </div>
@@ -138,8 +138,14 @@ eleventyNavigation:
                                 <li class="cs-item-p">
                                     {{ publication.authors }}
                                     <a href="{{ publication.link }}" class="cs-item-link" target="_blank">{{ publication.title }}</a>
-                                    <span class="cs-reference"><strong>{{ publication.publication }}</strong>, {{ publication.reference }}</span>
+                                    <span class="cs-reference"><strong>{{ publication.publication }}</strong> {{ publication.reference }}</span>
                                     <div class="cs-social-li">
+                                        {% if publication.repo %}
+                                            <a href="{{ publication.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
+                                                <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <span>Code Repo</span>
+                                            </a>
+                                        {% endif %}
                                         {% if publication.coverArticle %}
                                             <a href="{{ publication.coverArticle }}" aria-label="cover article" class="cs-social-link" target="_blank" rel="noopener" title="Cover article">
                                                 <img src="../../assets/svgs/book.svg" class="cs-social-icon cs-cover-article" alt="book icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
@@ -156,12 +162,6 @@ eleventyNavigation:
                                             <a href="{{ publication.videoAbstract }}" aria-label="youtube" class="cs-social-link" target="_blank" rel="noopener" title="Youtube abstract">
                                                 <img src="../../assets/svgs/brand-youtube.svg" class="cs-social-icon cs-youtube" alt="youtube logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Video</span>
-                                            </a>
-                                        {% endif %}
-                                        {% if publication.repo %}
-                                            <a href="{{ publication.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
-                                                <span>Code Repo</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.cadFile %}
@@ -190,13 +190,13 @@ eleventyNavigation:
                                     <span>{{ conference.authors }}</span>
                                     <div class="cs-item-p-2">
                                         <a href="{{ conference.link }}" class="cs-item-link" target="_blank">{{ conference.title }}</a>
-                                        <p class="cs-reference"><strong>{{ conference.reference }}</strong>, {{ conference.location }}</p>
+                                        <p class="cs-reference"><strong>{{ conference.reference }}</strong> {{ conference.location }}</p>
                                     </div>
                                     <div class="cs-social-li">
                                         {% if conference.repo %}
                                             <a href="{{ conference.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
                                                 <img src="../../assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
-                                                <span>GitHub Repo</span>
+                                                <span>Code Repo</span>
                                             </a>
                                         {% endif %}
                                     </div>
@@ -220,7 +220,7 @@ eleventyNavigation:
                                     <span>{{ report.authors }}</span>
                                     <div class="cs-item-p-2">
                                         <a href="{{ report.link }}" class="cs-item-link" target="_blank">{{ report.title }}</a>
-                                        <span class="cs-reference"><strong>{{ report.publication }}</strong>, {{ report.reference }}</span>
+                                        <span class="cs-reference"><strong>{{ report.publication }}</strong> {{ report.reference }}</span>
                                     </div>
                                 </li>
                             {% endfor %}
@@ -241,7 +241,7 @@ eleventyNavigation:
                                     <span>{{ article.authors }}</span>
                                     <div class="cs-item-p-2">
                                         <a href="{{ article.link }}" class="cs-item-link" target="_blank">{{ article.title }}</a>
-                                        <span class="cs-reference"><strong>{{ article.publication }}</strong>, {{ article.reference }}</span>
+                                        <span class="cs-reference"><strong>{{ article.publication }}</strong> {{ article.reference }}</span>
                                     </div>
                                 </li>
                             {% endfor %}
@@ -263,7 +263,7 @@ eleventyNavigation:
                                     <span>{{ thesis.authors }}</span>
                                     <div class="cs-item-p-2">
                                         <a href="{{ thesis.link }}" class="cs-item-link" target="_blank">{{ thesis.title }}</a>
-                                        <span class="cs-reference"><strong>{{ thesis.publication }}</strong>, {{ thesis.reference }}</span>
+                                        <span class="cs-reference"><strong>{{ thesis.publication }}</strong> {{ thesis.reference }}</span>
                                     </div>
                                 </li>
                             {% endfor %}

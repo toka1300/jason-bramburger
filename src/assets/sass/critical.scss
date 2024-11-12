@@ -53,19 +53,20 @@
         }
 
         .cs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
         }
 
         .cs-title {
-            /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 700;
             line-height: 1.2em;
-            text-align: left;
+            text-align: center;
             max-width: calc(829 / 16 * 1rem);
-            /* 16px - 24px */
             margin: 0;
             color: #fff;
             position: relative;
@@ -74,10 +75,10 @@
         .cs-text {
             font-size: clamp(1rem, 1.95vw, 1.25rem);
             line-height: 1.5em;
-            text-align: left;
+            text-align: center;
             width: 100%;
             max-width: clamp(29rem, 60vw, 38.785rem);
-            margin: 0 auto 0 0;
+            // margin: 0 auto 0 0;
             color: var(--primaryVLight);
         }
 
@@ -100,7 +101,7 @@
             margin-top: 2rem;
             display: flex;
             align-items: center;
-            gap: calc(8 / 16 * 1rem);
+            gap: 1.5rem;
         }
 
         .cs-social-li {
@@ -108,7 +109,7 @@
         }
 
         .cs-social-link {
-            padding: 0.5rem;
+            padding: 0.75rem;
             background-color: #484848;
             border-radius: 50%;
             display: flex;
@@ -126,7 +127,7 @@
         }
 
         .cs-social-icon {
-            width: 0.9rem;
+            width: 1.25rem;
             height: auto;
             display: block;
             opacity: 0.5;
@@ -134,12 +135,20 @@
     }
 }
 
-/* Desktop - 1024px */
-@media screen and (min-width: 64rem) {
+/* tablet - 1024px */
+@media screen and (min-width: 37.5rem) {
 
     #hero-219 {
+        // .cs-social {
+        //     gap: 0.75rem;
+        // }
+
+        // .cs-social-link {
+        //     padding: 0.75rem;
+        // }
+
         .cs-social-icon {
-            width: 1.15rem;
+            width: 1.5rem;
         }
     }
 }
@@ -180,6 +189,7 @@
         .cs-text {
             margin-bottom: calc(16/16 * 1rem);
             opacity: .8;
+            text-align: justify;
             &:last-of-type {
                 margin-bottom: calc(32/16 * 1rem);
             }
@@ -238,8 +248,6 @@
         }
 
         .cs-picture {
-            // border-radius: calc(24/16 * 1em);
-            /* clips img tag corners */
             overflow: hidden;
             position: absolute;
             display: block;
@@ -250,12 +258,12 @@
                 left: 0;
                 height: 100%;
                 width: 100%;
-                /* makes image act like a background image */
                 object-fit: cover;
             }
         }
 
         .cs-picture1 {
+            border-radius: calc(24/16 * 1em);
             width: calc(522/16 * 1em);
             height: calc(729/16 * 1em);
             left: 0;
@@ -336,8 +344,6 @@
         }
 
         .cs-picture {
-            border-radius: calc(24/16 * 1em);
-            /* clips img tag corners */
             overflow: hidden;
             position: absolute;
             display: block;

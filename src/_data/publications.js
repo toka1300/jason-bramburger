@@ -171,8 +171,110 @@ module.exports = {
             "reference": "476, (2020) 20200450",
             "link": "https://royalsocietypublishing.org/doi/10.1098/rspa.2020.0450",
             "videoAbstract": "https://www.youtube.com/watch?v=LtjwMMpxLt8"
-        }
-        
+        },
+        {
+            "authors": "J. Bramburger, D. Dylewsky, and J.N. Kutz.",
+            "title": "Sparse identification of slow timescale dynamics.",
+            "link": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.022204",
+            "publication": "Physical Review E",
+            "reference": "102, (2020) 022204.",
+            "repo": "https://github.com/jbramburger/Slow-Discovery",
+            "videoAbstract": "https://www.youtube.com/watch?v=2ji2-XUgVl0"
+        },
+        {
+            "authors": "J. Bramburger and B. Sandstede.",
+            "title": "Localized patterns in planar bistable weakly coupled lattice systems.",
+            "link": "https://iopscience.iop.org/article/10.1088/1361-6544/ab7d1e",
+            "publication": "Nonlinearity",
+            "reference": "33, (2020) 3500-3525."
+        },
+        {
+            "authors": "J. Bramburger and B. Sandstede.",
+            "title": "Spatially localized structures in lattice dynamical systems.",
+            "link": "https://link.springer.com/article/10.1007/s00332-019-09584-x",
+            "publication": "Journal of Nonlinear Science",
+            "reference": "30, (2020) 603-644."
+        },
+        {
+            "authors": "J. Bramburger and J.N. Kutz.",
+            "title": "Poincaré maps for multiscale physics discovery and nonlinear Floquet theory.",
+            "link": "https://www.sciencedirect.com/science/article/pii/S0167278919305470?via%3Dihub",
+            "publication": "Physica D",
+            "reference": "408, (2020) 132497.",
+            "repo": "https://github.com/jbramburger/Poincare-Maps",
+            "videoAbstract": "https://www.youtube.com/watch?v=2Z2oYc5IS7M"
+        },
+        {
+            "authors": "J. Bramburger, J. Cuevas-Maraver, and P.G. Kevrekidis.",
+            "title": "Vortex pairs in the discrete nonlinear Schrodinger equation.",
+            "link": "https://iopscience.iop.org/article/10.1088/1361-6544/ab6f4c",
+            "publication": "Nonlinearity",
+            "reference": "33, (2020) 2159-2180."
+        },
+        {
+            "authors": "J. Bramburger.",
+            "title": "Ultracontractive properties for directed graph semigroups with applications to coupled oscillators.",
+            "link": "https://doi.org/10.4153/S0008439519000390",
+            "publication": "Canadian Mathematical Bulletin",
+            "reference": "63, (2020) 13-30."
+        },
+        {
+            "authors": "J. Bramburger.",
+            "title": "Stable periodic solutions to lambda-omega lattice dynamical systems.",
+            "link": "https://www.sciencedirect.com/science/article/pii/S0022039619304607",
+            "publication": "Journal of Differential Equations",
+            "reference": "268, (2020) 3201-3254."
+        },
+        {
+            "authors": "S. Alexander, J. Bramburger, and E. McDonough.",
+            "title": "Dark disk substructure and superfluid dark matter.",
+            "link": "https://www.sciencedirect.com/science/article/pii/S0370269319305854?via%3Dihub",
+            "publication": "Physics Letters B",
+            "reference": "797, (2019) 134871."
+        },
+        {
+            "authors": "J. Bramburger, D. Altschuler, C. Avery, T. Sangsawang, M. Beck, P. Carter, and B. Sandstede.",
+            "title": "Localized radial roll patterns in higher space dimensions.",
+            "link": "https://epubs.siam.org/doi/pdf/10.1137/18M1218728",
+            "publication": "SIAM Journal on Applied Dynamical Systems",
+            "reference": "18, (2019) 1420-1453.",
+            "repo": "https://github.com/sandstede-lab/Radial-Roll-Patterns"
+        },
+        {
+            "authors": "J. Bramburger and F. Lutscher.",
+            "title": "Analysis of integrodifference equations with a separable dispersal kernel.",
+            "link": "https://link.springer.com/article/10.1007/s10440-018-0207-9",
+            "publication": "Acta Applicandae Mathematicae",
+            "reference": "161, (2019) 127-151."
+        },
+        {
+            "authors": "J. Bramburger.",
+            "title": "Rotating wave solutions to lattice dynamical systems II: Persistence results.",
+            "link": "https://link.springer.com/article/10.1007/s10884-018-9677-8",
+            "publication": "Journal of Dynamics and Differential Equations",
+            "reference": "31, (2019) 499-536."
+        },
+        {
+            "authors": "J. Bramburger.",
+            "title": "Rotating wave solutions to lattice dynamical systems I: The anti-continuum limit.",
+            "link": "https://link.springer.com/article/10.1007/s10884-018-9678-7",
+            "publication": "Journal of Dynamics and Differential Equations",
+            "reference": "31, (2019) 469-498."
+        },
+        {
+            "authors": "J. Bramburger.",
+            "title": "Stability of infinite systems of coupled oscillators via random walks on weighted graphs.",
+            "link": "https://www.ams.org/journals/tran/2019-372-02/S0002-9947-2019-07609-2/",
+            "publication": "Transactions of the American Mathematical Society",
+            "reference": "372, (2019) 1159-1192."
+        },
+        {
+            "authors": "J. Bramburger, B. Dionne, and V.G. LeBlanc.",
+            "title": "Zero-Hopf bifurcation in the Van der Pol oscillator with delayed position and velocity feedback.",
+            "link": "https://link.springer.com/content/pdf/10.1007/s11071-014-1638-0.pdf",
+            "publication": "Nonlinear Dynamics",
+            "reference": "78, (2014) 2959-2973."
+        }        
     ],
     "conferenceProceedings":[
         {

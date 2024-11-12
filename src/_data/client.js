@@ -17,6 +17,7 @@ module.exports = {
         "github": "https://github.com/jbramburger",
         "twitter": "https://twitter.com/jbramburger7",
         "researchGate": "https://www.researchgate.net/profile/Jason_Bramburger",
+        "googleScholar": "https://scholar.google.com/citations?user=eMeqKJAAAAAJ&hl=en&oi=ao",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://hybrid.concordia.ca/jbrambur"

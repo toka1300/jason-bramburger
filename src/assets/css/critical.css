@@ -48,18 +48,19 @@
     object-position: right;
   }
   #hero-219 .cs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 80rem;
     margin: auto;
   }
   #hero-219 .cs-title {
-    /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
     line-height: 1.2em;
-    text-align: left;
+    text-align: center;
     max-width: 51.8125rem;
-    /* 16px - 24px */
     margin: 0;
     color: #fff;
     position: relative;
@@ -67,10 +68,9 @@
   #hero-219 .cs-text {
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: clamp(29rem, 60vw, 38.785rem);
-    margin: 0 auto 0 0;
     color: var(--primaryVLight);
   }
   #hero-219 .cs-button-box {
@@ -90,13 +90,13 @@
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
   #hero-219 .cs-social-li {
     list-style: none;
   }
   #hero-219 .cs-social-link {
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: #484848;
     border-radius: 50%;
     display: flex;
@@ -112,16 +112,16 @@
     opacity: 1;
   }
   #hero-219 .cs-social-icon {
-    width: 0.9rem;
+    width: 1.25rem;
     height: auto;
     display: block;
     opacity: 0.5;
   }
 }
-/* Desktop - 1024px */
-@media screen and (min-width: 64rem) {
+/* tablet - 1024px */
+@media screen and (min-width: 37.5rem) {
   #hero-219 .cs-social-icon {
-    width: 1.15rem;
+    width: 1.5rem;
   }
 }
 /*-- -------------------------- -->
@@ -156,6 +156,7 @@
   #sbs-1461 .cs-text {
     margin-bottom: 1rem;
     opacity: 0.8;
+    text-align: justify;
   }
   #sbs-1461 .cs-text:last-of-type {
     margin-bottom: 2rem;
@@ -208,7 +209,6 @@
     position: relative;
   }
   #sbs-1461 .cs-picture {
-    /* clips img tag corners */
     overflow: hidden;
     position: absolute;
     display: block;
@@ -219,10 +219,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    /* makes image act like a background image */
     object-fit: cover;
   }
   #sbs-1461 .cs-picture1 {
+    border-radius: 1.5em;
     width: 32.625em;
     height: 45.5625em;
     left: 0;
@@ -293,8 +293,6 @@
     position: relative;
   }
   #sbs-1461 .cs-picture {
-    border-radius: 1.5em;
-    /* clips img tag corners */
     overflow: hidden;
     position: absolute;
     display: block;

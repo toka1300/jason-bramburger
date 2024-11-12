@@ -1,6 +1,6 @@
 ---
 title: 'Home | Jason Bramburger'
-description: 'TODO: Meta description for the page'
+description: 'Researcher in computational and applied mathematics from Concordia University with specialization in dynamical systems.'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -66,32 +66,39 @@ eleventyNavigation:
         <h1 class="cs-title">Jason Bramburger</h1>
         <p class="cs-text">Assistant Professor</p>
         <p class="cs-text">Concordia University</p>
-        <div class="cs-button-box">
-            <a href="/contact" class="cs-button-solid">Contact</a>
-            <a href="/research" class="cs-button-transparent">View Research</a>
-        </div>
+ 
         <ul class="cs-social"> {# If you have a new 'social you'd like to add, copy one of the <li> elements within the <ul> and add your info #}
             <li class="cs-social-li">
                 <a href="{{ client.socials.youtube }}" class="cs-social-link" aria-label="youtube" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-youtube.svg" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.twitter }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-twitter.svg" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.github }}" class="cs-social-link" aria-label="github" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-github.svg" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-github.svg" title="GitHub" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.researchGate }}" class="cs-social-link" aria-label="research gate" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-research-gate.svg" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-research-gate.svg" title="ResearchGate" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                </a>
+            </li>
+            <li class="cs-social-li">
+                <a href="{{ client.socials.googleScholar }}" class="cs-social-link" aria-label="googleScholar link" target="_blank" rel="noopener">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-google-scholar.svg" alt="google scholar icon" title="Google Scholar" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
         </ul>
+
+        <div class="cs-button-box">
+            <a href="/contact" class="cs-button-solid">Contact</a>
+            <a href="/cv" class="cs-button-transparent">View CV</a>
+        </div>
     </div>
 
     <picture class="cs-background">
@@ -127,15 +134,14 @@ eleventyNavigation:
                <img src="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" alt="Screenshot of Jason writing on a lightboard for his YouTube channel" loading="eager" width="540" height="720" decoding="async" aria-hidden="true">
             </picture>
             <picture class="cs-picture cs-picture2">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | webp %}" type="image/webp">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" type="image/jpeg">
+               <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | avif %}" type="image/avif">
+               <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | webp %}" type="image/webp">
+               <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" type="image/jpeg">
                <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 780, height: 798 }) | jpeg %}" alt="Cover of Data Driven Methods book" width="313" height="381" loading="eager" decoding="async" aria-hidden="true">
             </picture>
         </div>
         <!-- Right Content Section-->
         <div class="cs-content">
-            <span class="cs-topper">About Me</span>
             <h2 class="cs-title">Welcome to Jason Bramburger's Homepage</h2>
             <p class="cs-text">
                 I'm an assistant professor at Concordia University and a member of the <a href="http://www.crm.umontreal.ca/labo/mathappli/en/" target="_blank">CRM Applied Math Lab</a>. My interests broadly lie in dynamical systems with research programs focusing on data-driven discovery, pattern formation, and polynomial optimization applied to differential equations. I received my Ph.D. in 2017 from the University of Ottawa under the supervision of Dr. Benoit Dionne and <a href="https://mysite.science.uottawa.ca/vleblanc/" target="_blank">Dr. Victor LeBlanc</a>. My training includes working as an NSERC postdoctoral fellow at Brown University, a PIMS postdoctoral fellow at the University of Victoria, and an acting instructor at the University of Washington.

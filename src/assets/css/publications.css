@@ -96,10 +96,13 @@
   #faq-2070 .cs-faq-item.active ol {
     padding-left: 1.5rem;
   }
+  #faq-2070 .cs-faq-item.active ol li::marker {
+    font-weight: bold;
+  }
   #faq-2070 .cs-faq-item.active .cs-item-p {
     height: auto;
     opacity: 1;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
   #faq-2070 .cs-faq-item.active .cs-item-link {
     display: block;
