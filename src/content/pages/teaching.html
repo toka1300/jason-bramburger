@@ -50,8 +50,8 @@ eleventyNavigation:
         <div class="cs-flex-group">
             <div class="cs-wrapper">
                 <ul class="cs-faq-group">
-                    <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
-                    <li class="cs-faq-item active">
+                    {# ** Current Teaching ** #}
+                    <li class="cs-faq-item active"> <!-- Add a class of active to the 'cs-faq-item' if you want it to be open by default -->
                         <button class="cs-button">
                             <span class="cs-button-text">Current Teaching</span>
                             <span class="cs-arrows" aria-hidden="true">
@@ -60,7 +60,7 @@ eleventyNavigation:
                         </button>
                         <ul class="cs-item-p">
                             {# <h3>This year I am teaching the following courses: TODO: Is this text needed?</h3> #}
-                            {% for universityName, classes in teaching.currentTeaching %}
+                            {% for universityName, classes in teaching.currentTeaching %} <!-- To add an item go into teaching.js and find the current teaching group -->
                                 <h2>{{ teaching.universityNames[universityName] }}</h2>
                                     <ul>
                                         {% for class in classes %}
@@ -76,6 +76,7 @@ eleventyNavigation:
                         </ul>
                     </li>
 
+                    {# ** Past Teaching ** #}
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Past Teaching</span>
@@ -86,7 +87,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             {# <h3> An up-to-date list of my teaching experience follows: TODO: Is this text needed?</h3> #}
                             <ul>
-                                {% for universityName, classes in teaching.pastTeaching %}
+                                {% for universityName, classes in teaching.pastTeaching %} <!-- To add an item go into teaching.js and find the past teaching group -->
                                     <h2>{{ teaching.universityNames[universityName] }}</h2>
                                         <ul>
                                             {% for class in classes %}
@@ -103,6 +104,7 @@ eleventyNavigation:
                         </ul>
                     </li>
 
+                    {# ** Course Development ** #}
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Course Development</span>
@@ -115,6 +117,7 @@ eleventyNavigation:
                         </ul>
                     </li>
 
+                    {# ** Teaching Assistant Experience ** #}
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Teaching Assistant Experience</span>
@@ -127,6 +130,7 @@ eleventyNavigation:
                         </ul>
                     </li>
 
+                    {# ** Other Relevant Experience ** #}
                     <li class="cs-faq-item">
                         <button class="cs-button">
                             <span class="cs-button-text">Other Relevant Experience</span>

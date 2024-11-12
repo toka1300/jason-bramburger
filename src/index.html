@@ -70,7 +70,7 @@ eleventyNavigation:
             <a href="/contact" class="cs-button-solid">Contact</a>
             <a href="/research" class="cs-button-transparent">View Research</a>
         </div>
-        <ul class="cs-social">
+        <ul class="cs-social"> {# If you have a new 'social you'd like to add, copy one of the <li> elements within the <ul> and add your info #}
             <li class="cs-social-li">
                 <a href="{{ client.socials.youtube }}" class="cs-social-link" aria-label="youtube" target="_blank" rel="noopener">
                     <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-youtube.svg" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
@@ -217,6 +217,37 @@ eleventyNavigation:
                     </div>
                 </div>
             </li>
+            {# Additional events for when you need them: #}
+            {# <li class="cs-item">
+                <span class="cs-date"><strong>11-25</strong>Aug</span>
+                <div class="cs-info-wrapper">
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
+                        <span class="cs-location">
+                            <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            Montréal
+                        </span>
+                    </div>
+                    <div class="cs-button-wrapper">
+                        <a href="https://www.siam.org/students-education/programs-initiatives/gene-golub-siam-summer-school" target="_blank" class="cs-button-solid">Event Details</a>
+                    </div>
+                </div>
+            </li>
+            <li class="cs-item">
+                <span class="cs-date"><strong>11-25</strong>Aug</span>
+                <div class="cs-info-wrapper">
+                    <div class="cs-info">
+                        <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
+                        <span class="cs-location">
+                            <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            Montréal
+                        </span>
+                    </div>
+                    <div class="cs-button-wrapper">
+                        <a href="https://www.siam.org/students-education/programs-initiatives/gene-golub-siam-summer-school" target="_blank" class="cs-button-solid">Event Details</a>
+                    </div>
+                </div>
+            </li> #}
         </ul>
     </div>
     <picture class="cs-background">
