@@ -81,9 +81,9 @@ module.exports = {
             "publication": "HardwareX",
             "reference": "15, (2023) e00465",
             "link": "https://www.sciencedirect.com/science/article/pii/S246806722300072X",
-            "video": "https://www.youtube.com/watch?v=OkEsTLeIP98",
+            "videoAbstract": "https://www.youtube.com/watch?v=OkEsTLeIP98",
             "repo": "https://github.com/dynamicslab/MultiArm-Pendulum",
-            "data": "https://zenodo.org/record/6633719"
+            "cadFile": "https://zenodo.org/record/6633719"
         },
         {
             "authors": "J. Bramburger and M. Holzer.",
@@ -106,8 +106,8 @@ module.exports = {
             "reference": "36, (2023) 2567-2630",
             "link": "https://iopscience.iop.org/article/10.1088/1361-6544/acc508",
             "repo": "https://github.com/Dan-Hill95/Localised-Dihedral-Patterns",
-            "cover": "https://iopscience.iop.org/volume/0951-7715/37",
-            "feature": "https://dsweb.siam.org/Media-Gallery/localised-patches"
+            "coverArticle": "https://iopscience.iop.org/volume/0951-7715/37",
+            "dsWebFeature": "https://dsweb.siam.org/Media-Gallery/localised-patches"
         },
         {
             "authors": "K. Kaheman, J. Bramburger, J.N. Kutz, and S. Brunton.",
@@ -130,7 +130,7 @@ module.exports = {
             "publication": "Physica D",
             "reference": "447, (2021) 133008",
             "link": "https://www.sciencedirect.com/science/article/pii/S0167278921001652",
-            "video": "https://www.youtube.com/watch?v=SxRazghFL-Y",
+            "videoAbstract": "https://www.youtube.com/watch?v=SxRazghFL-Y",
             "repo": "https://github.com/jbramburger/Deep-Conjugacies"
         },
         {
@@ -154,7 +154,7 @@ module.exports = {
             "publication": "IEEE Access",
             "reference": "9, (2021) 43504-43521",
             "link": "https://ieeexplore.ieee.org/document/9378534",
-            "video": "https://www.youtube.com/watch?v=72MeRaNki8E&feature=youtu.be",
+            "videoAbstract": "https://www.youtube.com/watch?v=72MeRaNki8E&feature=youtu.be",
             "repo": "https://github.com/jbramburger/Stabilizing_UPOs"
         },
         {
@@ -170,7 +170,7 @@ module.exports = {
             "publication": "Proceedings of the Royal Society A",
             "reference": "476, (2020) 20200450",
             "link": "https://royalsocietypublishing.org/doi/10.1098/rspa.2020.0450",
-            "video": "https://www.youtube.com/watch?v=LtjwMMpxLt8"
+            "videoAbstract": "https://www.youtube.com/watch?v=LtjwMMpxLt8"
         }
         
     ],

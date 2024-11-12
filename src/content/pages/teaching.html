@@ -65,7 +65,7 @@ eleventyNavigation:
                                     <ul>
                                         {% for class in classes %}
                                             <li>
-                                                <a href="{{ class.syllabusLink }}" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
+                                                <a href="/{{ class.syllabusLink }} ..." class="blackTextLink" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
                                                     <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="info icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
                                                     <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
                                                 </a>
@@ -91,7 +91,7 @@ eleventyNavigation:
                                         <ul>
                                             {% for class in classes %}
                                                 <li>
-                                                    <a href="{{ class.syllabusLink }}" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
+                                                    <a href="/{{ class.syllabusLink }}"  class="blackTextLink" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
                                                         <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="info icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
                                                         <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
                                                     </a>

@@ -110,7 +110,7 @@ eleventyNavigation:
                         <ol>
                             {% for preprint in publications.preprints %}
                                 <li class="cs-item-p">
-                                    <strong>{{ preprint.authors }}</strong>
+                                    {{ preprint.authors }}
                                     <a href="{{ preprint.link }}" class="cs-item-link" target="_blank">{{ preprint.title }}</a>
                                     <div class="cs-social-li">
                                         {% if preprint.repo %}
@@ -126,7 +126,7 @@ eleventyNavigation:
                     </div>
 
                     {# ---Publications--- #}
-                    <div class="cs-faq-item">
+                    <div class="cs-faq-item active">
                         <button class="cs-button">
                             <span class="cs-button-text">Publications</span>
                             <span class="cs-arrows" aria-hidden="true">

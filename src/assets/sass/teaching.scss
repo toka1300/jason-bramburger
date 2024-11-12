@@ -170,19 +170,18 @@
 
             a {
                 position: relative;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                gap: 0.5rem;
                 text-decoration: none;
-
-                :hover {
-                    font-weight: normal;
-                    text-decoration: underline;
-                }
-
+                
                 strong:hover {
                     font-weight: bold;
+                }
+                
+                &.blackTextLink {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0.5rem;
+                    color: var(--bodyTextColor);
                 }
             }
 

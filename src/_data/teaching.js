@@ -5,12 +5,12 @@ module.exports = {
             {
                 "semester": "Fall 2024",
                 "className": "Advanced Differential Equations",
-                "syllabusLink": "https://hybrid.concordia.ca/jbrambur/680_Syllabus.pdf"
+                "syllabusLink": "680_Syllabus.pdf"
             },
             {
                 "semester": "Winter 2025",
                 "className": "Mathematical Modeling",
-                "syllabusLink": "https://hybrid.concordia.ca/jbrambur/331_Syllabus.pdf"
+                "syllabusLink": "331_Syllabus.pdf"
             }
         ]
     },
@@ -19,7 +19,7 @@ module.exports = {
                 {
                     "semester": "Fall 2024",
                     "className": "Advanced Differential Equations",
-                    "syllabusLink": "https://hybrid.concordia.ca/jbrambur/680_Syllabus.pdf"
+                    "syllabusLink": "680_Syllabus.pdf"
                 },
                 {
                     "semester": "Fall 2023",

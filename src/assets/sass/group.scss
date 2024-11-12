@@ -73,6 +73,9 @@
                 }
 
                 .cs-item-p {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.35rem;
                     height: auto;
                     list-style-position: inside;
                     list-style-type: decimal;

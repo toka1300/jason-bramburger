@@ -25,12 +25,10 @@
         }
 
         .cs-text {
-            /* 16px - 48px */
             margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
         }
 
         .cs-header {
-            /* 13px - 16px */
             font-size: clamp(0.8125rem, 1.5vw, 1rem);
             line-height: 1.2em;
             text-transform: uppercase;
@@ -42,12 +40,10 @@
         }
 
         .cs-link {
-            /* 16px - 20px */
             font-size: clamp(1rem, 2vw, 1.25rem);
             text-decoration: none;
             line-height: 1.5em;
             font-weight: 700;
-            /* 16px - 32px */
             margin: 0 0 clamp(1rem, 2.5vw, 2rem);
             color: var(--headerColor);
             display: block;
@@ -62,7 +58,6 @@
         }
 
         .cs-social {
-            /* 32px - 80px */
             margin-top: clamp(2rem, 6vw, 5rem);
             display: inline-flex;
             justify-content: flex-start;
@@ -70,7 +65,6 @@
         }
 
         .cs-social-link {
-            /* 32px - 52px */
             width: clamp(2rem, 4vw, 3.25rem);
             height: clamp(2rem, 4vw, 3.25rem);
             background-color: #4e4b66;
@@ -91,114 +85,24 @@
         }
 
         .cs-social-img {
-            /* 14px - 24px */
             height: clamp(0.875rem, 2vw, 1.5rem);
             width: auto;
             display: block;
         }
-
-        #cs-form-490 {
-            width: 100%;
-            max-width: calc(650 / 16 * 1rem);
-            /* 32px - 40px */
-            margin-bottom: clamp(2rem, 5.3vw, 2.5rem);
-            /* 20px - 40px */
-            padding: clamp(1.25rem, 4.5vw, 2.5rem);
-            /* prevents padding from affecting width and height */
-            box-sizing: border-box;
-            border: 1px solid #dad9e3;
-            border-radius: calc(16 / 16 * 1rem);
-        }
-
-        .cs-label {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.3vw, 1rem);
-            line-height: 1.5em;
-            font-weight: 700;
-            /* 16px - 20px */
-            margin-bottom: clamp(1rem, 1em, 1.25rem);
-            color: var(--headerColor);
+                
+        .cs-picture {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-        }
-
-        .cs-label-message {
-            font-weight: 700;
-            font-size: clamp(0.875rem, 1.3vw, 1rem);
-            margin-bottom: clamp(2rem, 4.5vw, 2.5rem);
-        }
-
-        .cs-input,
-        textarea {
-            font-size: calc(16 / 16 * 1rem);
-            width: 100%;
-            height: calc(64 / 16 * 1rem);
-            margin-top: calc(4 / 16 * 1rem);
-            padding-left: calc(20 / 16 * 1rem);
-            /* set transparent border so on hover border doesn't make it glitch */
-            border: 1px solid transparent;
-            border-bottom: 1px solid #b4b2c7;
-            /* prevents border & padding from affecting height */
-            box-sizing: border-box;
-            transition: border 0.3s;
-
-            &:hover {
-                border: 1px solid var(--primary);
-            }
-
-            &::placeholder {
-                color: #7d799c;
-            }
-        }
-
-        textarea {
-            font-family: inherit;
-            margin: 0;
-            padding-top: calc(20 / 16 * 1rem);
-            min-height: calc(120 / 16 * 1rem);
-        }
-
-        .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875em, 5.5vw, 3.5em);
-            text-decoration: none;
-            font-weight: 700;
-            text-align: center;
-            margin: auto;
-            width: 100%;
-            color: #fff;
-            padding: 0 calc(24 / 16 * 1rem);
-            background-color: var(--primary);
-            border: none;
-            border-radius: calc(8 / 16 * 1rem);
-            display: inline-block;
             position: relative;
-            z-index: 1;
-            /* prevents padding from adding to the width */
-            box-sizing: border-box;
+            width: clamp(22rem, 40vw, 60rem);
+            align-self: center;
+            justify-content: center;
+            order: 1;
 
-            &:before {
-                content: "";
-                position: absolute;
-                height: 100%;
-                width: 0%;
-                background: #000;
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                border-radius: calc(8 / 16 * 1rem);
-                transition: width 0.3s;
-            }
-
-            &:hover {
-                cursor: pointer;
-                &:before {
-                    width: 100%;
-                }
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                display: block;
             }
         }
     }
@@ -210,18 +114,14 @@
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .cs-content {
             width: 40%;
-            /* pushes it to the right */
             order: 2;
             flex: none;
-        }
-
-        #cs-form-490 {
-            margin: 0;
         }
     }
 }

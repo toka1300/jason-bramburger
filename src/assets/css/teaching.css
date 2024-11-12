@@ -143,18 +143,17 @@
   }
   #faq-2070 .cs-item-p a {
     position: relative;
+    text-decoration: none;
+  }
+  #faq-2070 .cs-item-p a strong:hover {
+    font-weight: bold;
+  }
+  #faq-2070 .cs-item-p a.blackTextLink {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 0.5rem;
-    text-decoration: none;
-  }
-  #faq-2070 .cs-item-p a :hover {
-    font-weight: normal;
-    text-decoration: underline;
-  }
-  #faq-2070 .cs-item-p a strong:hover {
-    font-weight: bold;
+    color: var(--bodyTextColor);
   }
   #faq-2070 .cs-item-p .cs-social-link:hover {
     font-weight: normal;
