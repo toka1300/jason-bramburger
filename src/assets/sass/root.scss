@@ -4,7 +4,7 @@
 
 @media only screen and (min-width: 0rem) {
     :root {
-        --primary: #1976D2;
+        --primary: #135496;
         --primaryLight: #2196F3;
         --primaryVLight: #BBDEFB;
         --secondary: #5D6D7E;
@@ -69,8 +69,7 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
-        // line-height: calc(50 / 16 * 1em);
-        height: clamp(2.875rem, 5.5vw, 3.5rem);
+        line-height: calc(50 / 16 * 1em);
         font-weight: bold;
 
         transition: 0.3s;
@@ -1207,8 +1206,12 @@ html {
 
         .cs-copyright-link {
             font-size: inherit;
-            color: var(--primary);
+            color: var(--primaryLight);
             transition: 0.3s;
+
+            &:visited {
+                color: (--primaryLight);
+            }
 
             &:hover {
                 color: var(--primaryLight);

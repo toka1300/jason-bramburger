@@ -73,22 +73,22 @@ eleventyNavigation:
         <ul class="cs-social">
             <li class="cs-social-li">
                 <a href="{{ client.socials.youtube }}" class="cs-social-link" aria-label="youtube" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-youtube.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-youtube.svg" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.twitter }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-twitter.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-twitter.svg" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.github }}" class="cs-social-link" aria-label="github" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-github.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-github.svg" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.researchGate }}" class="cs-social-link" aria-label="research gate" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-research-gate.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="../../assets/svgs/brand-research-gate.svg" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
         </ul>
@@ -121,22 +121,16 @@ eleventyNavigation:
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 934 }) | webp %}" type="image/webp">
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 934 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 1080, height: 1440 }) | avif %}" type="image/avif">
+               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | avif %}" type="image/avif">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" alt="Screenshot of Jason writing on a lightboard for his YouTube channel" width="540" height="720" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" alt="Screenshot of Jason writing on a lightboard for his YouTube channel" loading="eager" width="540" height="720" decoding="async" aria-hidden="true">
             </picture>
-
             <picture class="cs-picture cs-picture2">
-               <!--Mobile Image-->
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | avif %}" type="image/avif">
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | webp %}" type="image/webp">
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" type="image/jpeg">
-               <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 1080, height: 1440 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
-               <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 780, height: 798 }) | jpeg %}" alt="Cover of Data Driven Methods book" width="313" height="381" loading="lazy" decoding="async" aria-hidden="true">
+               <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 780, height: 798 }) | jpeg %}" alt="Cover of Data Driven Methods book" width="313" height="381" loading="eager" decoding="async" aria-hidden="true">
             </picture>
         </div>
         <!-- Right Content Section-->
@@ -189,7 +183,7 @@ eleventyNavigation:
                     </span>
                     </div>
                     <div class="cs-button-wrapper">
-                        <a href="https://www.mcgill.ca/qls/seminars" target="_blank" class="cs-button-solid">More Info</a>
+                        <a href="https://www.mcgill.ca/qls/seminars" target="_blank" class="cs-button-solid">Event Details</a>
                     </div>
                 </div>
             </li>
@@ -204,7 +198,7 @@ eleventyNavigation:
                     </span>
                     </div>
                     <div class="cs-button-wrapper">
-                        <a href="https://cellfate.uci.edu/2025mddls/"  target="_blank" class="cs-button-solid">More Info</a>
+                        <a href="https://cellfate.uci.edu/2025mddls/"  target="_blank" class="cs-button-solid">Event Details</a>
                     </div>
                 </div>
             </li>
@@ -219,7 +213,7 @@ eleventyNavigation:
                         </span>
                     </div>
                     <div class="cs-button-wrapper">
-                        <a href="https://www.siam.org/students-education/programs-initiatives/gene-golub-siam-summer-school" target="_blank" class="cs-button-solid">More Info</a>
+                        <a href="https://www.siam.org/students-education/programs-initiatives/gene-golub-siam-summer-school" target="_blank" class="cs-button-solid">Event Details</a>
                     </div>
                 </div>
             </li>

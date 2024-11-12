@@ -22,7 +22,7 @@ eleventyNavigation:
 
     <section id="int-hero">
         <h1 id="home-h">CV</h1>
-        <picture class="">
+        <picture class="cs-background">
            <!--Mobile Image-->
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
@@ -55,7 +55,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Education</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="down arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -81,7 +81,7 @@ eleventyNavigation:
                                 Employment
                             </span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         {% for job in cv.employment %}
@@ -96,7 +96,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Research Funding</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -119,7 +119,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                             {% for award in cv.awards %}

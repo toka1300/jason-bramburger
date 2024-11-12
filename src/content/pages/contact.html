@@ -57,16 +57,16 @@ eleventyNavigation:
 
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit youTube profile"  target="_blank" href="{{ client.socials.youtube }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-youtube.svg" alt="google" width="11" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-youtube.svg" alt="youtube" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit twitter profile"  target="_blank" href="{{ client.socials.twitter }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-twitter.svg" alt="facebook" width="6" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-twitter.svg" alt="twitter" width="6" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit github profile"  target="_blank" href="{{ client.socials.github }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-github.svg" alt="instagram" width="11" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/brand-github.svg" alt="github" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit research gate profile"  target="_blank" href="{{ client.socials.researchGate }}">
-                    <img class="cs-social-img cs-default" src="../../assets/svgs/brand-research-gate.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                    <img class="cs-social-img cs-default" src="../../assets/svgs/brand-research-gate.svg" alt="reserach gate" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
                 </a>
             </div>
         </div>
@@ -79,7 +79,7 @@ eleventyNavigation:
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | avif %}" type="image/avif">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/profile-picture.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true">
+            <img src="{% getUrl "/assets/images/profile-picture.jpg" | jpeg %}" alt="hill regions" width="630" height="775" decoding="async" aria-hidden="true" loading="lazy" alt="photo of jason teaching at a blackboard">
         </picture>
 </section>
 {% endblock %}

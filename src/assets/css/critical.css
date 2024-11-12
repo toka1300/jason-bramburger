@@ -84,6 +84,7 @@
   #hero-219 .cs-button-solid {
     line-height: 3.5rem;
     color: #fff;
+    height: clamp(2.875rem, 5.5vw, 3.5rem);
   }
   #hero-219 .cs-social {
     margin-top: 2rem;

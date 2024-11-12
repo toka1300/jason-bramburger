@@ -93,6 +93,7 @@
         .cs-button-solid {
             line-height: calc(56 / 16 * 1rem);
             color: #fff;
+            height: clamp(2.875rem, 5.5vw, 3.5rem);
         }
 
         .cs-social {
