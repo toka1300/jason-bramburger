@@ -91,17 +91,18 @@
             margin-top: 2rem;
         }
 
-        .cs-button-solid {
+        .cs-button-solid, .cs-button-transparent {
             line-height: calc(56 / 16 * 1rem);
             color: #fff;
             height: clamp(2.875rem, 5.5vw, 3.5rem);
+            width: clamp(9rem, 21vw, 13rem);
         }
 
         .cs-social {
             margin-top: 2rem;
             display: flex;
             align-items: center;
-            gap: 1.5rem;
+            gap: 1.35rem;
         }
 
         .cs-social-li {
@@ -171,8 +172,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            gap: 5rem;
         }
 
         .cs-content {
@@ -271,7 +271,7 @@
         }
 
         .cs-picture2 {
-            width: calc(378/16 * 1em);
+            width: 22.625em;
             height: calc(460/16 * 1em);
             right: 0;
             bottom: -2.5rem;

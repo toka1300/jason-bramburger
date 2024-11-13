@@ -40,31 +40,31 @@ module.exports = {
         {
             "name": "Deep learning of conjugate mappings",
             "videoLink": "https://www.youtube.com/watch?v=SxRazghFL-Y",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!",
+            "description": "Video abstract for the paper “Deep learning of conjugate mappings” with Kutz and Brunton.",
             "paperLink": "https://www.sciencedirect.com/science/article/pii/S0167278921001652"
         },
         {
             "name": "Sparse identification of slow timescale dynamics",
             "videoLink": "https://www.youtube.com/watch?v=2ji2-XUgVl0",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!",
+            "description": "Video abstract for the paper “Sparse identification of slow timescale dynamics” with Dylewsky and Kutz.",
             "paperLink": "https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.022204"
         },
         {
             "name": "Bounding minimum wave speeds",
             "videoLink": "https://www.youtube.com/watch?v=LtjwMMpxLt8",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!",
+            "description": "Video abstract for the paper “Minimum wave speeds in monostable reaction-diffusion equations” with Goluskin.",
             "paperLink": "https://royalsocietypublishing.org/doi/10.1098/rspa.2020.0450"
         },
         {
             "name": "Discovering Poincaré mappings",
             "videoLink": "https://www.youtube.com/watch?v=2Z2oYc5IS7M",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!",
+            "description": "Video abstract for the paper “Poincare maps for multiscale physics discovery and nonlinear Floquet theory” with Kutz.",
             "paperLink": "https://www.sciencedirect.com/science/article/pii/S0167278919305470?via%3Dihub"
         },
         {
             "name": "Data-driven stabilization of periodic orbits",
             "videoLink": "https://www.youtube.com/watch?v=72MeRaNki8E",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio quas asperiores reiciendis! Facilis quia recusandae vel facere delect corrupti!",
+            "description": "Video abstract for the paper “Data-driven stabilization of periodic orbits” with Brunton and Kutz.",
             "paperLink": "https://ieeexplore.ieee.org/document/9378534"
         }
     ],

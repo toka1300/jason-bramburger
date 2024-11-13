@@ -85,7 +85,7 @@
     grid-column: span 12;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     position: relative;
     z-index: 1;
     transition: box-shadow 0.3s, transform 0.3s;

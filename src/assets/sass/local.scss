@@ -200,16 +200,17 @@
         }
 
         .cs-location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
             font-size: calc(16 / 16 * 1rem);
-            /* 24px - 32px */
-            // margin: 0 0 clamp(1.5rem, 4vw, 2rem) 0;
             line-height: 1.5em;
             min-height: 3rem;
             color: var(--bodyTextColor);
         }
 
         .cs-button-wrapper {
-            margin-top: auto;
+            margin-top: 0.5rem;
             display: flex;
             position: relative;
             align-items: center;
@@ -278,6 +279,7 @@
     #events-1711 {
         .cs-background {
             right: calc(40 / 16 * 1rem);
+            top: -1rem;
         }
     }
 

@@ -95,6 +95,7 @@
             &.active {
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 16px;
 
                 .cs-button {
                     color: var(--primary);

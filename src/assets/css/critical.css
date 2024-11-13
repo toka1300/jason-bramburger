@@ -81,16 +81,17 @@
     gap: 1.25rem;
     margin-top: 2rem;
   }
-  #hero-219 .cs-button-solid {
+  #hero-219 .cs-button-solid, #hero-219 .cs-button-transparent {
     line-height: 3.5rem;
     color: #fff;
     height: clamp(2.875rem, 5.5vw, 3.5rem);
+    width: clamp(9rem, 21vw, 13rem);
   }
   #hero-219 .cs-social {
     margin-top: 2rem;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1.35rem;
   }
   #hero-219 .cs-social-li {
     list-style: none;
@@ -141,8 +142,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: 5rem;
   }
   #sbs-1461 .cs-content {
     /* set text align to left if content needs to be left aligned */
@@ -229,7 +229,7 @@
     top: 0;
   }
   #sbs-1461 .cs-picture2 {
-    width: 23.625em;
+    width: 22.625em;
     height: 28.75em;
     right: 0;
     bottom: -2.5rem;

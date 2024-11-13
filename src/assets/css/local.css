@@ -163,14 +163,16 @@
     color: var(--headerColor);
   }
   #events-1711 .cs-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     font-size: 1rem;
-    /* 24px - 32px */
     line-height: 1.5em;
     min-height: 3rem;
     color: var(--bodyTextColor);
   }
   #events-1711 .cs-button-wrapper {
-    margin-top: auto;
+    margin-top: 0.5rem;
     display: flex;
     position: relative;
     align-items: center;
@@ -225,6 +227,7 @@
 @media only screen and (min-width: 81.25rem) {
   #events-1711 .cs-background {
     right: 2.5rem;
+    top: -1rem;
   }
   .cs-h3 {
     min-height: 5.5rem;

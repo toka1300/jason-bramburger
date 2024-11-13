@@ -81,6 +81,7 @@
   #faq-2070 .cs-faq-item.active {
     display: flex;
     flex-direction: column;
+    padding-bottom: 16px;
   }
   #faq-2070 .cs-faq-item.active .cs-button {
     color: var(--primary);

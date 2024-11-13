@@ -39,6 +39,9 @@
     color: var(--headerColor);
     text-align: inherit;
   }
+  .cs-title.subTitle {
+    font-size: clamp(1.35rem, 2.9vw, 2.0625rem);
+  }
   .cs-text {
     margin: 0;
     max-width: 72.625rem;

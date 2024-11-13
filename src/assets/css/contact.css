@@ -31,33 +31,28 @@
     font-weight: 700;
     letter-spacing: 0.1em;
     margin: 0 0 1rem 0;
-    color: #b4b2c7;
+    color: var(--primary);
     display: block;
   }
   #cs-contact-490 .cs-link {
     font-size: clamp(1rem, 2vw, 1.25rem);
     text-decoration: none;
     line-height: 1.5em;
-    font-weight: 700;
     margin: 0 0 clamp(1rem, 2.5vw, 2rem);
     color: var(--headerColor);
     display: block;
-  }
-  #cs-contact-490 .cs-link:hover {
-    text-decoration: underline;
   }
   #cs-contact-490 .cs-link:last-of-type {
     margin-bottom: 0;
   }
   #cs-contact-490 .cs-social {
-    margin-top: clamp(2rem, 6vw, 5rem);
+    margin-top: clamp(2rem, 6vw, 3rem);
     display: inline-flex;
     justify-content: flex-start;
-    gap: 0.75rem;
+    gap: clamp(0.5rem, 2vw, 1.25rem);
   }
   #cs-contact-490 .cs-social-link {
-    width: clamp(2rem, 4vw, 3.25rem);
-    height: clamp(2rem, 4vw, 3.25rem);
+    padding: 0.75rem;
     background-color: #4e4b66;
     border-radius: 50%;
     display: flex;
@@ -72,13 +67,14 @@
     transform: translateY(-0.1875rem);
   }
   #cs-contact-490 .cs-social-img {
-    height: clamp(0.875rem, 2vw, 1.5rem);
+    height: clamp(1.25rem, 2vw, 1.5rem);
     width: auto;
     display: block;
   }
   #cs-contact-490 .cs-picture {
     display: flex;
     position: relative;
+    align-self: flex-start;
     width: clamp(22rem, 40vw, 60rem);
     align-self: center;
     justify-content: center;
