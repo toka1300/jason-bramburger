@@ -34,6 +34,7 @@
         .cs-text {
             margin-bottom: calc(16 / 16 * 1rem);
             max-width: fit-content;
+            text-align: justify;
             &:last-of-type {
                 margin-bottom: 0;
             }
