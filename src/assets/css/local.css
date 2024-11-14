@@ -187,7 +187,7 @@
     position: absolute;
     left: 50%;
     right: 1rem;
-    bottom: 2.5rem;
+    top: 1rem;
     z-index: -1;
   }
   #events-1711 .cs-background img {
@@ -230,7 +230,6 @@
 @media only screen and (min-width: 81.25rem) {
   #events-1711 .cs-background {
     right: 2.5rem;
-    top: 1rem;
     width: clamp(30rem, 41%, 49rem);
   }
   .cs-h3 {
