@@ -11,10 +11,12 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css"/>
-    <link rel="stylesheet" href="/assets/css/critical.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="stylesheet" href="/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 934 }) | avif %}"/>
-    <noscript><link rel="stylesheet" href="/assets/css/local.css"> </noscript>
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/local.css">
+    </noscript>
 
     <!-- JSON Schema Markup -->
     <script type="application/ld+json">
