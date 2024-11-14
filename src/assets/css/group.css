@@ -67,7 +67,7 @@
     gap: 0.35rem;
     height: auto;
     list-style-position: inside;
-    list-style-type: none;
+    list-style-type: decimal;
     padding: 0 0 1.5rem 0;
     opacity: 1;
   }
