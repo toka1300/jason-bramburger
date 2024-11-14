@@ -111,6 +111,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: none;
     transition: transform 0.6s, opacity 0.3s;
   }
   #blog-1144 .cs-flex {

@@ -41,7 +41,7 @@
   #sbs-865 .cs-picture, #sbs-865-r .cs-picture {
     display: flex;
     position: relative;
-    max-width: clamp(14rem, 10vw, 19rem);
+    max-width: clamp(14rem, 19vw, 19rem);
     justify-content: center;
     order: 1;
   }

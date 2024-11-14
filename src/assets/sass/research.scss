@@ -47,9 +47,7 @@
         .cs-picture {
             display: flex;
             position: relative;
-            // width: 30%;
-            // min-width: 19rem;
-            max-width: clamp(14rem, 10vw, 19rem);
+            max-width: clamp(14rem, 19vw, 19rem);
             justify-content: center;
             order: 1;
 
