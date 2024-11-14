@@ -64,7 +64,7 @@
   #faq-2070 .cs-faq-item.active .cs-item-p {
     height: auto;
     list-style-position: inside;
-    list-style-type: decimal;
+    list-style-type: none;
     padding: 0 0 1.5rem 0;
     opacity: 1;
   }

@@ -48,7 +48,7 @@ eleventyNavigation:
             {% for playlist in videos.playlists %} <!-- To add a playlist to the collection go into videos.js and add it to the playlists section -->
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <iframe src="https://www.youtube.com/embed/videoseries?list={{ playlist.link.split('=')[1] }}&rel=0" title="YouTube playlist player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/videoseries?list={{ playlist.link.split('=')[1] }}&rel=0" title="YouTube playlist player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ playlist.name }}</h3>
@@ -80,7 +80,7 @@ eleventyNavigation:
             {% for video in videos.videoAbstracts %} <!-- To add a video to the collection go into videos.js and add it to the video abstracts section -->
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <iframe src="https://www.youtube.com/embed/{{ video.videoLink.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{{ video.videoLink.split('=')[1] }}?&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ video.name }}</h3>
@@ -112,7 +112,7 @@ eleventyNavigation:
             {% for video in videos.researchTalks %} <!-- To add a video to the collection go into videos.js and add it to the research talks section -->
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ video.name }}</h3>
@@ -140,7 +140,7 @@ eleventyNavigation:
             {% for video in videos.podcasts %} <!-- To add a video to the collection go into videos.js and add it to the podcasts section -->
                 <li class="cs-item">
                     <picture class="cs-picture">
-                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{{ video.link.split('=')[1] }}?&rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </picture>
                     <div class="cs-flex">
                         <h3 class="cs-h3">{{ video.name }}</h3>

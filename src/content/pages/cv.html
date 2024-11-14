@@ -58,19 +58,19 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            <p><strong>Ph.D Mathematics</strong>, July 2017</p>
-                            <p>University of Ottawa</p>
-                            <p>Advisors: Benoit Dionne and Victor LeBlanc</p>
+                            <li><strong>Ph.D Mathematics</strong>, July 2017</li>
+                            <li>University of Ottawa</li>
+                            <li>Advisors: Benoit Dionne and Victor LeBlanc</li>
                         </ul>
                         <ul class="cs-item-p">
-                            <p><strong>M.Sc. Mathematics</strong>, July 2013</p>
-                            <p>University of Ottawa</p>
-                            <p>Advisors: Benoit Dionne and Victor LeBlanc</p>
+                            <li><strong>M.Sc. Mathematics</strong>, July 2013</li>
+                            <li>University of Ottawa</li>
+                            <li>Advisors: Benoit Dionne and Victor LeBlanc</li>
                         </ul>
                         <ul class="cs-item-p">
-                            <p><strong>B.A. Honours</strong>, May 2011</p>
-                            <p>Nipissing University</p>
-                            <p>Specialization in pure mathematics with minor in computer science</p>
+                            <li><strong>B.A. Honours</strong>, May 2011</li>
+                            <li>Nipissing University</li>
+                            <li>Specialization in pure mathematics with minor in computer science</li>
                         </ul>
                     </li> <!-- **End copy Here -->
 
@@ -100,22 +100,22 @@ eleventyNavigation:
                             </span>
                         </button>
                         <ul class="cs-item-p">
-                            <p><strong>Research Support for New Academics (FRQNT) - Metropolitan communities</strong></p>
-                            <p>April 2024 - March 2026</p>
-                            <p>Title: <em>Model Discovery in the Right Coordinates using Neural Networks</em></p>
+                            <li><strong>Research Support for New Academics (FRQNT) - Metropolitan communities</strong></li>
+                            <li>April 2024 - March 2026</li>
+                            <li>Title: <em>Model Discovery in the Right Coordinates using Neural Networks</em></li>
                         </ul>
                         <ul class="cs-item-p">
-                            <p><strong>NSERC Discovery Grant</strong></p>
-                            <p>April 2023 - March 2028</p>
-                            <p>Title: <em>Data-Driven Methods for Dynamical Systems Analysis</em></p>
+                            <li><strong>NSERC Discovery Grant</strong></li>
+                            <li>April 2023 - March 2028</li>
+                            <li>Title: <em>Data-Driven Methods for Dynamical Systems Analysis</em></li>
                         </ul>
                         <ul class="cs-item-p">
-                            <p><strong>NSERC Discovery Launch Supplement</strong></p>
-                                <p>April 2023 - March 2028</p>
+                            <li><strong>NSERC Discovery Launch Supplement</strong></li>
+                            <li>April 2023 - March 2028</li>
                         </ul>
                         <ul class="cs-item-p">
-                            <p><strong>Concodia University Faculty of Arts and Science Start-Up Grant</strong></p>
-                            <p>September 2022 - August 2024</p>
+                            <li><strong>Concodia University Faculty of Arts and Science Start-Up Grant</strong></li>
+                            <li>September 2022 - August 2024</li>
                         </ul>
                     </li>
 
@@ -129,8 +129,8 @@ eleventyNavigation:
                         </button>
                             {% for award in cv.awards %}
                                 <ul class="cs-item-p">
-                                    <p><strong>{{ award.name }}</strong>, {{ award.dates }}</p>
-                                    <p>{{ award.source }}</p>
+                                    <li><strong>{{ award.name }}</strong>, {{ award.dates }}</li>
+                                    <li>{{ award.source }}</li>
                                     {% if award.link %}
                                         <a href="{{ award.link }}" target="_blank">Details<img src="../../assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
                                     {% endif %}

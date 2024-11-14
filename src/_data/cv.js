@@ -101,7 +101,7 @@ module.exports = {
             "name": "Ontario Graduate Scholarship",
             "source": "Ontario Ministry of Training, Colleges and Universities",
             "dates": "September 2013 - August 2017",
-            "link": "https://www.osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html"
+            "link": "https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html"
         },
         {
             "name": "Excellence Scholarship",

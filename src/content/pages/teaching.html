@@ -43,7 +43,7 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <h2 class="cs-title">Teaching</h2>
-            <p class="cs-text">Teaching is an important and critical part of my career that I strive to excel at. To date I have been involved in many teaching-related activities, as summarized below.</p>
+            <p class="cs-text">Teaching is an important and critical part of my career that I strive to excel at. To date I have been involved in many teaching-related activities, as summarized below.h2</p>
         </div>
 
         <div class="cs-flex-group">
@@ -64,7 +64,7 @@ eleventyNavigation:
                                     <ul>
                                         {% for class in classes %}
                                             <li>
-                                                <a href="/{{ class.syllabusLink }} ..." class="blackTextLink" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
+                                                <a href="/{{ class.syllabusLink }} ..." aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
                                                     <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
                                                     <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
                                                 </a>
@@ -87,17 +87,17 @@ eleventyNavigation:
                             {# <h3> An up-to-date list of my teaching experience follows: TODO: Is this text needed?</h3> #}
                             <ul>
                                 {% for universityName, classes in teaching.pastTeaching %} <!-- To add an item go into teaching.js and find the past teaching group -->
-                                    <h2>{{ teaching.universityNames[universityName] }}</h2>
-                                        <ul>
-                                            {% for class in classes %}
-                                                <li>
-                                                    <a href="/{{ class.syllabusLink }}"  class="blackTextLink" aria-label="info" class="cs-social-link" target="_blank" rel="noopener" title="Syllabus">
-                                                        <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
-                                                        <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
-                                                    </a>
-                                                </li>
-                                            {% endfor %}
-                                        </ul>
+                                    <li><h2>{{ teaching.universityNames[universityName] }}</h2></li>
+                                    <ul>
+                                        {% for class in classes %}
+                                            <li>
+                                                <a href="/{{ class.syllabusLink }}" aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
+                                                    <img src="../../assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
+                                                    <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
                                 {% endfor %}
                             </ul>
                         </ul>
