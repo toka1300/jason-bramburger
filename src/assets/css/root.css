@@ -162,6 +162,9 @@
   button:hover {
     cursor: pointer;
   }
+  a:hover {
+    text-decoration: underline;
+  }
   .skip {
     z-index: -1111111;
     position: absolute;

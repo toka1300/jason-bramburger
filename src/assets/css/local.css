@@ -61,6 +61,7 @@
 @media only screen and (min-width: 0rem) {
   #events-1711 {
     padding: var(--sectionPadding);
+    padding-top: 0;
     position: relative;
     z-index: 1;
   }
@@ -186,7 +187,6 @@
     position: absolute;
     left: 50%;
     right: 1rem;
-    top: 2.5rem;
     bottom: 2.5rem;
     z-index: -1;
   }
@@ -202,6 +202,9 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 62rem) {
+  #events-1711 {
+    padding: var(--sectionPadding);
+  }
   #events-1711 .cs-container {
     max-width: 80rem;
   }
@@ -246,6 +249,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-1278 {
     padding: var(--sectionPadding);
+    padding-top: 0;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -289,7 +293,10 @@
   }
 }
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 62rem) {
+  #sbs-1278 {
+    padding: var(--sectionPadding);
+  }
   #sbs-1278 .cs-content {
     flex-wrap: wrap;
     row-gap: 2rem;

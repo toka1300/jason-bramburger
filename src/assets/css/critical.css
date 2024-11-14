@@ -145,9 +145,9 @@
     gap: 5rem;
   }
   #sbs-1461 .cs-content {
-    /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
+    max-width: 36.25rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
@@ -279,7 +279,8 @@
   }
   #sbs-1461 .cs-content {
     width: 50%;
-    padding: 3rem 0;
+    max-width: none;
+    padding-bottom: 3rem;
     /* prevents flexbox from squishing it */
     flex: none;
     align-self: center;

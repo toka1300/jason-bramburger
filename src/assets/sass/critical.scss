@@ -161,6 +161,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-1461 {
+        // background-color: #f7f7f7;
         padding: var(--sectionPadding);
         position: relative;
         z-index: 1;
@@ -176,9 +177,9 @@
         }
 
         .cs-content {
-            /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
+            max-width: 36.25rem;
             // max-width: calc(522/16 * 1rem);
             display: flex;
             flex-direction: column;
@@ -328,7 +329,8 @@
 
         .cs-content {
             width: 50%;
-            padding: calc(48/16 * 1rem) 0;
+            max-width: none;
+            padding-bottom: calc(48/16 * 1rem);
             /* prevents flexbox from squishing it */
             flex: none;
             align-self: center;
