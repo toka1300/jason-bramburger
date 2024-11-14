@@ -68,6 +68,9 @@
     padding: 0 0 1.5rem 0;
     opacity: 1;
   }
+  #faq-2070 .cs-faq-item.active .cs-item-p a {
+    text-decoration: none;
+  }
   #faq-2070 .cs-faq-item.active .cs-item-p strong {
     font-size: 1.25rem;
   }

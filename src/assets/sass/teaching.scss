@@ -182,6 +182,11 @@
                     align-items: center;
                     gap: 0.5rem;
                     color: var(--bodyTextColor);
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
 

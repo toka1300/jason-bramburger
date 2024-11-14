@@ -59,6 +59,9 @@
   #sbs-865 .cs-item-ul, #sbs-865-r .cs-item-ul {
     padding-left: 1.25rem;
   }
+  #sbs-865 .cs-item-ul a, #sbs-865-r .cs-item-ul a {
+    text-decoration: none;
+  }
   #sbs-865-r {
     background-color: #f7f7f7;
   }

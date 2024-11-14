@@ -153,6 +153,10 @@
     align-items: center;
     gap: 0.5rem;
     color: var(--bodyTextColor);
+    text-decoration: none;
+  }
+  #faq-2070 .cs-item-p a.blackTextLink:hover {
+    text-decoration: underline;
   }
   #faq-2070 .cs-item-p .cs-social-link:hover {
     font-weight: normal;

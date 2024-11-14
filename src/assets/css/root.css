@@ -72,6 +72,7 @@
   .cs-button-solid:hover {
     background-color: var(--primaryLight);
     scale: 1.01;
+    text-decoration: none;
   }
   .cs-button-transparent {
     font-size: 1rem;
@@ -97,6 +98,7 @@
   .cs-button-transparent:hover {
     border-color: var(--primaryLight);
     scale: 1.01;
+    text-decoration: none;
   }
   .cs-hide-on-mobile {
     display: none;
@@ -161,6 +163,9 @@
   a:hover,
   button:hover {
     cursor: pointer;
+  }
+  a {
+    text-decoration: underline;
   }
   a:hover {
     text-decoration: underline;

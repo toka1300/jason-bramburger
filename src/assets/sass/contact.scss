@@ -5,6 +5,9 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #cs-contact-490 {
+        a:hover {
+            text-decoration: underline;
+        }
         padding: var(--sectionPadding);
 
         .cs-container {

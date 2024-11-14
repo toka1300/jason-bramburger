@@ -7,6 +7,9 @@
     padding: var(--sectionPadding);
     position: relative;
   }
+  #faq-2070 a {
+    text-decoration: none;
+  }
   #faq-2070 .cs-container {
     width: 100%;
     max-width: 44rem;

@@ -82,6 +82,7 @@
             &:hover {
                 background-color: var(--primaryLight);
                 scale: 1.01;
+                text-decoration: none;
             }
     }
 
@@ -109,6 +110,7 @@
         &:hover {
             border-color: var(--primaryLight);
             scale: 1.01;
+            text-decoration: none;
         }
     }
 
@@ -187,6 +189,10 @@
         &:hover {
             cursor: pointer;
         }
+    }
+
+    a {
+        text-decoration: underline;
     }
 
     a:hover {

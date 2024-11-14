@@ -6,6 +6,9 @@
   #cs-contact-490 {
     padding: var(--sectionPadding);
   }
+  #cs-contact-490 a:hover {
+    text-decoration: underline;
+  }
   #cs-contact-490 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */
