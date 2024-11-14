@@ -30,6 +30,7 @@
   #sbs-865 .cs-text, #sbs-865-r .cs-text {
     margin-bottom: 1rem;
     max-width: fit-content;
+    text-align: justify;
   }
   #sbs-865 .cs-text:last-of-type, #sbs-865-r .cs-text:last-of-type {
     margin-bottom: 0;
