@@ -60,12 +60,13 @@ eleventyNavigation:
                     <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Data Driven Methods" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
                 </picture>
                 {# Third book below, it will not be visible on mobile, as it will be too squished, add "mobile-hidden" class to any of them you want to hide on mobile #}
-                {# <picture class="cs-picture mobile-hidden">
+                {# You will need to put the path to the image on the four different lines, they are backup options for browsers that don't support avif or webp + add an alt description #}
+                <picture class="cs-picture mobile-hidden">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
                     <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
-                </picture> #}
+                </picture>
             </div>
         </div>
         <div class="cs-flex-group">

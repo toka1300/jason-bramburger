@@ -71,6 +71,9 @@
   #faq-2070 .cs-faq-item.active .cs-item-p a {
     text-decoration: none;
   }
+  #faq-2070 .cs-faq-item.active .cs-item-p a:hover {
+    text-decoration: underline;
+  }
   #faq-2070 .cs-faq-item.active .cs-item-p strong {
     font-size: 1.25rem;
   }
