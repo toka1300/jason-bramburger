@@ -7,6 +7,10 @@
     #faq-2070 {
         a {
             text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
         padding: var(--sectionPadding);
         // margin-left: 1rem;
@@ -221,7 +225,7 @@
 
         .cs-social-li {
             display: flex;
-            gap: 0.5rem;
+            gap: 1rem;
             margin-top: 0.25rem;
         }
 
@@ -243,6 +247,10 @@
             &:hover {
                 scale: 1.05;
                 background-color: var(--primary);
+            }
+
+            span {
+                padding-top: 3px;
             }
         }
 
