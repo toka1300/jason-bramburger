@@ -75,7 +75,7 @@
     display: flex;
     position: relative;
     align-self: flex-start;
-    width: clamp(22rem, 40vw, 60rem);
+    width: clamp(22rem, 40vw, 30rem);
     align-self: center;
     justify-content: center;
     order: 1;
@@ -85,6 +85,7 @@
     height: auto;
     object-fit: cover;
     display: block;
+    border-radius: 1rem;
   }
 }
 /* Tablet - 700px */

@@ -267,7 +267,7 @@
 
         .cs-background {
             display: block;
-            height: 50rem;
+            height: 33rem;
         }
 
         .cs-h3 {
@@ -281,7 +281,8 @@
     #events-1711 {
         .cs-background {
             right: calc(40 / 16 * 1rem);
-            top: -1rem;
+            top: 1rem;
+            width: clamp(30rem, 41%, 49rem);
         }
     }
 
