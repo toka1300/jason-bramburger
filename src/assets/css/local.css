@@ -61,6 +61,7 @@
 @media only screen and (min-width: 0rem) {
   #events-1711 {
     padding: var(--sectionPadding);
+    padding-top: 0;
     position: relative;
     z-index: 1;
   }
@@ -248,6 +249,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-1278 {
     padding: var(--sectionPadding);
+    padding-top: 0;
     overflow: hidden;
     position: relative;
     z-index: 1;
