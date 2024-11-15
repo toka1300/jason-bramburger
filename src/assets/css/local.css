@@ -347,7 +347,6 @@
     width: 100%;
     max-width: 46.125rem;
     height: clamp(26.5rem, 30vw, 28.5rem);
-    border-radius: 1.25rem;
     overflow: hidden;
     display: block;
     order: 1;

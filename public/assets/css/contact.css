@@ -1,1 +1,108 @@
- @media only screen and (min-width: 0rem) {#cs-contact-490 {padding: var(--sectionPadding);}#cs-contact-490 a:hover {text-decoration: underline;}#cs-contact-490 .cs-container {width: 100%;max-width: 34.375rem;margin: auto;display: flex;flex-direction: column;justify-content: center;align-items: flex-start;gap: 3rem;}#cs-contact-490 .cs-content {max-width: 32.625rem;text-align: left;}#cs-contact-490 .cs-text {margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;}#cs-contact-490 .cs-header {font-size: clamp(0.8125rem, 1.5vw, 1rem);line-height: 1.2em;text-transform: uppercase;font-weight: 700;letter-spacing: 0.1em;margin: 0 0 1rem 0;color: var(--primary);display: block;}#cs-contact-490 .cs-link {font-size: clamp(1rem, 2vw, 1.25rem);text-decoration: none;line-height: 1.5em;margin: 0 0 clamp(1rem, 2.5vw, 2rem);color: var(--headerColor);display: block;}#cs-contact-490 .cs-link:last-of-type {margin-bottom: 0;}#cs-contact-490 .cs-social {margin-top: clamp(2rem, 6vw, 3rem);display: inline-flex;justify-content: flex-start;gap: clamp(0.5rem, 2vw, 1.25rem);}#cs-contact-490 .cs-social-link {padding: 0.75rem;background-color: #4e4b66;border-radius: 50%;display: flex;justify-content: center;align-items: center;position: relative;z-index: 1;transition: transform 0.3s, background-color 0.3s;}#cs-contact-490 .cs-social-link:hover {background-color: var(--primary);transform: translateY(-0.1875rem);}#cs-contact-490 .cs-social-img {height: clamp(1.25rem, 2vw, 1.5rem);width: auto;display: block;}#cs-contact-490 .cs-picture {display: flex;position: relative;align-self: flex-start;width: clamp(22rem, 40vw, 30rem);align-self: center;justify-content: center;order: 1;}#cs-contact-490 .cs-picture img {width: 100%;height: auto;object-fit: cover;display: block;border-radius: 1rem;}}@media only screen and (min-width: 43rem) {#cs-contact-490 .cs-container {max-width: 80rem;flex-direction: row;justify-content: space-around;align-items: center;}#cs-contact-490 .cs-content {width: 40%;order: 2;flex: none;}}
+/*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-contact-490 {
+    padding: var(--sectionPadding);
+  }
+  #cs-contact-490 a:hover {
+    text-decoration: underline;
+  }
+  #cs-contact-490 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  #cs-contact-490 .cs-content {
+    max-width: 32.625rem;
+    text-align: left;
+  }
+  #cs-contact-490 .cs-text {
+    margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
+  }
+  #cs-contact-490 .cs-header {
+    font-size: clamp(0.8125rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 1rem 0;
+    color: var(--primary);
+    display: block;
+  }
+  #cs-contact-490 .cs-link {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    text-decoration: none;
+    line-height: 1.5em;
+    margin: 0 0 clamp(1rem, 2.5vw, 2rem);
+    color: var(--headerColor);
+    display: block;
+  }
+  #cs-contact-490 .cs-link:last-of-type {
+    margin-bottom: 0;
+  }
+  #cs-contact-490 .cs-social {
+    margin-top: clamp(2rem, 6vw, 3rem);
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: clamp(0.5rem, 2vw, 1.25rem);
+  }
+  #cs-contact-490 .cs-social-link {
+    padding: 0.75rem;
+    background-color: #4e4b66;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  #cs-contact-490 .cs-social-link:hover {
+    background-color: var(--primary);
+    transform: translateY(-0.1875rem);
+  }
+  #cs-contact-490 .cs-social-img {
+    height: clamp(1.25rem, 2vw, 1.5rem);
+    width: auto;
+    display: block;
+  }
+  #cs-contact-490 .cs-picture {
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    width: clamp(22rem, 40vw, 30rem);
+    align-self: center;
+    justify-content: center;
+    order: 1;
+  }
+  #cs-contact-490 .cs-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+/* Tablet - 700px */
+@media only screen and (min-width: 43rem) {
+  #cs-contact-490 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #cs-contact-490 .cs-content {
+    width: 40%;
+    order: 2;
+    flex: none;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -51,21 +51,21 @@ eleventyNavigation:
                     <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
                     <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
                     <source srcset="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                    <img src="{% getUrl "/assets/images/nonlinearity-cover-2024.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="160" height="240" loading="eager" decoding="async" aria-hidden="true">
                 </picture>
                 <picture class="cs-picture">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Data Driven Methods" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" alt="Book cover of Data Driven Methods" width="160" height="240" loading="eager" decoding="async" aria-hidden="true">
                 </picture>
                 {# Third book below, it will not be visible on mobile, as it will be too squished, add "mobile-hidden" class to any of them you want to hide on mobile #}
                 {# You will need to put the path to the image on the four different lines, they are backup options for browsers that don't support avif or webp + add an alt description #}
-                {# <picture class="cs-picture mobile-hidden">
+                {# <picture class="cs-picture">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | avif %}" type="image/avif">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | webp %}" type="image/webp">
                     <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 520, height: 747 }) | jpeg %}" alt="Book cover of Nonlinearity 2024" width="150" height="250" loading="eager" decoding="async" aria-hidden="true">
+                    <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 320, height: 480 }) | jpeg %}" alt="Book cover of Data Driven Methods" width="160" height="240" loading="eager" decoding="async" aria-hidden="true">
                 </picture> #}
             </div>
         </div>
@@ -154,7 +154,7 @@ eleventyNavigation:
                                         {% endif %}
                                         {% if publication.dsWebFeature %}
                                             <a href="{{ publication.dsWebFeature }}" aria-label="ds-web" class="cs-social-link" target="_blank" rel="noopener" title="DSweb Feature">
-                                                <img src="../../assets/svgs/ds-web.svg" class="cs-social-icon cs-dsweb" alt="Journal" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="../../assets/svgs/ds-web.svg" class="cs-social-icon cs-dsweb" alt="Journal icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>DSWeb</span>
                                             </a>
                                         {% endif %}
