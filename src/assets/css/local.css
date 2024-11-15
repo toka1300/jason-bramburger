@@ -346,7 +346,7 @@
   #sbs-1278 .cs-picture {
     width: 100%;
     max-width: 46.125rem;
-    height: clamp(26.5rem, 30vw, 28.5rem);
+    height: clamp(15.5rem, 27vw, 23.5rem);
     overflow: hidden;
     display: block;
     order: 1;
