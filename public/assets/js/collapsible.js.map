@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/assets/js/collapsible.js"],
+  "sourcesContent": ["const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));\nconst sections = document.querySelectorAll('.cs-item-p');\n\nfor (const item of faqItems) {\n        const onClick = () => {\n        item.classList.toggle('active')\n    }\n    item.addEventListener('click', onClick)\n}\n\nsections.forEach(icon => {\n    icon.addEventListener('click', event => {\n        event.stopPropagation();\n    })\n})"],
+  "mappings": ";;AAAA,MAAM,WAAW,MAAM,KAAK,SAAS,iBAAiB,cAAc,CAAC;AACrE,MAAM,WAAW,SAAS,iBAAiB,YAAY;AAEvD,aAAW,QAAQ,UAAU;AACrB,UAAM,UAAU,MAAM;AACtB,WAAK,UAAU,OAAO,QAAQ;AAAA,IAClC;AACA,SAAK,iBAAiB,SAAS,OAAO;AAAA,EAC1C;AAEA,WAAS,QAAQ,UAAQ;AACrB,SAAK,iBAAiB,SAAS,WAAS;AACpC,YAAM,gBAAgB;AAAA,IAC1B,CAAC;AAAA,EACL,CAAC;",
+  "names": []
+}

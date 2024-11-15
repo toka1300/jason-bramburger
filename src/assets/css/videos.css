@@ -102,7 +102,7 @@
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
-    overflow: hidden;
+    overflow: hid den;
   }
   #blog-1144 .cs-picture iframe {
     position: absolute;

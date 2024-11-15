@@ -1,0 +1,25 @@
+on: push
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com # @Jason input your server name here
+        # server-dir: # Not sure if needed
+        username: myFtpUserName # @Jason input your password here
+        password: ${{ secrets.ftp_password }}
+        exclude: |
+          **/src/**
+          **/.eleventry.js*
+          **/.gitignore*
+          **/.LICENSE.md*
+          **/.README.md*
+          **/.package-lock.json*
+          **/package.json*
