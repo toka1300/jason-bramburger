@@ -74,9 +74,6 @@
   #faq-2070 .cs-faq-item.active .cs-social-icon {
     transition: 0.3s;
   }
-  #faq-2070 .cs-faq-item.active .cs-social-icon:hover {
-    scale: 1.05;
-  }
   #faq-2070 .cs-button {
     font-size: clamp(1.25rem, 2vw, 1.5rem);
     font-weight: bold;
