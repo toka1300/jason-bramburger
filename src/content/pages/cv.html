@@ -54,7 +54,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Education</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -79,7 +79,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Employment</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         {% for job in cv.employment %}
@@ -96,7 +96,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Research Funding</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -124,7 +124,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                             {% for award in cv.awards %}
@@ -132,7 +132,7 @@ eleventyNavigation:
                                     <li><strong>{{ award.name }}</strong>, {{ award.dates }}</li>
                                     <li>{{ award.source }}</li>
                                     {% if award.link %}
-                                        <a href="{{ award.link }}" target="_blank">Details<img src="../../assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
+                                        <a href="{{ award.link }}" target="_blank">Details<img src="/assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
                                     {% endif %}
                                 </ul>
                             {% endfor%}
