@@ -10,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/group.css">
-    <script defer src="/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/jbrambur/assets/css/group.css">
+    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -23,12 +23,8 @@ eleventyNavigation:
     <h1 id="home-h">Group</h1>
     <picture class="cs-background">
         <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
         <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
         <!--Desktop Image-->
-        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
-        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
         <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
         <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
     </picture>
@@ -53,34 +49,34 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Doctoral</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
                             <li><strong>Gabriel Remond-Tiedrez</strong>, since 2024</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two person icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two person icon">
                                 <p>Co-supervisor: <a href="https://www.math.mcgill.ca/jplessard/Home.html" target="_blank">Jean-Philippe Lessard</a></p>
                             </li>
                         </ul>
                         <ul class="cs-item-p">
                             <li><strong>Jackson Williams</strong>, since 2021</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two person icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two person icon">
                                 <p>Co-supervisor: <a href="https://math.gmu.edu/~mholzer/">Matt Holzer</a></p>
                             </li>
                             {# Un comment lines below when ready to put the paper in #}
                             {# <li><strong>Name</strong>, since 2021</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/paper.svg" alt="TBD icon"> 
+                                <img src="/jbrambur/assets/svgs/paper.svg" alt="TBD icon"> 
                                 <p>TBD</p>
                             </li> #}
                             <a href="https://hybrid.concordia.ca/jbrambur/Graphon_Poster_Jackson.pdf" class="cs-item-p-2" target="_blank">
-                                <img src="/assets/svgs/poster.svg" alt="presentation poster icon">
+                                <img src="/jbrambur/assets/svgs/poster.svg" alt="presentation poster icon">
                                 Existence and Persistence of Steady States for Dynamical Systems on Large Networks
                             </a>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/trophy.svg" alt="trophy icon"> 
+                                <img src="/jbrambur/assets/svgs/trophy.svg" alt="trophy icon"> 
                                 <p>T.C. Lim Graduate Award for Excellence in Teaching</p>
                             </li>
                         </ul>
@@ -91,14 +87,14 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Masters</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
 
                         <ul class="cs-item-p">
                             <li><strong>Tristan Kolla</strong>, since 2024</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two people icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two people icon">
                                 <p>Co-supervisor: <a href="https://www.pedersenfisherieslab.com/" target="_blank">Eric Pederson</a></p>
                             </li>
                         </ul>
@@ -106,7 +102,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             <li><strong>Daniel Fassler</strong>, since 2023</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two people icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two people icon">
                                 <p>Co-supervisor: <a href="https://sites.google.com/view/paglia" target="_blank">Simone Brugiapaglia</a></p>
                             </li>
                         </ul>
@@ -114,7 +110,7 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             <li><strong>Bocheng Ruan</strong>, since 2023</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two people icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two people icon">
                                 <p>Co-supervisor: <a href="http://mypage.concordia.ca/mathstat/pgora/" target="_blank"> Pawel Gora</a></p>
                             </li>
                         </ul>
@@ -125,7 +121,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Undergraduate</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="graphic" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -135,19 +131,23 @@ eleventyNavigation:
                         <ul class="cs-item-p">
                             <li><strong>Marco Mignacca</strong> 2023, Honours Project & 2023, NSERC USRA</li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/users.svg" alt="two people icon">
+                                <img src="/jbrambur/assets/svgs/users.svg" alt="two people icon">
                                 <p>Co-supervisor: <a href="https://sites.google.com/view/paglia" target="_blank">Simone Brugiapaglia</a></p>
                             </li>
                             <li>
                                 <a href="https://hybrid.concordia.ca/jbrambur/Marco_Poster_CMS.pdf" class="cs-item-p-2" target="_blank">
-                                    <img src="/assets/svgs/poster.svg" alt="poster presentation icon">
+                                    <img src="/jbrambur/assets/svgs/poster.svg" alt="poster presentation icon">
                                     Motion Detection using Dynamic Mode Decomposition
                                 </a>
                             </li>
                             <li class="cs-item-p-2">
-                                <img src="/assets/svgs/trophy.svg" alt="trophy icon"> 
+                                <img src="/jbrambur/assets/svgs/trophy.svg" alt="trophy icon"> 
                                 <p>Best poster prize at CMS Winter Meeting 2023</p>
                             </li>
+                            {# <li class="cs-item-p-2">
+                                <img src="{{ baseUrl }}/jbrambur/assets/svgs/trophy.svg" alt="trophy icon"> 
+                                <p>Best poster prize at CMS Winter Meeting 2023</p>
+                            </li> #}
                         </ul>
 
                         <ul class="cs-item-p">

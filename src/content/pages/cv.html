@@ -10,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/cv.css">
-    <script defer src="/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/jbrambur/assets/css/cv.css">
+    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -24,12 +24,8 @@ eleventyNavigation:
         <h1 id="home-h">CV</h1>
         <picture class="cs-background">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
            <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
@@ -54,7 +50,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Education</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -79,7 +75,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Employment</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         {% for job in cv.employment %}
@@ -96,7 +92,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Research Funding</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -124,7 +120,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                             {% for award in cv.awards %}
@@ -132,7 +128,7 @@ eleventyNavigation:
                                     <li><strong>{{ award.name }}</strong>, {{ award.dates }}</li>
                                     <li>{{ award.source }}</li>
                                     {% if award.link %}
-                                        <a href="{{ award.link }}" target="_blank">Details<img src="/assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
+                                        <a href="{{ award.link }}" target="_blank">Details<img src="/jbrambur/assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
                                     {% endif %}
                                 </ul>
                             {% endfor%}

@@ -10,9 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/research.css">
-    {# <link rel="preload" as="image" href="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930  }) | avif %}"/> #}
-    <script defer src="/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/jbrambur/assets/css/research.css">
+    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -24,12 +23,8 @@ eleventyNavigation:
         <h1 id="home-h">Research</h1>
         <picture class="cs-background">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
            <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
@@ -44,12 +39,8 @@ eleventyNavigation:
 
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 448, height: 634 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 448, height: 634 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 448, height: 634 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 608, height: 862 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 608, height: 862 }) | webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hill-regions.jpg" | resize({ width: 608, height: 862 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/hill-regions.jpg" | jpeg %}" alt="Slow extraction diagram" width="308" height="431" decoding="async" aria-hidden="true" loading="lazy">
         </picture>
@@ -73,12 +64,8 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 448, height: 737 })  | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 448, height: 737 })  | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 448, height: 737 })  | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 608, height: 1054 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 608, height: 1054 }) | webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/slow-extraction.jpg" | resize({ width: 608, height: 1054 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/slow-extraction.jpg" | jpeg %}" alt="Slow extraction diagram" width="304" height="527" decoding="async" aria-hidden="true" loading="lazy">
         </picture>
@@ -102,12 +89,8 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 448, height: 712 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 448, height: 712 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 448, height: 712 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 604, height: 1000 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 604, height: 1000 }) | webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hom-connect.jpg" | resize({ width: 604, height: 1000 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/hom-connect.jpg" | jpeg %}" alt="hom connect" width="302" height="500" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
@@ -134,12 +117,8 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 448, height: 712 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 448, height: 712 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 448, height: 712 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 604, height: 1000 })| avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 604, height: 1000 })| webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/spots-vs-rings.jpg" | resize({ width: 604, height: 1000 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/spots-vs-rings.jpg" | jpeg %}" alt="spots vs rings" width="604" height="1000" loading="lazy" decoding="async" aria-hidden="true">
         </picture>

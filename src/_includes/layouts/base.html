@@ -16,31 +16,31 @@
         <meta property="og:description" content="{{ description }}"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}"/>
-        <meta property="og:image" content="/assets/images/og-image.png"/>
-        <meta property="og:image:secure_url" content="/assets/images/og-image.png"/>
+        <meta property="og:image" content="/jbrambur/assets/images/og-image.png"/>
+        <meta property="og:image:secure_url" content="/jbrambur/assets/images/og-image.png"/>
 
         <!--Favicons-->
-        <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="/jbrambur/assets/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/jbrambur/assets/favicons/favicon.svg" />
+        <link rel="shortcut icon" href="/jbrambur/assets/favicons/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/jbrambur/assets/favicons/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
-        <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+        <link rel="manifest" href="/jbrambur/assets/favicons/site.webmanifest" />
 
         <!-- Preloads banner images on all the pages that are not the homepage -->
-        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
-        {# {% if page.url != '/' %}
-            <link rel="preload" as="image" href="{% getUrl '/assets/images/night-sky-banner.jpg' | resize({ width: 1400, height: 930 }) | avif %})"/>
-        {% endif %} #}
+        <link rel="preload" as="image" href="/jbrambur/assets/svgs/logo-white.svg">
+        {% if page.url != '/' %}
+            <link rel="preload" as="image" href="{% getUrl '/jbrambur/assets/images/night-sky-banner.jpg' | resize({ width: 1400, height: 930 }) | jpeg %})"/>
+        {% endif %}
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {# {% if preloadImg != '' %}
+        {% if preloadImg != '' %}
             <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %} #}
+        {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css">
-        <script defer src="/assets/js/nav.js"></script>
+        <link rel="stylesheet" href="/jbrambur/assets/css/root.css">
+        <script defer src="/jbrambur/assets/js/nav.js"></script>
 
         {% block head %}{% endblock %}
 

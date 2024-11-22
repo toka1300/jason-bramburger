@@ -10,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/teaching.css">
-    <script defer src="/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/jbrambur/assets/css/teaching.css">
+    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -24,12 +24,8 @@ eleventyNavigation:
         <h1 id="home-h">Teaching</h1>
         <picture class="cs-background">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
            <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
@@ -54,7 +50,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Current Teaching</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -64,8 +60,8 @@ eleventyNavigation:
                                     <ul>
                                         {% for class in classes %}
                                             <li>
-                                                <a href="/{{ class.syllabusLink }}" aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
-                                                    <img src="/assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
+                                                <a href="/jbrambur/{{ class.syllabusLink }}" aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
+                                                    <img src="/jbrambur/assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
                                                     <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
                                                 </a>
                                             </li>
@@ -80,7 +76,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Past Teaching</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand icon" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -91,8 +87,8 @@ eleventyNavigation:
                                     <ul>
                                         {% for class in classes %}
                                             <li>
-                                                <a href="/{{ class.syllabusLink }}" aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
-                                                    <img src="/assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
+                                                <a href="/jbrambur/{{ class.syllabusLink }}" aria-label="info" class="cs-social-link blackTextLink" target="_blank" rel="noopener" title="Syllabus">
+                                                    <img src="/jbrambur/assets/svgs/file-info.svg" class="cs-social-icon" alt="syllabus icon" loading="lazy" decoding="async" width="20" height="20" aria-hidden="true">
                                                     <span><strong>{{ class.semester }} </strong>{{ class.className }}</span>
                                                 </a>
                                             </li>
@@ -108,7 +104,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Course Development</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -121,7 +117,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Teaching Assistant Experience</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -134,7 +130,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Other Relevant Experience</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">

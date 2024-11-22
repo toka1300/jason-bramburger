@@ -11,7 +11,7 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/jbrambur/assets/css/contact.css">
 {% endblock %}
 
 {% block body %}
@@ -24,12 +24,8 @@ eleventyNavigation:
         <h1 id="home-h">Contact</h1>
         <picture class="cs-background">
            <!--Mobile Image-->
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | avif %}" type="image/avif">
-           <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | webp %}" type="image/webp">
            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 1200, height: 930 }) | jpeg %}" type="image/jpeg">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" type="image/jpeg">
            <img src="{% getUrl "/assets/images/night-sky-banner.jpg" | resize({ width: 2000, height: 930 }) | jpeg %}" alt="Starry night sky" width="2000" height="465" loading="eager" decoding="async" aria-hidden="true">
         </picture>
@@ -56,30 +52,26 @@ eleventyNavigation:
 
             <div class="cs-social">
                 <a class="cs-social-link" aria-label="visit youTube profile"  target="_blank" href="{{ client.socials.youtube }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube logo" width="11" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube logo" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit twitter profile"  target="_blank" href="{{ client.socials.twitter }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter logo" width="6" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter logo" width="6" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit github profile"  target="_blank" href="{{ client.socials.github }}">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/brand-github.svg" title="GitHub" alt="github logo" width="11" height="11">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/brand-github.svg" title="GitHub" alt="github logo" width="11" height="11">
                 </a>
                 <a class="cs-social-link" aria-label="visit research gate profile"  target="_blank" href="{{ client.socials.researchGate }}">
-                    <img class="cs-social-img cs-default" src="/assets/svgs/brand-research-gate.svg" alt="reserach gate logo" loading="lazy" title="ResearchGate" decoding="async" width="12" height="12" aria-hidden="true">
+                    <img class="cs-social-img cs-default" src="/jbrambur/assets/svgs/brand-research-gate.svg" alt="reserach gate logo" loading="lazy" title="ResearchGate" decoding="async" width="12" height="12" aria-hidden="true">
                 </a>
                 <a class="cs-social-link" aria-label="visit google scholar profile"  target="_blank" href="{{ client.socials.googleScholar }}">
-                    <img class="cs-social-img cs-default" src="/assets/svgs/brand-google-scholar.svg" alt="google scholar logo" loading="lazy" title="GoogleScholar" decoding="async" width="12" height="12" aria-hidden="true">
+                    <img class="cs-social-img cs-default" src="/jbrambur/assets/svgs/brand-google-scholar.svg" alt="google scholar logo" loading="lazy" title="GoogleScholar" decoding="async" width="12" height="12" aria-hidden="true">
                 </a>
             </div>
         </div>
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 704, height: 704 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 704, height: 704 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 704, height: 704 }) | jpeg %}" type="image/jpeg">
             <!--Desktop Image-->
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 960, height: 960 }) | avif %}" type="image/avif">
-            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 960, height: 960 }) | webp %}" type="image/webp">
             <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/profile-picture.jpg" | resize({ width: 960, height: 960 }) | jpeg %}" type="image/jpeg">
             <img src="{% getUrl "/assets/images/profile-picture.jpg" | jpeg %}" width="960" height="960" decoding="async" aria-hidden="true" loading="lazy" alt="photo of jason teaching at a blackboard">
         </picture>

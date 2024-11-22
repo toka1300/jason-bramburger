@@ -11,11 +11,11 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/critical.css"/>
-    <link rel="stylesheet" href="/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
-    <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 934 }) | avif %}"/>
+    <link rel="stylesheet" href="/jbrambur/assets/css/critical.css"/>
+    <link rel="stylesheet" href="/jbrambur/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 934 }) | jpeg %}"/>
     <noscript>
-        <link rel="stylesheet" href="/assets/css/local.css">
+        <link rel="stylesheet" href="/jbrambur/assets/css/local.css">
     </noscript>
 
     <!-- JSON Schema Markup -->
@@ -72,45 +72,41 @@ eleventyNavigation:
         <ul class="cs-social"> {# If you have a new 'social you'd like to add, copy one of the <li> elements within the <ul> and add your info #}
             <li class="cs-social-li">
                 <a href="{{ client.socials.youtube }}" class="cs-social-link" aria-label="youtube" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.twitter }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.github }}" class="cs-social-link" aria-label="github" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-github.svg" title="GitHub" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-github.svg" title="GitHub" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.researchGate }}" class="cs-social-link" aria-label="research gate" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-research-gate.svg" title="ResearchGate" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-research-gate.svg" title="ResearchGate" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.googleScholar }}" class="cs-social-link" aria-label="googleScholar link" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-google-scholar.svg" alt="google scholar icon" title="Google Scholar" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-google-scholar.svg" alt="google scholar icon" title="Google Scholar" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
         </ul>
 
         <div class="cs-button-box">
-            <a href="/contact" class="cs-button-solid">Contact</a>
-            <a href="/cv" class="cs-button-transparent">View CV</a>
+            <a href="/jbrambur/contact" class="cs-button-solid">Contact</a>
+            <a href="/jbrambur/cv" class="cs-button-transparent">View CV</a>
         </div>
     </div>
 
     <picture class="cs-background">
        <!--Mobile Image-->
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 1200, height: 934 }) | avif %}" type="image/avif">
-       <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 1200, height: 934 }) | webp %}" type="image/webp">
        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 1200, height: 934 }) | jpeg %}" type="image/jpeg">
        <!--Desktop Image-->
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2000, height: 1000, position: "left"}) | avif %}" type="image/avif">
-       <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2000, height: 1000, position: "left" }) | webp %}" type="image/webp">
        <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/hero.png" | resize({ width: 2000, height: 1000, position: "left" }) | jpeg %}" type="image/jpeg">
        <img src="{% getUrl "/assets/images/hero.png" | resize({ width: 2000, height: 2000, position: "left" }) | jpeg %}" alt="Hero image, geometric shapes" width="1200" height="934" decoding="async" aria-hidden="true">
     </picture>
@@ -126,18 +122,12 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
                <!--Mobile Image-->
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 934 }) | avif %}" type="image/avif">
-               <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 934 }) | webp %}" type="image/webp">
                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 934 }) | jpeg %}" type="image/jpeg">
                <!--Desktop Image-->
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | avif %}" type="image/avif">
-               <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | webp %}" type="image/webp">
                <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" type="image/jpeg">
                <img src="{% getUrl "/assets/images/lightboard.jpg" | resize({ width: 866, height: 1210 }) | jpeg %}" alt="Screenshot of Jason writing on a lightboard for his YouTube channel" loading="eager" width="433" height="605" decoding="async" aria-hidden="true">
             </picture>
             <picture class="cs-picture cs-picture2">
-               <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | avif %}" type="image/avif">
-               <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | webp %}" type="image/webp">
                <source srcset="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" type="image/jpeg">
                <img src="{% getUrl "/assets/images/data-driven-methods-book.jpg" | resize({ width: 616, height: 764 }) | jpeg %}" alt="Cover of Data Driven Methods book" width="313" height="382" loading="eager" decoding="async" aria-hidden="true">
             </picture>
@@ -151,7 +141,6 @@ eleventyNavigation:
             <p class="cs-text">
                 Students who are interested in working with me on problems in computational and/or analytical aspects of dynamical systems are encouraged to reach out with a brief description of their interests. Moderate to strong programming skills are an advantage, while a background in differential equations is necessary. Those interested in working as a postdoctoral fellow in my lab are encouraged to apply for a <a href="https://www.crmath.ca/en/fellowships-and-visitors/crm-ism-postdoctoral-fellowships/" target="_blank">CRM-ISM Fellowship</a> listing me as an advisor.
             </p>
-            {# <a href="/contact" class="cs-button-solid">Contact</a> #}
         </div>
     </div>
 </section>
@@ -186,7 +175,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">McGill CAMBAM-QLS Seminar</h3>
                     <span class="cs-location">
-                        <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                        <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                         Montréal
                     </span>
                     </div>
@@ -201,7 +190,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Data, Dynamics, and Life Sciences (MDDLS) Conference</h3>
                     <span class="cs-location">
-                        <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                        <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                         Irvine, CA
                     </span>
                     </div>
@@ -216,7 +205,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>
@@ -232,7 +221,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>
@@ -247,7 +236,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="./assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>
@@ -259,8 +248,6 @@ eleventyNavigation:
         </ul>
     </div>
     <picture class="cs-background">
-        <source srcset="{% getUrl "/assets/images/conference.jpg" | resize({ width: 781, height: 528, position: "right" }) | avif %}" type="image/avif">
-        <source srcset="{% getUrl "/assets/images/conference.jpg" | resize({ width: 781, height: 528, position: "right" }) | webp %}" type="image/webp">
         <source srcset="{% getUrl "/assets/images/conference.jpg" | resize({ width: 781, height: 528, position: "right" }) | jpeg %}" type="image/jpeg">
         <img src="{% getUrl "/assets/images/conference.jpg" | resize({ width: 781, height: 528, position: "right" }) | jpeg %}" alt="Jason speaking at a conference" width="781" height="528" loading="lazy" decoding="async" aria-hidden="true">
     </picture>
@@ -274,8 +261,6 @@ eleventyNavigation:
     <div class="cs-container">
         <picture class="cs-picture">
            <!--Desktop Image-->
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/formulas.jpg" | resize({ width: 1444, height: 912, position: "bottom" }) | avif %}" type="image/avif">
-           <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/formulas.jpg" | resize({ width: 1444, height: 912 }) | webp %}" type="image/webp">
            <source media="(min-width: 601px)" srcset="{% getUrl "/assets/images/formulas.jpg" | resize({ width: 1444, height: 912 }) | jpeg %}" type="image/jpeg">
            <img src="{% getUrl "/assets/images/formulas.jpg" | resize({ width: 1444, height: 912 }) | jpeg %}" alt="Formula on blackboard" width="568" height="456" loading="lazy" decoding="async" aria-hidden="true">
         </picture>
