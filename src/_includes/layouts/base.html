@@ -30,13 +30,13 @@
         <!-- Preloads banner images on all the pages that are not the homepage -->
         <link rel="preload" as="image" href="/jbrambur/assets/svgs/logo-white.svg">
         {% if page.url != '/' %}
-            <link rel="preload" as="image" href="{% getUrl '/jbrambur/assets/images/night-sky-banner.jpg' | resize({ width: 1400, height: 930 }) | jpeg %})"/>
+            <link rel="preload" as="image" href="{% getUrl '/assets/images/night-sky-banner.jpg' | resize({ width: 2000, height: 930 }) | jpeg %}"/>
         {% endif %}
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
+        {# {% if preloadImg != '' %}
             <link rel="preload" as="image" href="{{ preloadImg }}"/>
-        {% endif %}
+        {% endif %} #}
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/jbrambur/assets/css/root.css">
