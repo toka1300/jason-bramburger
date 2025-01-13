@@ -11,9 +11,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.samkirkland.com # @Jason input your server name here
-        # server-dir: # Not sure if needed
-        username: myFtpUserName # @Jason input your password here
+        server: https://cdaftp.concordia.ca/file
+        server-dir: d/My%20CDA%20Share/public_html/ #Not sure this is right?
+        username: jbrambur
         password: ${{ secrets.ftp_password }}
         exclude: |
           **/src/**

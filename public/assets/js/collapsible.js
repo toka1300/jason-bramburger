@@ -1,1 +1,17 @@
-(()=>{var c=Array.from(document.querySelectorAll(".cs-faq-item")),o=document.querySelectorAll(".cs-item-p");for(let t of c){let e=()=>{t.classList.toggle("active")};t.addEventListener("click",e)}o.forEach(t=>{t.addEventListener("click",e=>{e.stopPropagation()})});})();
+(() => {
+  // src/assets/js/collapsible.js
+  var faqItems = Array.from(document.querySelectorAll(".cs-faq-item"));
+  var sections = document.querySelectorAll(".cs-item-p");
+  for (const item of faqItems) {
+    const onClick = () => {
+      item.classList.toggle("active");
+    };
+    item.addEventListener("click", onClick);
+  }
+  sections.forEach((icon) => {
+    icon.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  });
+})();
+//# sourceMappingURL=collapsible.js.map
