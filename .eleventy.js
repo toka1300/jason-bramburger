@@ -16,15 +16,7 @@ const isProduction = configServer.isProduction;
 
 
 module.exports = function (eleventyConfig) {
-    // const isProd = process.env.ELEVENTY_ENV === "productio    // const baseUrl = isProduction ? "/jbrambur" : "";
-
-    // eleventyConfig.addGlobalData("baseUrl", baseUrl);
-    // return {
-    //     dir: {
-    //         input: "src",
-    //         output: "public"
-    //     }
-    // }n";
+    const pathPrefix = configServer.isProduction ? "/jbrambur/" : "/";
 
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
@@ -55,7 +47,8 @@ module.exports = function (eleventyConfig) {
     /** https://www.11ty.dev/docs/plugins/ */
     
     eleventyConfig.addPlugin(eleventyPluginSharpImages, {
-        urlPath: "/jbrambur/assets/images",
+        // Not sure if this will work in prod****
+        urlPath: "/assets/images",
         outputDir: "public/assets/images",
     });
 
@@ -142,6 +135,7 @@ module.exports = function (eleventyConfig) {
     =======================================================================*/
 
     return {
+        pathPrefix: pathPrefix,
         dir: {
             input: "src",
             output: "public",

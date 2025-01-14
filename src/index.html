@@ -11,11 +11,11 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/jbrambur/assets/css/critical.css"/>
-    <link rel="stylesheet" href="/jbrambur/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="stylesheet" href="/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
     <link rel="preload" as="image" href="{% getUrl '/assets/images/hero.png' | resize({ width: 1200, height: 930 }) | jpeg %}"/>
     <noscript>
-        <link rel="stylesheet" href="/jbrambur/assets/css/local.css">
+        <link rel="stylesheet" href="/assets/css/local.css">
     </noscript>
 
     <!-- JSON Schema Markup -->
@@ -72,34 +72,34 @@ eleventyNavigation:
         <ul class="cs-social"> {# If you have a new 'social you'd like to add, copy one of the <li> elements within the <ul> and add your info #}
             <li class="cs-social-li">
                 <a href="{{ client.socials.youtube }}" class="cs-social-link" aria-label="youtube" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-youtube.svg" title="YouTube" alt="youtube icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.twitter }}" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-twitter.svg" title="Twitter" alt="twitter icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.github }}" class="cs-social-link" aria-label="github" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-github.svg" title="GitHub" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-github.svg" title="GitHub" alt="github icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.researchGate }}" class="cs-social-link" aria-label="research gate" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-research-gate.svg" title="ResearchGate" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-research-gate.svg" title="ResearchGate" alt="research gate icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
             <li class="cs-social-li">
                 <a href="{{ client.socials.googleScholar }}" class="cs-social-link" aria-label="googleScholar link" target="_blank" rel="noopener">
-                    <img class="cs-social-icon cs-default" src="/jbrambur/assets/svgs/brand-google-scholar.svg" alt="google scholar icon" title="Google Scholar" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                    <img class="cs-social-icon cs-default" src="/assets/svgs/brand-google-scholar.svg" alt="google scholar icon" title="Google Scholar" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
                 </a>
             </li>
         </ul>
 
         <div class="cs-button-box">
-            <a href="/jbrambur/contact" class="cs-button-solid">Contact</a>
-            <a href="/jbrambur/cv" class="cs-button-transparent">View CV</a>
+            <a href="/contact" class="cs-button-solid">Contact</a>
+            <a href="/cv" class="cs-button-transparent">View CV</a>
         </div>
     </div>
 
@@ -175,7 +175,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">McGill CAMBAM-QLS Seminar</h3>
                     <span class="cs-location">
-                        <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                        <img class="cs-icon" src="/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                         Montréal
                     </span>
                     </div>
@@ -190,7 +190,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Data, Dynamics, and Life Sciences (MDDLS) Conference</h3>
                     <span class="cs-location">
-                        <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                        <img class="cs-icon" src="/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                         Irvine, CA
                     </span>
                     </div>
@@ -205,7 +205,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>
@@ -221,7 +221,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/assets/svgs/map-pin-secondary.svg" alt="map icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>
@@ -236,7 +236,7 @@ eleventyNavigation:
                     <div class="cs-info">
                         <h3 class="cs-h3">Gene Golub SIAM Summer School</h3>
                         <span class="cs-location">
-                            <img class="cs-icon" src="/jbrambur/assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
+                            <img class="cs-icon" src="/assets/svgs/map-pin-secondary.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">
                             Montréal
                         </span>
                     </div>

@@ -10,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/jbrambur/assets/css/cv.css">
-    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/assets/css/cv.css">
+    <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -40,7 +40,7 @@ eleventyNavigation:
         <div class="cs-content">
             <h2 class="cs-title">Curriculum Vitae</h2>
             <p class="cs-text">Below you can find some quick information about my education, employment, and some awards I have won. A complete and up-to-date version of my CV can be found here:</p>
-            <a href="https://hybrid.concordia.ca/jbrambur/Bramburger-CV.pdf"><button class="cs-button-solid">Download Full CV</button></a>
+            <a href="https://hybrid.concordia.ca/Bramburger-CV.pdf"><button class="cs-button-solid">Download Full CV</button></a>
         </div>
         <div class="cs-flex-group">
             <div class="cs-wrapper">
@@ -50,7 +50,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Education</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -75,7 +75,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Employment</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         {% for job in cv.employment %}
@@ -92,7 +92,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Research Funding</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ul class="cs-item-p">
@@ -120,7 +120,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Scholarships, Awards, and Fellowships</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                             {% for award in cv.awards %}
@@ -128,7 +128,7 @@ eleventyNavigation:
                                     <li><strong>{{ award.name }}</strong>, {{ award.dates }}</li>
                                     <li>{{ award.source }}</li>
                                     {% if award.link %}
-                                        <a href="{{ award.link }}" target="_blank">Details<img src="/jbrambur/assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
+                                        <a href="{{ award.link }}" target="_blank">Details<img src="/assets/svgs/external-link.svg" class="cs-external-link" alt="external link icon"></a>
                                     {% endif %}
                                 </ul>
                             {% endfor%}

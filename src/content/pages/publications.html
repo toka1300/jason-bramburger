@@ -10,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/jbrambur/assets/css/publications.css">
-    <script defer src="/jbrambur/assets/js/collapsible.js"></script>
+    <link rel="stylesheet" href="/assets/css/publications.css">
+    <script defer src="/assets/js/collapsible.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -67,7 +67,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Books</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ol>
@@ -79,7 +79,7 @@ eleventyNavigation:
                                     <div class="cs-social-li">
                                         {% if book.repo %}
                                             <a href="{{ book.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                <img src="/jbrambur/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Code</span>
                                             </a>
                                         {% endif %}
@@ -94,7 +94,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Preprints</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ol>
@@ -105,7 +105,7 @@ eleventyNavigation:
                                     <div class="cs-social-li">
                                         {% if preprint.repo %}
                                             <a href="{{ preprint.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                <img src="/jbrambur/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Code</span>
                                             </a>
                                         {% endif %}
@@ -120,7 +120,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Publications</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ol>
@@ -132,31 +132,31 @@ eleventyNavigation:
                                     <div class="cs-social-li">
                                         {% if publication.repo %}
                                             <a href="{{ publication.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                <img src="/jbrambur/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Code</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.coverArticle %}
                                             <a href="{{ publication.coverArticle }}" aria-label="cover article" class="cs-social-link" target="_blank" rel="noopener" title="Cover article">
-                                                <img src="/jbrambur/assets/svgs/book.svg" class="cs-social-icon cs-cover-article" alt="book icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/book.svg" class="cs-social-icon cs-cover-article" alt="book icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Cover</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.dsWebFeature %}
                                             <a href="{{ publication.dsWebFeature }}" aria-label="ds-web" class="cs-social-link" target="_blank" rel="noopener" title="DSweb Feature">
-                                                <img src="/jbrambur/assets/svgs/ds-web.svg" class="cs-social-icon cs-dsweb" alt="Journal icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/ds-web.svg" class="cs-social-icon cs-dsweb" alt="Journal icon" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>DSWeb</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.videoAbstract %}
                                             <a href="{{ publication.videoAbstract }}" aria-label="youtube" class="cs-social-link" target="_blank" rel="noopener" title="Youtube abstract">
-                                                <img src="/jbrambur/assets/svgs/brand-youtube.svg" class="cs-social-icon cs-youtube" alt="youtube logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/brand-youtube.svg" class="cs-social-icon cs-youtube" alt="youtube logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Video</span>
                                             </a>
                                         {% endif %}
                                         {% if publication.cadFile %}
                                             <a href="{{ publication.repo }}" aria-label="cad file" class="cs-social-link" target="_blank" rel="noopener" title="CAD Files">
-                                                <img src="/jbrambur/assets/svgs/cad-file-icon.svg" class="cs-social-icon cs-cad" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/cad-file-icon.svg" class="cs-social-icon cs-cad" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>CAD File</span>
                                             </a>
                                         {% endif %}
@@ -171,7 +171,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Refereed Conference Proceedings</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ol>
@@ -185,7 +185,7 @@ eleventyNavigation:
                                     <div class="cs-social-li">
                                         {% if conference.repo %}
                                             <a href="{{ conference.repo }}" aria-label="github" class="cs-social-link" target="_blank" rel="noopener" title="Code Repository">
-                                                <img src="/jbrambur/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
+                                                <img src="/assets/svgs/brand-github.svg" class="cs-social-icon cs-github" alt="GitHub logo" loading="lazy" decoding="async" width="18" height="18" aria-hidden="true">
                                                 <span>Code</span>
                                             </a>
                                         {% endif %}
@@ -200,7 +200,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Conference Reports</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
 
@@ -222,7 +222,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Outreach and Public Interest Articles</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
                         <ol>
@@ -243,7 +243,7 @@ eleventyNavigation:
                         <button class="cs-button">
                             <span class="cs-button-text">Theses</span>
                             <span class="cs-arrows" aria-hidden="true">
-                                <img class="cs-icon" loading="lazy" decoding="async" src="/jbrambur/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
+                                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/faq-down.svg" alt="expand arrow" width="24" height="24" aria-hidden="true">
                             </span>
                         </button>
 
