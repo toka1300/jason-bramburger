@@ -50,7 +50,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyPluginSharpImages, {
         // Not sure if this will work in prod****
         urlPath: "/assets/images",
-        outputDir: "public/assets/images",
+        outputDir: "public/jbrambur/assets/images",
     });
 
     /**
