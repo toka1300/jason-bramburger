@@ -48,9 +48,8 @@ module.exports = function (eleventyConfig) {
     /** https://www.11ty.dev/docs/plugins/ */
     
     eleventyConfig.addPlugin(eleventyPluginSharpImages, {
-        // Not sure if this will work in prod****
         urlPath: "/assets/images",
-        outputDir: "public/jbrambur/assets/images",
+        outputDir: `public/assets/images`,
     });
 
     /**
@@ -142,7 +141,7 @@ module.exports = function (eleventyConfig) {
         pathPrefix: pathPrefix,
         dir: {
             input: "src",
-            output: "public/jbrambur",
+            output: "public",
             includes: "_includes",
             data: "_data",
         },

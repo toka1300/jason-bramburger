@@ -1,0 +1,1 @@
+(()=>{var c=Array.from(document.querySelectorAll(".cs-faq-item")),o=document.querySelectorAll(".cs-item-p");for(let t of c){let e=()=>{t.classList.toggle("active")};t.addEventListener("click",e)}o.forEach(t=>{t.addEventListener("click",e=>{e.stopPropagation()})});})();
