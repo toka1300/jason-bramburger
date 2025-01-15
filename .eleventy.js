@@ -142,7 +142,7 @@ module.exports = function (eleventyConfig) {
         pathPrefix: pathPrefix,
         dir: {
             input: "src",
-            output: "public",
+            output: "public/jbrambur",
             includes: "_includes",
             data: "_data",
         },
