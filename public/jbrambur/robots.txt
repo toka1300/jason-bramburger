@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /admin/
-Allow: /
-
-Sitemap: https://hybrid.concordia.ca/jbrambur/sitemap.xml
- 
