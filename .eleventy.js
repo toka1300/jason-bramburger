@@ -3,6 +3,7 @@ const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
 const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 // Configs
 const configCss = require("./src/config/css");
@@ -21,11 +22,10 @@ module.exports = function (eleventyConfig) {
     /**=====================================================================
           EXTENSIONS - Recognising non-default languages as templates 
     =======================================================================*/
-    /** https://www.11ty.dev/docs/languages/custom/ */
 
     /**
      *  CSS EXTENSION
-     *  Setting up CSS files to be recognised as aN eleventy template language. This allows our minifier to read CSS files and minify them
+     *  Setting up CSS files to be recognised as an eleventy template language. llows minifier to read CSS files and minify them
      */
     eleventyConfig.addTemplateFormats("css");
     eleventyConfig.addExtension("css", configCss);
@@ -36,12 +36,13 @@ module.exports = function (eleventyConfig) {
      */
     eleventyConfig.addTemplateFormats("js");
     eleventyConfig.addExtension("js", configJs);
+
     /**=====================================================================
                                 END EXTENSIONS
     =======================================================================*/
 
 
-    /**===================================  ==================================
+    /**=====================================================================
                   PLUGINS - Adds additional eleventy functionality 
     =======================================================================*/
     /** https://www.11ty.dev/docs/plugins/ */
@@ -74,6 +75,9 @@ module.exports = function (eleventyConfig) {
     if (isProduction) {
         eleventyConfig.addPlugin(pluginMinifier);
     }
+
+    // Enables the prefix for HTML files
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin); 
     /**=====================================================================
                                 END PLUGINS
     =======================================================================*/
